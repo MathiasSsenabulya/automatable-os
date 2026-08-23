@@ -16,6 +16,49 @@ Verwandte Dateien: [`findings.py`](findings.py) (GBP-Findings) · [`web_findings
 > Kampagne. Der Rest ist Werkzeug für andere Varianten, Altlast aus der Sonnet-Zeit oder
 > Sonderzüge, die Geld kosten und ausdrücklich angestoßen werden.
 
+### Schritt 0: welches Land, welche Branche
+
+Steht in [`maerkte.json`](maerkte.json) — elf Länder mit ihrer Rechtslage, zwanzig Branchen
+mit dem Suchbegriff, unter dem Maps sie kennt. Dieselbe Datei speist die Erklärseite, damit
+Seite und Pipeline nicht auseinanderlaufen.
+
+```bash
+python3 build_regions.py --list          # welche Länder, wie sie rechtlich stehen
+python3 build_regions.py US              # Regionen für ein neues Land bauen
+```
+
+**Die Ebene ist eine gemessene Größe, keine gesetzte.** `build_regions.py` arbeitet
+standardmäßig adaptiv: Bundesstaaten als Region, und nur die, die für einen Lauf zu groß
+sind, werden in Countys zerlegt. Australien bekommt so 8 Regionen (Western Australia bleibt
+ganz — 2,8 Mio Einwohner, davon 2,4 in Perth, das Umland kostet fast nichts mit), die USA
+195 statt 954. Die Schwelle stammt vom größten Lauf, der nachweislich vollständig war:
+Greater London, 1.359 Treffer für 9,51 $.
+
+**Ein ganzes Land geht auch in einem einzigen Lauf** — gemessen am 23.08.2026 an
+Neuseeland, Schlüsseldienste:
+
+| | Treffer | Kosten | Läufe |
+|---|---|---|---|
+| `--country-wide` | **330** | 1,65 $ | 1, sechs Minuten |
+| über die generierte Regionsliste | 97 | 0,52 $ | 9 von 31, dann abgebrochen |
+
+Der Unterschied liegt an den Namen, nicht am Rastern: „Auckland" scheitert als County ganz
+und gibt als City 17 Treffer für ein Drittel des Landes, weil automatische Stadtpolygone die
+Agglomeration nicht enthalten. **Bei einer kuratierten Liste dreht sich das um** — UK wird
+county-weise gescrapt, weil die Namen dort geprüft sind und ein Lauf, der bei County 40
+stirbt, bei 41 weitermacht statt von vorn.
+
+```bash
+# eine Branche, ein Land, ein Lauf
+python3 run_campaign.py --niche locksmith --country NZ --country-wide
+# alle 17 Notfall-Branchen über ein Land
+python3 run_campaign.py --niches emergency --country AU --country-wide
+```
+
+Beide sagen vor dem Start, was sie ungefähr kosten (~11 $ je Branche für Australien, 181 $
+für alle siebzehn) und wie das Zielland rechtlich steht. Scrapen ist überall zulässig,
+anschreiben nicht.
+
 ### Die zehn Schritte, in Reihenfolge
 
 | # | Schritt | Skript | rein → raus | Kosten |
