@@ -12,109 +12,128 @@
    "name": "Uusimaa",
    "level": "state",
    "pop": 1730957,
-   "cum": 0.3788
+   "cum": 0.3788,
+   "osm": "admin_level 4"
   },
   {
    "name": "Pirkanmaa",
    "level": "state",
    "pop": 473407,
-   "cum": 0.4824
+   "cum": 0.4824,
+   "osm": "admin_level 4"
   },
   {
    "name": "Southwest Finland",
    "level": "state",
    "pop": 391678,
-   "cum": 0.5681
+   "cum": 0.5681,
+   "osm": "admin_level 4"
   },
   {
    "name": "North Ostrobothnia",
    "level": "state",
    "pop": 272305,
-   "cum": 0.6277
+   "cum": 0.6277,
+   "osm": "admin_level 4"
   },
   {
    "name": "Central Finland",
    "level": "state",
    "pop": 204443,
-   "cum": 0.6724
+   "cum": 0.6724,
+   "osm": "admin_level 4"
   },
   {
    "name": "Paijat-Hame",
    "level": "state",
    "pop": 198244,
-   "cum": 0.7158
+   "cum": 0.7158,
+   "osm": "admin_level 4"
   },
   {
    "name": "North Savo",
    "level": "state",
    "pop": 186778,
-   "cum": 0.7567
+   "cum": 0.7567,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kymenlaakso",
    "level": "state",
    "pop": 170423,
-   "cum": 0.794
+   "cum": 0.794,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kanta-Häme",
    "level": "state",
    "pop": 129446,
-   "cum": 0.8223
+   "cum": 0.8223,
+   "osm": "admin_level 4"
   },
   {
    "name": "Satakunta",
    "level": "state",
    "pop": 122066,
-   "cum": 0.849
+   "cum": 0.849,
+   "osm": "admin_level 4"
   },
   {
    "name": "Ostrobothnia",
    "level": "state",
    "pop": 106663,
-   "cum": 0.8724
+   "cum": 0.8724,
+   "osm": "admin_level 4"
   },
   {
    "name": "Lapland",
    "level": "state",
    "pop": 105934,
-   "cum": 0.8955
+   "cum": 0.8955,
+   "osm": "admin_level 4"
   },
   {
    "name": "South Ostrobothnia",
    "level": "state",
    "pop": 101388,
-   "cum": 0.9177
+   "cum": 0.9177,
+   "osm": "admin_level 4"
   },
   {
    "name": "South Savo",
    "level": "state",
    "pop": 100187,
-   "cum": 0.9396
+   "cum": 0.9396,
+   "osm": "admin_level 4"
   },
   {
    "name": "South Karelia",
    "level": "state",
    "pop": 97490,
-   "cum": 0.961
+   "cum": 0.961,
+   "osm": "admin_level 4"
   },
   {
    "name": "North Karelia",
    "level": "state",
    "pop": 93490,
-   "cum": 0.9814
+   "cum": 0.9814,
+   "osm": "admin_level 4"
   },
   {
    "name": "Central Ostrobothnia",
    "level": "state",
    "pop": 48361,
-   "cum": 0.992
+   "cum": 0.992,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kainuu",
    "level": "state",
    "pop": 36458,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 4"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 18 von 18 passen"
 }

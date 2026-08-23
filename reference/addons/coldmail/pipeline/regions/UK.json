@@ -6,51 +6,236 @@
  "level": "county",
  "_source": "England ceremonial counties (curated) — GeoNames GB admin2 lists districts/boroughs, not counties, and omits metropolitan county names like 'West Midlands' that the actor resolves. Scotland/Wales/NI can be appended.",
  "regions": [
-  {"name": "Greater London", "level": "county"},
-  {"name": "West Midlands", "level": "county"},
-  {"name": "Greater Manchester", "level": "county"},
-  {"name": "West Yorkshire", "level": "county"},
-  {"name": "Merseyside", "level": "county"},
-  {"name": "South Yorkshire", "level": "county"},
-  {"name": "Tyne and Wear", "level": "county"},
-  {"name": "Kent", "level": "county"},
-  {"name": "Essex", "level": "county"},
-  {"name": "Hampshire", "level": "county"},
-  {"name": "Lancashire", "level": "county"},
-  {"name": "Surrey", "level": "county"},
-  {"name": "Hertfordshire", "level": "county"},
-  {"name": "Staffordshire", "level": "county"},
-  {"name": "Cheshire", "level": "county"},
-  {"name": "Nottinghamshire", "level": "county"},
-  {"name": "Derbyshire", "level": "county"},
-  {"name": "Devon", "level": "county"},
-  {"name": "Leicestershire", "level": "county"},
-  {"name": "Norfolk", "level": "county"},
-  {"name": "Lincolnshire", "level": "county"},
-  {"name": "Suffolk", "level": "county"},
-  {"name": "Warwickshire", "level": "county"},
-  {"name": "Worcestershire", "level": "county"},
-  {"name": "Cambridgeshire", "level": "county"},
-  {"name": "Gloucestershire", "level": "county"},
-  {"name": "Oxfordshire", "level": "county"},
-  {"name": "Somerset", "level": "county"},
-  {"name": "Berkshire", "level": "county"},
-  {"name": "Buckinghamshire", "level": "county"},
-  {"name": "Northamptonshire", "level": "county"},
-  {"name": "Durham", "level": "county"},
-  {"name": "East Sussex", "level": "county"},
-  {"name": "West Sussex", "level": "county"},
-  {"name": "Bristol", "level": "county"},
-  {"name": "Cornwall", "level": "county"},
-  {"name": "Cumbria", "level": "county"},
-  {"name": "Dorset", "level": "county"},
-  {"name": "Wiltshire", "level": "county"},
-  {"name": "Bedfordshire", "level": "county"},
-  {"name": "North Yorkshire", "level": "county"},
-  {"name": "Shropshire", "level": "county"},
-  {"name": "Herefordshire", "level": "county"},
-  {"name": "Northumberland", "level": "county"},
-  {"name": "Isle of Wight", "level": "county"},
-  {"name": "Rutland", "level": "county"}
- ]
+  {
+   "name": "Greater London",
+   "level": "county",
+   "osm": "admin_level 5"
+  },
+  {
+   "name": "West Midlands",
+   "level": "county",
+   "osm": "admin_level 5"
+  },
+  {
+   "name": "Greater Manchester",
+   "level": "county",
+   "osm": "admin_level 5"
+  },
+  {
+   "name": "West Yorkshire",
+   "level": "county",
+   "osm": "admin_level 5"
+  },
+  {
+   "name": "Merseyside",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "South Yorkshire",
+   "level": "county",
+   "osm": "admin_level 5"
+  },
+  {
+   "name": "Tyne and Wear",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "Kent",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Essex",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "Hampshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Lancashire",
+   "level": "county",
+   "osm": "admin_level 5"
+  },
+  {
+   "name": "Surrey",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Hertfordshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Staffordshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Cheshire",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "Nottinghamshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Derbyshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Devon",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Leicestershire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Norfolk",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Lincolnshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Suffolk",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Warwickshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Worcestershire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Cambridgeshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Gloucestershire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Oxfordshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Somerset",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Berkshire",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "Buckinghamshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Northamptonshire",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "Durham",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "East Sussex",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "West Sussex",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Bristol",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Cornwall",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Cumbria",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "Dorset",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Wiltshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Bedfordshire",
+   "level": "county",
+   "osm": "kein Polygon (boundary/ceremonial)"
+  },
+  {
+   "name": "North Yorkshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Shropshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Herefordshire",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Northumberland",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Isle of Wight",
+   "level": "county",
+   "osm": "admin_level 6"
+  },
+  {
+   "name": "Rutland",
+   "level": "county",
+   "osm": "admin_level 6"
+  }
+ ],
+ "_geprueft": "OSM-Namenspruefung, 38 von 46 passen"
 }

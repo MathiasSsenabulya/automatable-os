@@ -8,67 +8,84 @@
  "regions": [
   {
    "name": "Baden-Württemberg",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Bayern",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Berlin",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Brandenburg",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Bremen",
-   "level": "state"
+   "level": "county",
+   "osm": "admin_level 6"
   },
   {
    "name": "Hamburg",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Hessen",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Mecklenburg-Vorpommern",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Niedersachsen",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Nordrhein-Westfalen",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Rheinland-Pfalz",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Saarland",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Sachsen",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Sachsen-Anhalt",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Schleswig-Holstein",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   },
   {
    "name": "Thüringen",
-   "level": "state"
+   "level": "state",
+   "osm": "admin_level 4"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 15 von 16 passen"
 }

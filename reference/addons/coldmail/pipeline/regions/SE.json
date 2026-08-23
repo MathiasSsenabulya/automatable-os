@@ -10,129 +10,151 @@
  "regions": [
   {
    "name": "Stockholm",
-   "level": "state",
+   "level": "city",
    "pop": 2441812,
-   "cum": 0.3675
+   "cum": 0.3675,
+   "osm": "admin_level 7"
   },
   {
    "name": "Västra Götaland",
    "level": "state",
    "pop": 1116788,
-   "cum": 0.5355
+   "cum": 0.5355,
+   "osm": "admin_level 4"
   },
   {
    "name": "Skåne",
    "level": "state",
    "pop": 770254,
-   "cum": 0.6515
+   "cum": 0.6515,
+   "osm": "admin_level 4"
   },
   {
    "name": "Östergötland",
    "level": "state",
    "pop": 291382,
-   "cum": 0.6953
+   "cum": 0.6953,
+   "osm": "admin_level 4"
   },
   {
    "name": "Örebro",
-   "level": "state",
+   "level": "city",
    "pop": 200142,
-   "cum": 0.7254
+   "cum": 0.7254,
+   "osm": "admin_level 7"
   },
   {
    "name": "Uppsala",
-   "level": "state",
+   "level": "city",
    "pop": 199627,
-   "cum": 0.7555
+   "cum": 0.7555,
+   "osm": "admin_level 7"
   },
   {
    "name": "Jönköping",
-   "level": "state",
+   "level": "city",
    "pop": 171046,
-   "cum": 0.7812
+   "cum": 0.7812,
+   "osm": "admin_level 7"
   },
   {
    "name": "Västerbotten",
    "level": "state",
    "pop": 165740,
-   "cum": 0.8061
+   "cum": 0.8061,
+   "osm": "admin_level 4"
   },
   {
    "name": "Halland",
    "level": "state",
    "pop": 147525,
-   "cum": 0.8283
+   "cum": 0.8283,
+   "osm": "admin_level 4"
   },
   {
    "name": "Västmanland",
    "level": "state",
    "pop": 146154,
-   "cum": 0.8503
+   "cum": 0.8503,
+   "osm": "admin_level 4"
   },
   {
    "name": "Norrbotten",
    "level": "state",
    "pop": 134766,
-   "cum": 0.8706
+   "cum": 0.8706,
+   "osm": "kein Polygon (boundary/historic)"
   },
   {
    "name": "Södermanland",
    "level": "state",
    "pop": 129422,
-   "cum": 0.8901
+   "cum": 0.8901,
+   "osm": "admin_level 4"
   },
   {
    "name": "Gävleborg",
    "level": "state",
    "pop": 115689,
-   "cum": 0.9075
+   "cum": 0.9075,
+   "osm": "admin_level 4"
   },
   {
    "name": "Västernorrland",
    "level": "state",
    "pop": 115111,
-   "cum": 0.9248
+   "cum": 0.9248,
+   "osm": "admin_level 4"
   },
   {
    "name": "Dalarna",
    "level": "state",
    "pop": 94491,
-   "cum": 0.9391
+   "cum": 0.9391,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kronoberg",
    "level": "state",
    "pop": 87067,
-   "cum": 0.9522
+   "cum": 0.9522,
+   "osm": "admin_level 4"
   },
   {
    "name": "Blekinge",
    "level": "state",
    "pop": 86787,
-   "cum": 0.9652
+   "cum": 0.9652,
+   "osm": "admin_level 4"
   },
   {
    "name": "Värmland",
    "level": "state",
    "pop": 80049,
-   "cum": 0.9773
+   "cum": 0.9773,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kalmar",
-   "level": "state",
+   "level": "city",
    "pop": 77873,
-   "cum": 0.989
+   "cum": 0.989,
+   "osm": "admin_level 7"
   },
   {
    "name": "Jämtland",
    "level": "state",
    "pop": 49806,
-   "cum": 0.9965
+   "cum": 0.9965,
+   "osm": "admin_level 4"
   },
   {
    "name": "Gotland",
-   "level": "state",
+   "level": "city",
    "pop": 23402,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 7"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 14 von 21 passen"
 }

@@ -10,579 +10,676 @@
  "regions": [
   {
    "name": "Paris",
-   "level": "county",
+   "level": "city",
    "pop": 5298045,
-   "cum": 0.1601
+   "cum": 0.1601,
+   "osm": "admin_level 8"
   },
   {
    "name": "Bouches-du-Rhône",
    "level": "county",
    "pop": 2470751,
-   "cum": 0.2348
+   "cum": 0.2348,
+   "osm": "admin_level 6"
   },
   {
    "name": "Rhône",
    "level": "county",
    "pop": 1646139,
-   "cum": 0.2845
+   "cum": 0.2845,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hauts-de-Seine",
    "level": "county",
    "pop": 1520957,
-   "cum": 0.3305
+   "cum": 0.3305,
+   "osm": "admin_level 6"
   },
   {
    "name": "Seine-Saint-Denis",
    "level": "county",
    "pop": 1390605,
-   "cum": 0.3725
+   "cum": 0.3725,
+   "osm": "admin_level 6"
   },
   {
    "name": "Département du Nord",
    "level": "county",
    "pop": 1281381,
-   "cum": 0.4112
+   "cum": 0.4112,
+   "osm": "admin_level 6"
   },
   {
    "name": "Val-de-Marne",
    "level": "county",
    "pop": 1225508,
-   "cum": 0.4482
+   "cum": 0.4482,
+   "osm": "admin_level 6"
   },
   {
    "name": "Yvelines",
    "level": "county",
    "pop": 1053427,
-   "cum": 0.4801
+   "cum": 0.4801,
+   "osm": "admin_level 6"
   },
   {
    "name": "Val d'Oise",
    "level": "county",
    "pop": 995014,
-   "cum": 0.5101
+   "cum": 0.5101,
+   "osm": "admin_level 6"
   },
   {
    "name": "Alpes-Maritimes",
    "level": "county",
    "pop": 890316,
-   "cum": 0.537
+   "cum": 0.537,
+   "osm": "admin_level 6"
   },
   {
    "name": "Gironde",
    "level": "county",
    "pop": 756121,
-   "cum": 0.5599
+   "cum": 0.5599,
+   "osm": "admin_level 6"
   },
   {
    "name": "Essonne",
    "level": "county",
    "pop": 692434,
-   "cum": 0.5808
+   "cum": 0.5808,
+   "osm": "admin_level 6"
   },
   {
    "name": "Upper Garonne",
    "level": "county",
    "pop": 670194,
-   "cum": 0.601
+   "cum": 0.601,
+   "osm": "kein Polygon (shop/shoes)"
   },
   {
    "name": "Loire-Atlantique",
    "level": "county",
    "pop": 662892,
-   "cum": 0.6211
+   "cum": 0.6211,
+   "osm": "admin_level 6"
   },
   {
    "name": "Var",
    "level": "county",
    "pop": 561600,
-   "cum": 0.638
+   "cum": 0.638,
+   "osm": "admin_level 6"
   },
   {
    "name": "Seine-et-Marne",
    "level": "county",
    "pop": 554672,
-   "cum": 0.6548
+   "cum": 0.6548,
+   "osm": "admin_level 6"
   },
   {
    "name": "Seine-Maritime",
    "level": "county",
    "pop": 541555,
-   "cum": 0.6712
+   "cum": 0.6712,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hérault",
    "level": "county",
    "pop": 488630,
-   "cum": 0.6859
+   "cum": 0.6859,
+   "osm": "admin_level 6"
   },
   {
    "name": "Bas-Rhin",
    "level": "county",
    "pop": 426775,
-   "cum": 0.6988
+   "cum": 0.6988,
+   "osm": "admin_level 6"
   },
   {
    "name": "Pas-de-Calais",
    "level": "county",
    "pop": 424759,
-   "cum": 0.7117
+   "cum": 0.7117,
+   "osm": "admin_level 6"
   },
   {
    "name": "Isère",
    "level": "county",
    "pop": 362083,
-   "cum": 0.7226
+   "cum": 0.7226,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ille-et-Vilaine",
    "level": "county",
    "pop": 335713,
-   "cum": 0.7328
+   "cum": 0.7328,
+   "osm": "admin_level 6"
   },
   {
    "name": "Marne La Vallée",
    "level": "city",
    "pop": 318325,
-   "cum": 0.7424
+   "cum": 0.7424,
+   "osm": "kein Polygon (boundary/political)"
   },
   {
    "name": "Marne",
    "level": "county",
    "pop": 292154,
-   "cum": 0.7512
+   "cum": 0.7512,
+   "osm": "admin_level 6"
   },
   {
    "name": "Moselle",
    "level": "county",
    "pop": 289839,
-   "cum": 0.76
+   "cum": 0.76,
+   "osm": "admin_level 6"
   },
   {
    "name": "Loire",
    "level": "county",
    "pop": 288200,
-   "cum": 0.7687
+   "cum": 0.7687,
+   "osm": "admin_level 6"
   },
   {
    "name": "Finistère",
    "level": "county",
    "pop": 280303,
-   "cum": 0.7771
+   "cum": 0.7771,
+   "osm": "admin_level 6"
   },
   {
    "name": "Maine-et-Loire",
    "level": "county",
    "pop": 254668,
-   "cum": 0.7848
+   "cum": 0.7848,
+   "osm": "admin_level 6"
   },
   {
    "name": "Département du Vaucluse",
    "level": "county",
    "pop": 248454,
-   "cum": 0.7923
+   "cum": 0.7923,
+   "osm": "kein Polygon (office/government)"
   },
   {
    "name": "Loiret",
    "level": "county",
    "pop": 247095,
-   "cum": 0.7998
+   "cum": 0.7998,
+   "osm": "admin_level 6"
   },
   {
    "name": "Haut-Rhin",
    "level": "county",
    "pop": 228910,
-   "cum": 0.8067
+   "cum": 0.8067,
+   "osm": "admin_level 6"
   },
   {
    "name": "Indre-et-Loire",
    "level": "county",
    "pop": 227715,
-   "cum": 0.8136
+   "cum": 0.8136,
+   "osm": "admin_level 6"
   },
   {
    "name": "Meurthe et Moselle",
    "level": "county",
    "pop": 223738,
-   "cum": 0.8204
+   "cum": 0.8204,
+   "osm": "admin_level 6"
   },
   {
    "name": "Puy-de-Dôme",
    "level": "county",
    "pop": 223137,
-   "cum": 0.8271
+   "cum": 0.8271,
+   "osm": "admin_level 6"
   },
   {
    "name": "Gard",
    "level": "county",
    "pop": 210286,
-   "cum": 0.8335
+   "cum": 0.8335,
+   "osm": "admin_level 6"
   },
   {
    "name": "Haute-Savoie",
    "level": "county",
    "pop": 205170,
-   "cum": 0.8397
+   "cum": 0.8397,
+   "osm": "admin_level 6"
   },
   {
    "name": "Pyrénées-Atlantiques",
    "level": "county",
    "pop": 200939,
-   "cum": 0.8457
+   "cum": 0.8457,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cote d'Or",
    "level": "county",
    "pop": 199894,
-   "cum": 0.8518
+   "cum": 0.8518,
+   "osm": "admin_level 6"
   },
   {
    "name": "Oise",
    "level": "county",
    "pop": 199181,
-   "cum": 0.8578
+   "cum": 0.8578,
+   "osm": "admin_level 6"
   },
   {
    "name": "Doubs",
    "level": "county",
    "pop": 193181,
-   "cum": 0.8636
+   "cum": 0.8636,
+   "osm": "admin_level 6"
   },
   {
    "name": "Saône-et-Loire",
    "level": "county",
    "pop": 176107,
-   "cum": 0.8689
+   "cum": 0.8689,
+   "osm": "admin_level 6"
   },
   {
    "name": "Calvados",
    "level": "county",
    "pop": 175318,
-   "cum": 0.8742
+   "cum": 0.8742,
+   "osm": "admin_level 6"
   },
   {
    "name": "Morbihan",
    "level": "county",
    "pop": 173888,
-   "cum": 0.8795
+   "cum": 0.8795,
+   "osm": "admin_level 6"
   },
   {
    "name": "Somme",
    "level": "county",
    "pop": 169547,
-   "cum": 0.8846
+   "cum": 0.8846,
+   "osm": "admin_level 6"
   },
   {
    "name": "Sarthe",
    "level": "county",
    "pop": 163051,
-   "cum": 0.8896
+   "cum": 0.8896,
+   "osm": "admin_level 6"
   },
   {
    "name": "Charente-Maritime",
    "level": "county",
    "pop": 154766,
-   "cum": 0.8942
+   "cum": 0.8942,
+   "osm": "admin_level 6"
   },
   {
    "name": "Drôme",
    "level": "county",
    "pop": 154273,
-   "cum": 0.8989
+   "cum": 0.8989,
+   "osm": "admin_level 6"
   },
   {
    "name": "Aisne",
    "level": "county",
    "pop": 146608,
-   "cum": 0.9033
+   "cum": 0.9033,
+   "osm": "admin_level 6"
   },
   {
    "name": "Haute-Vienne",
    "level": "county",
    "pop": 141176,
-   "cum": 0.9076
+   "cum": 0.9076,
+   "osm": "admin_level 6"
   },
   {
    "name": "Vendée",
    "level": "county",
    "pop": 126442,
-   "cum": 0.9114
+   "cum": 0.9114,
+   "osm": "admin_level 6"
   },
   {
    "name": "Vienne",
    "level": "county",
    "pop": 123170,
-   "cum": 0.9151
+   "cum": 0.9151,
+   "osm": "admin_level 6"
   },
   {
    "name": "Pyrénées-Orientales",
    "level": "county",
    "pop": 110706,
-   "cum": 0.9185
+   "cum": 0.9185,
+   "osm": "admin_level 6"
   },
   {
    "name": "Eure-et-Loir",
    "level": "county",
    "pop": 108682,
-   "cum": 0.9218
+   "cum": 0.9218,
+   "osm": "admin_level 6"
   },
   {
    "name": "Savoie",
    "level": "county",
    "pop": 108404,
-   "cum": 0.925
+   "cum": 0.925,
+   "osm": "admin_level 6"
   },
   {
    "name": "Eure",
    "level": "county",
    "pop": 103052,
-   "cum": 0.9281
+   "cum": 0.9281,
+   "osm": "admin_level 6"
   },
   {
    "name": "Manche",
    "level": "county",
    "pop": 102463,
-   "cum": 0.9312
+   "cum": 0.9312,
+   "osm": "admin_level 6"
   },
   {
    "name": "Aude",
    "level": "county",
    "pop": 100376,
-   "cum": 0.9343
+   "cum": 0.9343,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tarn",
    "level": "county",
    "pop": 99684,
-   "cum": 0.9373
+   "cum": 0.9373,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cher",
    "level": "county",
    "pop": 97863,
-   "cum": 0.9402
+   "cum": 0.9402,
+   "osm": "admin_level 6"
   },
   {
    "name": "Allier",
    "level": "county",
    "pop": 95074,
-   "cum": 0.9431
+   "cum": 0.9431,
+   "osm": "admin_level 6"
   },
   {
    "name": "Loire-et-Cher",
    "level": "county",
    "pop": 92839,
-   "cum": 0.9459
+   "cum": 0.9459,
+   "osm": "kein Polygon (boundary/political)"
   },
   {
    "name": "Lot-et-Garonne",
    "level": "county",
    "pop": 79305,
-   "cum": 0.9483
+   "cum": 0.9483,
+   "osm": "admin_level 6"
   },
   {
    "name": "Deux-Sèvres",
    "level": "county",
    "pop": 75403,
-   "cum": 0.9506
+   "cum": 0.9506,
+   "osm": "admin_level 6"
   },
   {
    "name": "Côtes-d'Armor",
    "level": "county",
    "pop": 74247,
-   "cum": 0.9528
+   "cum": 0.9528,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ardennes",
    "level": "county",
    "pop": 73035,
-   "cum": 0.955
+   "cum": 0.955,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ain",
    "level": "county",
    "pop": 71037,
-   "cum": 0.9572
+   "cum": 0.9572,
+   "osm": "admin_level 6"
   },
   {
    "name": "Corrèze",
    "level": "county",
    "pop": 70435,
-   "cum": 0.9593
+   "cum": 0.9593,
+   "osm": "admin_level 6"
   },
   {
    "name": "Charente",
    "level": "county",
    "pop": 70336,
-   "cum": 0.9614
+   "cum": 0.9614,
+   "osm": "admin_level 6"
   },
   {
    "name": "Yonne",
    "level": "county",
    "pop": 70216,
-   "cum": 0.9636
+   "cum": 0.9636,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hautes-Pyrénées",
    "level": "county",
    "pop": 67892,
-   "cum": 0.9656
+   "cum": 0.9656,
+   "osm": "admin_level 6"
   },
   {
    "name": "Orne",
    "level": "county",
    "pop": 66446,
-   "cum": 0.9676
+   "cum": 0.9676,
+   "osm": "admin_level 6"
   },
   {
    "name": "Mayenne",
    "level": "county",
    "pop": 66072,
-   "cum": 0.9696
+   "cum": 0.9696,
+   "osm": "admin_level 6"
   },
   {
    "name": "Vosges",
    "level": "county",
    "pop": 64146,
-   "cum": 0.9716
+   "cum": 0.9716,
+   "osm": "admin_level 6"
   },
   {
    "name": "Dordogne",
    "level": "county",
    "pop": 63087,
-   "cum": 0.9735
+   "cum": 0.9735,
+   "osm": "admin_level 6"
   },
   {
    "name": "Haute-Marne",
    "level": "county",
    "pop": 60899,
-   "cum": 0.9753
+   "cum": 0.9753,
+   "osm": "admin_level 6"
   },
   {
    "name": "Aube",
    "level": "county",
    "pop": 60785,
-   "cum": 0.9771
+   "cum": 0.9771,
+   "osm": "admin_level 6"
   },
   {
    "name": "Landes",
    "level": "county",
    "pop": 58510,
-   "cum": 0.9789
+   "cum": 0.9789,
+   "osm": "admin_level 6"
   },
   {
    "name": "Territoire de Belfort",
    "level": "county",
    "pop": 54562,
-   "cum": 0.9806
+   "cum": 0.9806,
+   "osm": "admin_level 6"
   },
   {
    "name": "South Corsica",
    "level": "county",
    "pop": 54364,
-   "cum": 0.9822
+   "cum": 0.9822,
+   "osm": "admin_level 6"
   },
   {
    "name": "Indre",
    "level": "county",
    "pop": 53301,
-   "cum": 0.9838
+   "cum": 0.9838,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tarn-et-Garonne",
    "level": "county",
    "pop": 52434,
-   "cum": 0.9854
+   "cum": 0.9854,
+   "osm": "admin_level 6"
   },
   {
    "name": "Aveyron",
    "level": "county",
    "pop": 51644,
-   "cum": 0.987
+   "cum": 0.987,
+   "osm": "admin_level 6"
   },
   {
    "name": "Jura",
    "level": "county",
    "pop": 46556,
-   "cum": 0.9884
+   "cum": 0.9884,
+   "osm": "admin_level 6"
   },
   {
    "name": "Nièvre",
    "level": "county",
    "pop": 43988,
-   "cum": 0.9897
+   "cum": 0.9897,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hautes-Alpes",
    "level": "county",
    "pop": 42715,
-   "cum": 0.991
+   "cum": 0.991,
+   "osm": "admin_level 6"
   },
   {
    "name": "Upper Corsica",
    "level": "county",
    "pop": 41001,
-   "cum": 0.9922
+   "cum": 0.9922,
+   "osm": "admin_level 6"
   },
   {
    "name": "Meuse",
    "level": "county",
    "pop": 40393,
-   "cum": 0.9934
+   "cum": 0.9934,
+   "osm": "admin_level 6"
   },
   {
    "name": "Alpes-de-Haute-Provence",
    "level": "county",
    "pop": 40337,
-   "cum": 0.9947
+   "cum": 0.9947,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cantal",
    "level": "county",
    "pop": 34724,
-   "cum": 0.9957
+   "cum": 0.9957,
+   "osm": "admin_level 6"
   },
   {
    "name": "Gers",
    "level": "county",
    "pop": 24494,
-   "cum": 0.9965
+   "cum": 0.9965,
+   "osm": "admin_level 6"
   },
   {
    "name": "Lot",
    "level": "county",
    "pop": 23331,
-   "cum": 0.9972
+   "cum": 0.9972,
+   "osm": "admin_level 6"
   },
   {
    "name": "Haute-Loire",
    "level": "county",
    "pop": 22718,
-   "cum": 0.9978
+   "cum": 0.9978,
+   "osm": "admin_level 6"
   },
   {
    "name": "Haute-Saône",
    "level": "county",
    "pop": 19892,
-   "cum": 0.9985
+   "cum": 0.9985,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ardèche",
    "level": "county",
    "pop": 18423,
-   "cum": 0.999
+   "cum": 0.999,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ariège",
    "level": "county",
    "pop": 16997,
-   "cum": 0.9995
+   "cum": 0.9995,
+   "osm": "admin_level 6"
   },
   {
    "name": "Creuse",
    "level": "county",
    "pop": 15853,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 6"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 91 von 96 passen"
 }

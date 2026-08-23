@@ -10,45 +10,53 @@
  "regions": [
   {
    "name": "Singapore",
-   "level": "city",
+   "level": "state",
    "pop": 5903280,
-   "cum": 0.508
+   "cum": 0.508,
+   "osm": "admin_level 2"
   },
   {
    "name": "Ulu Bedok",
    "level": "city",
    "pop": 3387403,
-   "cum": 0.7995
+   "cum": 0.7995,
+   "osm": "kein Polygon (highway/residential)"
   },
   {
    "name": "Woodlands",
-   "level": "city",
+   "level": "county",
    "pop": 799000,
-   "cum": 0.8682
+   "cum": 0.8682,
+   "osm": "admin_level 6"
   },
   {
    "name": "Sengkang New Town",
    "level": "city",
    "pop": 684250,
-   "cum": 0.9271
+   "cum": 0.9271,
+   "osm": "nicht gefunden"
   },
   {
    "name": "Bedok New Town",
    "level": "city",
    "pop": 404370,
-   "cum": 0.9619
+   "cum": 0.9619,
+   "osm": "nicht gefunden"
   },
   {
    "name": "Jurong Town",
    "level": "city",
    "pop": 400780,
-   "cum": 0.9964
+   "cum": 0.9964,
+   "osm": "kein Polygon (amenity/bus_station)"
   },
   {
    "name": "MacPherson",
    "level": "city",
    "pop": 41970,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 7"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 1 von 7 passen"
 }

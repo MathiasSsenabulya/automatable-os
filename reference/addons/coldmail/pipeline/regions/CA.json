@@ -12,73 +12,86 @@
    "name": "Ontario",
    "level": "state",
    "pop": 13373780,
-   "cum": 0.4309
+   "cum": 0.4309,
+   "osm": "admin_level 4"
   },
   {
    "name": "Quebec",
    "level": "state",
    "pop": 7338520,
-   "cum": 0.6673
+   "cum": 0.6673,
+   "osm": "admin_level 4"
   },
   {
    "name": "British Columbia",
    "level": "state",
    "pop": 4288711,
-   "cum": 0.8055
+   "cum": 0.8055,
+   "osm": "admin_level 4"
   },
   {
    "name": "Alberta",
    "level": "state",
    "pop": 3176872,
-   "cum": 0.9079
+   "cum": 0.9079,
+   "osm": "admin_level 4"
   },
   {
    "name": "Manitoba",
    "level": "state",
    "pop": 814295,
-   "cum": 0.9341
+   "cum": 0.9341,
+   "osm": "admin_level 4"
   },
   {
    "name": "Nova Scotia",
    "level": "state",
    "pop": 787673,
-   "cum": 0.9595
+   "cum": 0.9595,
+   "osm": "admin_level 4"
   },
   {
    "name": "Saskatchewan",
    "level": "state",
    "pop": 613924,
-   "cum": 0.9793
+   "cum": 0.9793,
+   "osm": "admin_level 4"
   },
   {
    "name": "New Brunswick",
    "level": "state",
    "pop": 353369,
-   "cum": 0.9907
+   "cum": 0.9907,
+   "osm": "admin_level 4"
   },
   {
    "name": "Newfoundland and Labrador",
    "level": "state",
    "pop": 202443,
-   "cum": 0.9972
+   "cum": 0.9972,
+   "osm": "admin_level 4"
   },
   {
    "name": "Prince Edward Island",
    "level": "state",
    "pop": 38809,
-   "cum": 0.9984
+   "cum": 0.9984,
+   "osm": "admin_level 4"
   },
   {
    "name": "Yukon",
    "level": "state",
    "pop": 28201,
-   "cum": 0.9993
+   "cum": 0.9993,
+   "osm": "admin_level 4"
   },
   {
    "name": "Northwest Territories",
    "level": "state",
    "pop": 20340,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 4"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 12 von 12 passen"
 }

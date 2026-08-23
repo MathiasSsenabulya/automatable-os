@@ -10,33 +10,39 @@
  "regions": [
   {
    "name": "Harjumaa",
-   "level": "state",
+   "level": "county",
    "pop": 410654,
-   "cum": 0.6323
+   "cum": 0.6323,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tartu",
-   "level": "state",
+   "level": "city",
    "pop": 91407,
-   "cum": 0.773
+   "cum": 0.773,
+   "osm": "admin_level 9"
   },
   {
    "name": "Ida-Virumaa",
-   "level": "state",
+   "level": "county",
    "pop": 89804,
-   "cum": 0.9113
+   "cum": 0.9113,
+   "osm": "admin_level 6"
   },
   {
    "name": "Pärnumaa",
-   "level": "state",
+   "level": "county",
    "pop": 40228,
-   "cum": 0.9732
+   "cum": 0.9732,
+   "osm": "admin_level 6"
   },
   {
    "name": "Viljandimaa",
-   "level": "state",
+   "level": "county",
    "pop": 17407,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 6"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 0 von 5 passen"
 }

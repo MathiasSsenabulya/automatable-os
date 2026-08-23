@@ -10,189 +10,221 @@
  "regions": [
   {
    "name": "Auckland",
-   "level": "county",
+   "level": "state",
    "pop": 2677265,
-   "cum": 0.5145
+   "cum": 0.5145,
+   "osm": "admin_level 4"
   },
   {
    "name": "Christchurch City",
    "level": "county",
    "pop": 419200,
-   "cum": 0.595
+   "cum": 0.595,
+   "osm": "admin_level 6"
   },
   {
    "name": "Wellington City",
    "level": "county",
    "pop": 397280,
-   "cum": 0.6714
+   "cum": 0.6714,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hamilton City",
    "level": "county",
    "pop": 207400,
-   "cum": 0.7112
+   "cum": 0.7112,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tauranga City",
    "level": "county",
    "pop": 161000,
-   "cum": 0.7422
+   "cum": 0.7422,
+   "osm": "admin_level 6"
   },
   {
    "name": "Lower Hutt City",
    "level": "county",
    "pop": 134650,
-   "cum": 0.768
+   "cum": 0.768,
+   "osm": "admin_level 6"
   },
   {
    "name": "Dunedin City",
    "level": "county",
    "pop": 132800,
-   "cum": 0.7935
+   "cum": 0.7935,
+   "osm": "admin_level 6"
   },
   {
    "name": "Palmerston North City",
    "level": "county",
    "pop": 90500,
-   "cum": 0.8109
+   "cum": 0.8109,
+   "osm": "admin_level 6"
   },
   {
    "name": "New Plymouth District",
    "level": "county",
    "pop": 90100,
-   "cum": 0.8282
+   "cum": 0.8282,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hastings District",
    "level": "county",
    "pop": 88300,
-   "cum": 0.8452
+   "cum": 0.8452,
+   "osm": "admin_level 6"
   },
   {
    "name": "Nelson City",
    "level": "county",
    "pop": 74660,
-   "cum": 0.8596
+   "cum": 0.8596,
+   "osm": "admin_level 6"
   },
   {
    "name": "Napier City",
    "level": "county",
    "pop": 66400,
-   "cum": 0.8723
+   "cum": 0.8723,
+   "osm": "admin_level 6"
   },
   {
    "name": "Rotorua District",
    "level": "county",
    "pop": 65901,
-   "cum": 0.885
+   "cum": 0.885,
+   "osm": "admin_level 6"
   },
   {
    "name": "Porirua City",
    "level": "county",
    "pop": 61500,
-   "cum": 0.8968
+   "cum": 0.8968,
+   "osm": "admin_level 6"
   },
   {
    "name": "Invercargill City",
    "level": "county",
    "pop": 58000,
-   "cum": 0.9079
+   "cum": 0.9079,
+   "osm": "admin_level 6"
   },
   {
    "name": "Whangarei",
    "level": "county",
    "pop": 50900,
-   "cum": 0.9177
+   "cum": 0.9177,
+   "osm": "kein Polygon (place/city)"
   },
   {
    "name": "Whanganui District",
    "level": "county",
    "pop": 49200,
-   "cum": 0.9272
+   "cum": 0.9272,
+   "osm": "admin_level 6"
   },
   {
    "name": "Upper Hutt City",
    "level": "county",
    "pop": 47400,
-   "cum": 0.9363
+   "cum": 0.9363,
+   "osm": "admin_level 6"
   },
   {
    "name": "Gisborne District",
    "level": "county",
    "pop": 38100,
-   "cum": 0.9436
+   "cum": 0.9436,
+   "osm": "admin_level 6"
   },
   {
    "name": "Selwyn District",
    "level": "county",
    "pop": 34100,
-   "cum": 0.9502
+   "cum": 0.9502,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kapiti Coast District",
    "level": "county",
    "pop": 29900,
-   "cum": 0.9559
+   "cum": 0.9559,
+   "osm": "admin_level 6"
   },
   {
    "name": "Marlborough District",
    "level": "county",
    "pop": 29800,
-   "cum": 0.9616
+   "cum": 0.9616,
+   "osm": "admin_level 6"
   },
   {
    "name": "Timaru District",
    "level": "county",
    "pop": 29300,
-   "cum": 0.9673
+   "cum": 0.9673,
+   "osm": "admin_level 6"
   },
   {
    "name": "Masterton District",
    "level": "county",
    "pop": 28900,
-   "cum": 0.9728
+   "cum": 0.9728,
+   "osm": "admin_level 6"
   },
   {
    "name": "Taupo District",
    "level": "county",
    "pop": 27000,
-   "cum": 0.978
+   "cum": 0.978,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ashburton District",
    "level": "county",
    "pop": 21600,
-   "cum": 0.9822
+   "cum": 0.9822,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tasman District",
    "level": "county",
    "pop": 19950,
-   "cum": 0.986
+   "cum": 0.986,
+   "osm": "admin_level 6"
   },
   {
    "name": "Horowhenua District",
    "level": "county",
    "pop": 19789,
-   "cum": 0.9898
+   "cum": 0.9898,
+   "osm": "admin_level 6"
   },
   {
    "name": "Waimakariri District",
    "level": "county",
    "pop": 19300,
-   "cum": 0.9935
+   "cum": 0.9935,
+   "osm": "admin_level 6"
   },
   {
    "name": "Whakatane District",
    "level": "county",
    "pop": 18602,
-   "cum": 0.9971
+   "cum": 0.9971,
+   "osm": "admin_level 6"
   },
   {
    "name": "Waipa District",
    "level": "county",
    "pop": 15192,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 6"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 29 von 31 passen"
 }

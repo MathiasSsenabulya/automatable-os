@@ -12,91 +12,107 @@
    "name": "Oslo",
    "level": "state",
    "pop": 1082575,
-   "cum": 0.3308
+   "cum": 0.3308,
+   "osm": "admin_level 4"
   },
   {
    "name": "Vestland",
    "level": "state",
    "pop": 369813,
-   "cum": 0.4438
+   "cum": 0.4438,
+   "osm": "admin_level 4"
   },
   {
    "name": "Rogaland",
    "level": "state",
    "pop": 326698,
-   "cum": 0.5436
+   "cum": 0.5436,
+   "osm": "admin_level 4"
   },
   {
    "name": "Trøndelag",
    "level": "state",
    "pop": 252382,
-   "cum": 0.6207
+   "cum": 0.6207,
+   "osm": "admin_level 4"
   },
   {
    "name": "Østfold",
    "level": "state",
    "pop": 214437,
-   "cum": 0.6863
+   "cum": 0.6863,
+   "osm": "admin_level 4"
   },
   {
    "name": "Agder",
    "level": "state",
    "pop": 172170,
-   "cum": 0.7389
+   "cum": 0.7389,
+   "osm": "admin_level 4"
   },
   {
    "name": "Vestfold",
    "level": "state",
    "pop": 170023,
-   "cum": 0.7908
+   "cum": 0.7908,
+   "osm": "admin_level 4"
   },
   {
    "name": "Akershus",
    "level": "state",
    "pop": 151590,
-   "cum": 0.8371
+   "cum": 0.8371,
+   "osm": "admin_level 4"
   },
   {
    "name": "Buskerud",
    "level": "state",
    "pop": 123680,
-   "cum": 0.8749
+   "cum": 0.8749,
+   "osm": "admin_level 4"
   },
   {
    "name": "Møre og Romsdal",
    "level": "state",
    "pop": 99049,
-   "cum": 0.9052
+   "cum": 0.9052,
+   "osm": "admin_level 4"
   },
   {
    "name": "Telemark",
    "level": "state",
    "pop": 84972,
-   "cum": 0.9312
+   "cum": 0.9312,
+   "osm": "admin_level 4"
   },
   {
    "name": "Troms",
    "level": "state",
    "pop": 81159,
-   "cum": 0.956
+   "cum": 0.956,
+   "osm": "admin_level 4"
   },
   {
    "name": "Innlandet",
    "level": "state",
    "pop": 76086,
-   "cum": 0.9792
+   "cum": 0.9792,
+   "osm": "admin_level 4"
   },
   {
    "name": "Nordland",
    "level": "state",
    "pop": 52939,
-   "cum": 0.9954
+   "cum": 0.9954,
+   "osm": "admin_level 4"
   },
   {
    "name": "Finnmark",
    "level": "state",
    "pop": 15094,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 4"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 15 von 15 passen"
 }

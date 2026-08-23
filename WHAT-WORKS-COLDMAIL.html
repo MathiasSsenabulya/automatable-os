@@ -393,36 +393,74 @@
   .queue .foot{margin:18px 0 0;font-size:12.5px;color:var(--text-3);line-height:1.5;
     padding-left:44px}
   @media (max-width:560px){ .queue .foot{padding-left:0} }
-  /* Der Kasten, der dem Raster darueber widerspricht. Gestrichelt, weil er eine
-     offene Stelle markiert und keine Antwort. */
-  .second-half{margin-top:clamp(26px,3.5vw,34px);border:1px dashed var(--border-strong);
-    border-radius:12px;padding:clamp(18px,2.5vw,24px);background:transparent}
-  .second-half h4{font-family:var(--serif);font-size:clamp(16px,1.9vw,19px);font-weight:400;
-    margin:0 0 8px;color:var(--text)}
-  .second-half>p{font-size:14px;line-height:1.55;color:var(--text-2);margin:0}
-  .halves{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));
-    gap:clamp(12px,1.8vw,18px);margin-top:18px}
-  .halves>div{border-left:2px solid var(--accent);padding-left:13px}
-  .halves b{display:block;font-size:13.5px;color:var(--text);margin-bottom:5px}
-  .halves p{margin:0;font-size:13px;line-height:1.5;color:var(--text-2);max-width:none}
-  .second-half .foot{margin:16px 0 0;font-size:12.5px;color:var(--text-3);line-height:1.5;
-    font-style:italic}
 
-  /* Die Reihenfolge. Die Zahl traegt die Information -- hier ist die Folge echt. */
-  .queue{margin-top:clamp(30px,4vw,40px);padding-top:clamp(24px,3vw,30px);
-    border-top:1px solid var(--border)}
-  .queue h4{font-family:var(--serif);font-size:clamp(17px,2vw,20px);font-weight:400;
-    margin:0 0 16px;color:var(--text)}
-  .queue ol{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-  .queue li{display:grid;grid-template-columns:30px 1fr;gap:0 14px;align-items:baseline}
-  .queue .rank{font-family:var(--serif);font-size:21px;color:var(--accent);
-    grid-row:1/3;text-align:right}
-  .queue b{font-size:14.5px;color:var(--text);font-weight:600}
-  .queue li p{margin:4px 0 0;font-size:13px;line-height:1.55;color:var(--text-2);
-    grid-column:2/3}
-  .queue .foot{margin:18px 0 0;font-size:12.5px;color:var(--text-3);line-height:1.5;
-    padding-left:44px}
-  @media (max-width:560px){ .queue .foot{padding-left:0} }
+  /* Das Auftragswert-Bild. Die Balkenbreite IST die Zahl -- wer die Reihenfolge
+     verstehen will, muss keinen Absatz lesen. */
+  .worth{margin:6px 0 0}
+  .worth svg{display:block;width:100%;height:auto;overflow:visible}
+  .worth-note{margin:10px 0 0;font-size:13px;line-height:1.55;color:var(--text-2)}
+  .why{margin-top:20px;border-top:1px solid var(--border-soft)}
+  .why details{border-bottom:1px solid var(--border-soft)}
+  .why summary{list-style:none;cursor:pointer;padding:11px 0;font-size:14px;
+    color:var(--text);display:flex;gap:12px;align-items:baseline;width:auto}
+  .why summary::before{content:none;display:none}
+  .why summary::-webkit-details-marker{display:none}
+  .why summary::marker{content:""}
+  .why summary::after{content:"+";margin-left:auto;color:var(--text-3);font-size:15px}
+  .why details[open] summary::after{content:"\2013"}
+  .why summary span{font-family:var(--serif);color:var(--accent);font-size:15px;min-width:14px}
+  .why summary:hover{color:var(--accent-deep)}
+  .why details p{margin:0 0 13px 26px;font-size:13px;line-height:1.6;color:var(--text-2);
+    max-width:62ch}
+
+  /* Die Laender aufklappbar: 15 Zeilen mal vier Saetze sind eine Nachschlagetabelle,
+     kein Lesetext. Sichtbar bleibt, was die Entscheidung traegt. */
+  .lands-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+    flex-wrap:wrap;margin:clamp(20px,3vw,28px) 0 0;font-size:12.5px;color:var(--text-3);
+    max-width:none}
+  .lands-head .key{display:flex;gap:14px;align-items:center}
+  .lands-head .key i{width:9px;height:9px;border-radius:2px;display:inline-block;
+    margin-right:5px}
+  .lands-head .key .go{background:var(--go)} .lands-head .key .care{background:var(--amber)}
+  .lands-head .key .no{background:var(--stop)}
+  details.land{border-bottom:1px solid var(--border-soft)}
+  details.land:first-child{border-top:1px solid var(--border)}
+  /* Das Grid sitzt im DIV, nicht auf dem summary: ein summary ist ein list-item und
+     traegt display:grid nicht zuverlaessig -- die Spalten kamen schlicht nicht an. */
+  details.land summary{list-style:none;cursor:pointer;display:block;padding:0;
+    width:auto;gap:0;color:inherit;font-size:inherit}
+  details.land summary::before{content:none;display:none}
+  details.land summary::-webkit-details-marker{display:none}
+  details.land summary::marker{content:""}
+  details.land .row{display:grid;grid-template-columns:9px 150px minmax(0,1fr) 70px;
+    gap:0 16px;align-items:center;padding:13px 0}
+  details.land summary:hover b{color:var(--accent-deep)}
+  details.land i{width:9px;height:28px;border-radius:3px;display:block}
+  details.land .go{background:var(--go)} details.land .care{background:var(--amber)}
+  details.land .no{background:var(--stop)}
+  details.land b{font-family:var(--serif);font-size:15.5px;font-weight:400;color:var(--text);
+    line-height:1.25}
+  details.land b u{text-decoration:none;display:block;font-family:var(--mono);font-size:10.5px;
+    color:var(--text-3);margin-top:3px;letter-spacing:.02em;white-space:nowrap}
+  details.land .rule{font-size:12.5px;color:var(--text-2);font-family:var(--mono);
+    line-height:1.4}
+  details.land .rule em{font-style:normal;font-family:-apple-system,sans-serif;
+    font-size:10.5px;background:var(--bg-band);color:var(--text-3);padding:2px 7px;
+    border-radius:4px;margin-left:9px;white-space:nowrap;display:inline-block}
+  details.land .n{font-family:var(--serif);font-size:17px;color:var(--accent-deep);
+    text-align:right;font-variant-numeric:tabular-nums}
+  details.land .n::after{content:"+";font-family:-apple-system,sans-serif;font-size:12px;
+    color:var(--text-3);margin-left:7px}
+  details.land[open] .n::after{content:"\2013"}
+  details.land .detail{padding:0 0 14px 25px}
+  details.land .detail p{margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2);
+    max-width:64ch}
+  details.land .snag{margin-top:8px!important;font-size:12.5px;color:var(--text-3);
+    padding-left:12px;border-left:2px solid var(--border)}
+  @media (max-width:680px){
+    details.land .row{grid-template-columns:9px minmax(0,1fr) 54px;row-gap:6px}
+    details.land .rule{grid-column:2/4}
+  }
   /* Der Risiko-Block. Zweispaltig: links der Befund, rechts was dagegen hilft --
      ein Risiko ohne Gegenmassnahme daneben liest sich als Warnung statt als Rat. */
   .risk{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(16px,2.5vw,26px);
@@ -447,39 +485,10 @@
   .risk-side span{display:block;color:var(--text);font-weight:600;margin-bottom:3px}
   @media (max-width:680px){ .risk{grid-template-columns:1fr} }
   .lands{margin-top:clamp(20px,3vw,28px);border-top:1px solid var(--border)}
-  /* Vier Spalten, und die schmale rechte enthaelt NUR eine Zahl. Der Gesetzesname stand
-     dort zuerst und hat die Spalte gesprengt. */
-  .land{display:grid;grid-template-columns:9px 148px minmax(0,1fr) 78px;gap:0 16px;
-    align-items:start;padding:15px 0;border-bottom:1px solid var(--border-soft)}
-  .land i{align-self:stretch;border-radius:3px;font-style:normal}
-  .land .go{background:var(--go)} .land .care{background:var(--amber)}
-  .land .no{background:var(--stop)}
-  .land b{font-family:var(--serif);font-size:16px;font-weight:400;color:var(--text);
-    padding-top:1px}
-  .land b u{text-decoration:none;display:block;font-family:var(--mono);font-size:11px;
-    color:var(--text-3);margin-top:3px;letter-spacing:.03em;line-height:1.5}
-  .land .law{font-size:13.5px;color:var(--text-2);line-height:1.5;max-width:none}
-  .land .law p{margin:0;max-width:none;font-size:13.5px}
-  .land .verdict{display:inline-block;font-family:-apple-system,sans-serif;font-size:11px;
-    letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:5px;
-    margin-bottom:7px;background:var(--bg-band);color:var(--text-2)}
-  .land .verdict.go{background:#e6ecdf;color:var(--go)}
-  .land .verdict.care{background:var(--amber-soft);color:var(--amber)}
-  .land .verdict.no{background:#f2e0dc;color:var(--stop)}
-  .land .verdict em{font-style:normal;font-family:var(--mono);text-transform:none;
-    letter-spacing:0;opacity:.75}
-  .land .snag{font-size:12.5px;color:var(--text-3);line-height:1.5;margin-top:7px;
-    padding-left:12px;border-left:2px solid var(--border)}
   .land .n{font-size:11.5px;color:var(--text-3);text-align:right;line-height:1.4;
     font-variant-numeric:tabular-nums;font-family:-apple-system,sans-serif;padding-top:2px}
   .land .n u{text-decoration:none;display:block;color:var(--accent-deep);font-size:17px;
     font-family:var(--serif)}
-  @media (max-width:640px){
-    .land{grid-template-columns:9px minmax(0,1fr);gap:0 12px}
-    .land .law{grid-column:2/3;margin-top:8px}
-    .land .n{grid-column:2/3;text-align:left;margin-top:6px}
-    .land .n u{display:inline;font-size:13px}
-  }
   /* Zwei Messungen nebeneinander. Die Zahl ist gross, weil sie das Argument IST. */
   .race{margin-top:clamp(30px,4vw,40px);padding-top:clamp(24px,3vw,30px);
     border-top:1px solid var(--border)}
@@ -1323,46 +1332,63 @@
 
   <div class="queue">
     <h4>Which trade next, and why in this order</h4>
-    <ol>
-      <li><span class="rank">1</span>
-        <b>DRAIN AND SEWER, UK then US</b>
-        <p>Same mechanics as locksmiths, one rung up in ticket size and escalating: a jetting job starts around 175 pounds, a camera survey 90-250, the repair that follows closer to 850. Needs a tanker, so capital, so mostly limited companies rather than sole traders -- which is the decisive legal filter in the UK. Agency pressure is moderate: drainage is not on the standard target list the way plumbers and HVAC are.</p></li>
-      <li><span class="rank">2</span>
-        <b>EMERGENCY GLAZIERS, UK</b>
-        <p>The technical twin: same trigger (break-in, storm), same night-time search, same first-result-wins. Higher ticket than a locksmith call-out, same region files, and everything learned from 4,746 locksmith records transfers almost one to one. Lowest set-up cost of any candidate.</p></li>
-      <li><span class="rank">3</span>
-        <b>GARAGE DOOR REPAIR, but in the US and not the UK</b>
-        <p>Highest ticket of the emergency group: repair averages $264, replacement $1,200-4,500. The market depends on attached garages, so on American building style. The US region file exists and has never been used, and CAN-SPAM is the easiest regime on the list. Named openly: Local Services Ads already dominate there at $25-45 a lead, which makes the sale easier and the price lower.</p></li>
-      <li><span class="rank">4</span>
-        <b>SELF STORAGE, UK and US</b>
-        <p>The deliberate test against the niche rule: not urgent, but around 80% of customers come from search or driving past, and 67% of operators name SEO as their preferred channel. Recurring revenue instead of one-off jobs, so a genuine marketing budget, and a property behind it, so incorporated. If this works, 'urgent' is proven not to be a necessary criterion.</p></li>
-      <li><span class="rank">5</span>
-        <b>FUNERAL DIRECTORS, UK</b>
-        <p>High occasion value, real urgency, and consolidation has not swallowed it: independents hold 4,200 homes, 60% of all locations, against Co-op's 800. The tone has to change though. If that cannot be got right, take SEPTIC TANK EMPTYING instead: no agency pressure, licensed, urgent on overflow, but a small market.</p></li>
-    </ol>
-    <p class="foot">Cheap to add without a new scrape: auto locksmiths are largely a SUBSET of the 4,746 already scraped. Segment rather than re-scrape.</p>
-  </div>
+    <div class="worth" aria-hidden="true">
+      <svg viewBox="0 0 760 310" role="img">
+        <text x="196" y="18" font-size="11" fill="var(--text-3)" text-anchor="end"
+              font-family="-apple-system,sans-serif">TYPICAL JOB</text>
+      <text x="196" y="51" font-size="13" fill="var(--text)"
+            text-anchor="end" font-family="Georgia,serif">Locksmiths</text>
+      <rect x="208" y="34" width="14" height="25" rx="5" fill="var(--accent-soft)"
+            stroke="var(--accent)" stroke-width="1.4"/>
+      <text x="232" y="51" font-size="12.5" fill="var(--accent-deep)"
+            font-family="Georgia,serif">£85</text>
+      <text x="196" y="66" font-size="10.5" fill="var(--text-3)" text-anchor="end">call-out plus the lock</text>
+      <text x="196" y="103" font-size="13" fill="var(--text)"
+            text-anchor="end" font-family="Georgia,serif">Emergency glaziers</text>
+      <rect x="208" y="86" width="34" height="25" rx="5" fill="var(--card)"
+            stroke="var(--border-strong)" stroke-width="1.4"/>
+      <text x="252" y="103" font-size="12.5" fill="var(--accent-deep)"
+            font-family="Georgia,serif">£200+</text>
+      <text x="196" y="118" font-size="10.5" fill="var(--text-3)" text-anchor="end">boarding up plus the pane</text>
+      <text x="196" y="155" font-size="13" fill="var(--text)"
+            text-anchor="end" font-family="Georgia,serif">Drain and sewer</text>
+      <rect x="208" y="138" width="144" height="25" rx="5" fill="var(--card)"
+            stroke="var(--border-strong)" stroke-width="1.4"/>
+      <text x="362" y="155" font-size="12.5" fill="var(--accent-deep)"
+            font-family="Georgia,serif">£850</text>
+      <text x="196" y="170" font-size="10.5" fill="var(--text-3)" text-anchor="end">the repair the survey finds</text>
+      <text x="196" y="207" font-size="13" fill="var(--text)"
+            text-anchor="end" font-family="Georgia,serif">Garage doors, US</text>
+      <rect x="208" y="190" width="372" height="25" rx="5" fill="var(--card)"
+            stroke="var(--border-strong)" stroke-width="1.4"/>
+      <text x="590" y="207" font-size="12.5" fill="var(--accent-deep)"
+            font-family="Georgia,serif">$1,200–4,500</text>
+      <text x="196" y="222" font-size="10.5" fill="var(--text-3)" text-anchor="end">replacement, repair averages $264</text>
+      <text x="196" y="259" font-size="13" fill="var(--text)"
+            text-anchor="end" font-family="Georgia,serif">Self storage</text>
+      <rect x="208" y="242" width="372" height="25" rx="5" fill="var(--bg-band)"
+            stroke="var(--border-strong)" stroke-width="1.4" stroke-dasharray="4 3"/>
+      <text x="590" y="259" font-size="12.5" fill="var(--accent-deep)"
+            font-family="Georgia,serif">recurring</text>
+      <text x="196" y="274" font-size="10.5" fill="var(--text-3)" text-anchor="end">monthly, not a one-off job</text>
+      </svg>
+    </div>
+    <p class="worth-note">The order follows the money, not the search volume. Locksmiths are
+    running and pay the least per job; everything after them is the same machine pointed at a
+    bigger ticket.</p>
 
-
-  <div class="queue">
-    <h4>Which trade next, and why in this order</h4>
-    <ol>
-      <li><span class="rank">1</span>
-        <b>DRAIN AND SEWER, UK then US</b>
-        <p>Same mechanics as locksmiths, one rung up in ticket size and escalating: a jetting job starts around 175 pounds, a camera survey 90-250, the repair that follows closer to 850. Needs a tanker, so capital, so mostly limited companies rather than sole traders, which is the decisive legal filter in the UK. Agency pressure is moderate: drainage is not on the standard target list the way plumbers and HVAC are.</p></li>
-      <li><span class="rank">2</span>
-        <b>EMERGENCY GLAZIERS, UK</b>
-        <p>The technical twin: same trigger (break-in, storm), same night-time search, same first-result-wins. Higher ticket than a locksmith call-out, same region files, and everything learned from 4,746 locksmith records transfers almost one to one. Lowest set-up cost of any candidate.</p></li>
-      <li><span class="rank">3</span>
-        <b>GARAGE DOOR REPAIR, but in the US and not the UK</b>
-        <p>Highest ticket of the emergency group: repair averages $264, replacement $1,200-4,500. The market depends on attached garages, so on American building style. The US region file exists and has never been used, and CAN-SPAM is the easiest regime on the list. Named openly: Local Services Ads already dominate there at $25-45 a lead, which makes the sale easier and the price lower.</p></li>
-      <li><span class="rank">4</span>
-        <b>SELF STORAGE, UK and US</b>
-        <p>The deliberate test against the niche rule: not urgent, but around 80% of customers come from search or driving past, and 67% of operators name SEO as their preferred channel. Recurring revenue instead of one-off jobs, so a genuine marketing budget, and a property behind it, so incorporated. If this works, 'urgent' is proven not to be a necessary criterion.</p></li>
-      <li><span class="rank">5</span>
-        <b>FUNERAL DIRECTORS, UK</b>
-        <p>High occasion value, real urgency, and consolidation has not swallowed it: independents hold 4,200 homes, 60% of all locations, against Co-op's 800. The tone has to change though. If that cannot be got right, take SEPTIC TANK EMPTYING instead: no agency pressure, licensed, urgent on overflow, but a small market.</p></li>
-    </ol>
+    <div class="why">
+      <details><summary><span>1</span>DRAIN AND SEWER, UK then US</summary>
+        <p>Same mechanics as locksmiths, one rung up in ticket size and escalating: a jetting job starts around £175, a camera survey £90-250, the repair that follows closer to £850. Needs a tanker, so capital, so mostly limited companies rather than sole traders, which is the decisive legal filter in the UK. Agency pressure is moderate: drainage is not on the standard target list the way plumbers and HVAC are.</p></details>
+      <details><summary><span>2</span>EMERGENCY GLAZIERS, UK</summary>
+        <p>The technical twin: same trigger (break-in, storm), same night-time search, same first-result-wins. Higher ticket than a locksmith call-out, same region files, and everything learned from 4,746 locksmith records transfers almost one to one. Lowest set-up cost of any candidate.</p></details>
+      <details><summary><span>3</span>GARAGE DOOR REPAIR, but in the US and not the UK</summary>
+        <p>Highest ticket of the emergency group: repair averages $264, replacement $1,200-4,500. The market depends on attached garages, so on American building style. The US region file exists and has never been used, and CAN-SPAM is the easiest regime on the list. Named openly: Local Services Ads already dominate there at $25-45 a lead, which makes the sale easier and the price lower.</p></details>
+      <details><summary><span>4</span>SELF STORAGE, UK and US</summary>
+        <p>The deliberate test against the niche rule: not urgent, but around 80% of customers come from search or driving past, and 67% of operators name SEO as their preferred channel. Recurring revenue instead of one-off jobs, so a genuine marketing budget, and a property behind it, so incorporated. If this works, 'urgent' is proven not to be a necessary criterion.</p></details>
+      <details><summary><span>5</span>FUNERAL DIRECTORS, UK</summary>
+        <p>High occasion value, real urgency, and consolidation has not swallowed it: independents hold 4,200 homes, 60% of all locations, against Co-op's 800. The tone has to change though. If that cannot be got right, take SEPTIC TANK EMPTYING instead: no agency pressure, licensed, urgent on overflow, but a small market.</p></details>
+    </div>
     <p class="foot">Cheap to add without a new scrape: auto locksmiths are largely a SUBSET of the 4,746 already scraped. Segment rather than re-scrape.</p>
   </div>
 
@@ -1375,157 +1401,188 @@
     changes at every border — so the market list is sorted by law first and size second.</p>
   </div>
 
+  <p class="lands-head"><span>Click any country for the rule and the catch.</span><span class="key"><i class="go"></i>lawful <i class="care"></i>conditional <i class="no"></i>not advised</span></p>
   <div class="lands">
-    <div class="land">
-      <i class="go"></i>
-      <b>United Kingdom<u>UK · EN · running</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>PECR</em></span>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>United Kingdom<u>UK · EN · running</u></b>
+        <span class="rule">PECR<em>sole traders excluded</em></span>
+        <span class="n">46</span>
+      </div></summary>
+      <div class="detail">
         <p>Cold mail to corporate subscribers (Ltd, PLC, LLP) needs no prior consent, provided the sender is identified and an opt-out works.</p>
         <p class="snag">Sole traders and partnerships count as individual subscribers and are NOT covered.</p>
       </div>
-      <p class="n"><u>46</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>United States<u>US · EN</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>CAN-SPAM</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>United States<u>US · EN</u></b>
+        <span class="rule">CAN-SPAM<em>postal address required</em></span>
+        <span class="n">195</span>
+      </div></summary>
+      <div class="detail">
         <p>Lawful. Requires a truthful sender and subject line, a working opt-out, and a valid POSTAL ADDRESS in the footer.</p>
         <p class="snag">The postal address is mandatory and the thing most often left out. Some states add their own rules on top.</p>
       </div>
-      <p class="n"><u>195</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>Ireland<u>IE · EN</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>ePrivacy Regulations 2011</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>Ireland<u>IE · EN</u></b>
+        <span class="rule">ePrivacy Regulations 2011</span>
+        <span class="n">23</span>
+      </div></summary>
+      <div class="detail">
         <p>To companies as in the UK, with a working opt-out.</p>
         <p class="snag">Small market: three regions hold 60% of it.</p>
       </div>
-      <p class="n"><u>23</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>Sweden<u>SE · EN</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>Marknadsföringslagen 19 §</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>Sweden<u>SE · EN</u></b>
+        <span class="rule">Marknadsföringslagen 19 §<em>sole traders excluded</em></span>
+        <span class="n">21</span>
+      </div></summary>
+      <div class="detail">
         <p>The consent requirement applies only to natural persons, so corporate recipients need no prior consent. Every mail must carry a working address at which the recipient can demand it stops.</p>
         <p class="snag">Enskild näringsidkare (sole trader) is a natural person and IS covered by the consent requirement. English is effectively a second business language, so no translation is needed.</p>
       </div>
-      <p class="n"><u>21</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>Estonia<u>EE · EN</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>Elektroonilise side seadus § 103</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>Estonia<u>EE · EN</u></b>
+        <span class="rule">Elektroonilise side seadus § 103<em>sole traders excluded</em></span>
+        <span class="n">5</span>
+      </div></summary>
+      <div class="detail">
         <p>Opt-out for legal persons: no prior consent needed, provided it is clear who sends and on whose behalf, the commercial nature is obvious, and every mail carries a free electronic opt-out.</p>
         <p class="snag">FIE (sole trader) is a natural person and needs opt-in. Estonia's company register is fully digital, so the legal form can be filtered by machine, which makes exactly the filter cheap that Sweden also needs.</p>
       </div>
-      <p class="n"><u>5</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>Singapore<u>SG · EN</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>PDPA</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>Singapore<u>SG · EN</u></b>
+        <span class="rule">PDPA</span>
+        <span class="n">1</span>
+      </div></summary>
+      <div class="detail">
         <p>The PDPA excludes business contact information from personal data altogether, which makes Singapore one of the most permissive developed markets for B2B mail. Sender identification and opt-out still apply.</p>
         <p class="snag">The same sources that say this also say collecting addresses by scraping needs its own lawful basis, which is exactly how this pipeline gets them. That tension is unresolved.</p>
       </div>
-      <p class="n"><u>1</u>region</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>Hong Kong<u>HK · EN</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>UEMO</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>Hong Kong<u>HK · EN</u></b>
+        <span class="rule">UEMO<em>contact valid 30 days</em></span>
+        <span class="n">1</span>
+      </div></summary>
+      <div class="detail">
         <p>Commercial mail to business addresses is permitted with clear sender identification and opt-out. Business contact data sits outside the PDPO.</p>
         <p class="snag">Sender contact details must stay valid for 30 days after sending. Penalties run to HK$1m.</p>
       </div>
-      <p class="n"><u>1</u>region</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>France<u>FR · FR</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>LCEN art. 22 + CNIL guidance</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>France<u>FR · FR</u></b>
+        <span class="rule">LCEN art. 22 + CNIL guidance<em>needs translation</em></span>
+        <span class="n">96</span>
+      </div></summary>
+      <div class="detail">
         <p>B2B prospecting to a professional address runs on an opt-out basis: no prior consent needed, provided the message relates to the recipient's job, the sender is identified at first contact, and a one-click opt-out is honoured.</p>
         <p class="snag">The copy has to be French. Every building block, checker and subject line in this pipeline is written in English, so this is a translation project, not a config change.</p>
       </div>
-      <p class="n"><u>96</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="go"></i>
-      <b>Netherlands<u>NL · NL</u></b>
-      <div class="law">
-        <span class="verdict go">Lawful <em>Telecommunicatiewet art. 11.7</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="go"></i>
+        <b>Netherlands<u>NL · NL</u></b>
+        <span class="rule">Telecommunicatiewet art. 11.7<em>sole traders excluded</em></span>
+        <span class="n">206</span>
+      </div></summary>
+      <div class="detail">
         <p>Legal entities (BV, NV, stichting, vereniging) may be mailed without prior consent, with sender identification and a working opt-out.</p>
         <p class="snag">Natural persons (ZZP sole traders, VOF partners) need prior consent, and Dutch trades are full of them. Copy has to be Dutch.</p>
       </div>
-      <p class="n"><u>206</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="care"></i>
-      <b>Norway<u>NO · EN</u></b>
-      <div class="law">
-        <span class="verdict care">Conditional <em>Markedsføringsloven § 15</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="care"></i>
+        <b>Norway<u>NO · EN</u></b>
+        <span class="rule">Markedsføringsloven § 15</span>
+        <span class="n">15</span>
+      </div></summary>
+      <div class="detail">
         <p>The ban covers marketing to NATURAL PERSONS. The consumer authority states plainly that mail to addresses not belonging to a specific person is permitted, naming post@firmaX.no as the example.</p>
         <p class="snag">A firstname.lastname@ address falls back under the ban. In practice this is the easiest of the four: trades almost always run a shared inbox, and a rule of 'no personal names in the local part' settles the sole-trader question by address form instead of legal form.</p>
       </div>
-      <p class="n"><u>15</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="care"></i>
-      <b>Finland<u>FI · EN</u></b>
-      <div class="law">
-        <span class="verdict care">Conditional <em>Laki sähköisen viestinnän palveluista § 200 / § 202</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="care"></i>
+        <b>Finland<u>FI · EN</u></b>
+        <span class="rule">Laki sähköisen viestinnän palveluista § 200 / § 202</span>
+        <span class="n">18</span>
+      </div></summary>
+      <div class="detail">
         <p>Opt-out towards organisations. Generic addresses (info@) are free to write to.</p>
         <p class="snag">Writing to a NAMED work address requires that the recipient's role fits the offer, and the sender must be able to demonstrate that afterwards. Finland's authority is the most active in the field, with six-figure fines on record. Sticking to generic addresses avoids the whole test.</p>
       </div>
-      <p class="n"><u>18</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="care"></i>
-      <b>Australia<u>AU · EN</u></b>
-      <div class="law">
-        <span class="verdict care">Conditional <em>Spam Act 2003</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="care"></i>
+        <b>Australia<u>AU · EN</u></b>
+        <span class="rule">Spam Act 2003</span>
+        <span class="n">8</span>
+      </div></summary>
+      <div class="detail">
         <p>Consent is required, but a published business address can amount to inferred consent where the message relates to the function that address is published for.</p>
         <p class="snag">The inference only holds while the connection is tight. Writing to a locksmith's info@ about HIS visibility fits; the same address for a web design offer does not.</p>
       </div>
-      <p class="n"><u>8</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="care"></i>
-      <b>New Zealand<u>NZ · EN</u></b>
-      <div class="law">
-        <span class="verdict care">Conditional <em>Unsolicited Electronic Messages Act 2007</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="care"></i>
+        <b>New Zealand<u>NZ · EN</u></b>
+        <span class="rule">Unsolicited Electronic Messages Act 2007</span>
+        <span class="n">31</span>
+      </div></summary>
+      <div class="detail">
         <p>As Australia, on the same inference from a published business address.</p>
         <p class="snag">Small market. Auckland alone is most of it.</p>
       </div>
-      <p class="n"><u>31</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="care"></i>
-      <b>South Africa<u>ZA · EN</u></b>
-      <div class="law">
-        <span class="verdict care">Conditional <em>POPIA s.69</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="care"></i>
+        <b>South Africa<u>ZA · EN</u></b>
+        <span class="rule">POPIA s.69</span>
+        <span class="n">14</span>
+      </div></summary>
+      <div class="detail">
         <p>POPIA requires opt-in and has no B2B carve-out. The December 2024 guidance note carved out one narrow path: role addresses (info@, sales@) written to the legal entity rather than a named person sit outside the strictest consent requirement.</p>
         <p class="snag">That path is narrow and recent, and it collapses the moment the mail is addressed to a person. Buying or renting lists is prohibited outright.</p>
       </div>
-      <p class="n"><u>14</u>regions</p>
-    </div>
-    <div class="land">
-      <i class="no"></i>
-      <b>Canada<u>CA · EN/FR</u></b>
-      <div class="law">
-        <span class="verdict no">Not advised <em>CASL</em></span>
+    </details>
+    <details class="land">
+      <summary><div class="row">
+        <i class="no"></i>
+        <b>Canada<u>CA · EN/FR</u></b>
+        <span class="rule">CASL</span>
+        <span class="n">12</span>
+      </div></summary>
+      <div class="detail">
         <p>Requires express or narrowly-defined implied consent BEFORE sending. A published address qualifies only under tight conditions and only for messages relevant to the role.</p>
         <p class="snag">Penalties reach into the millions and the regulator enforces actively. The most attractive English-speaking market you leave alone anyway.</p>
       </div>
-      <p class="n"><u>12</u>regions</p>
-    </div>
+    </details>
   </div>
 
   <p class="note"><b>The catch that applies almost everywhere.</b> Where B2B cold mail

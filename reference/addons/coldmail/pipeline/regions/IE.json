@@ -10,141 +10,165 @@
  "regions": [
   {
    "name": "Dublin City",
-   "level": "county",
+   "level": "city",
    "pop": 1059094,
-   "cum": 0.3893
+   "cum": 0.3893,
+   "osm": "admin_level 7"
   },
   {
    "name": "South Dublin",
-   "level": "county",
+   "level": "city",
    "pop": 432775,
-   "cum": 0.5483
+   "cum": 0.5483,
+   "osm": "admin_level 7"
   },
   {
    "name": "County Cork",
    "level": "county",
    "pop": 287747,
-   "cum": 0.6541
+   "cum": 0.6541,
+   "osm": "admin_level 6"
   },
   {
    "name": "Limerick City and County Council",
    "level": "county",
    "pop": 102287,
-   "cum": 0.6917
+   "cum": 0.6917,
+   "osm": "kein Polygon (amenity/townhall)"
   },
   {
    "name": "Kildare",
    "level": "county",
    "pop": 96506,
-   "cum": 0.7272
+   "cum": 0.7272,
+   "osm": "admin_level 6"
   },
   {
    "name": "Fingal County",
-   "level": "county",
+   "level": "city",
    "pop": 95559,
-   "cum": 0.7623
+   "cum": 0.7623,
+   "osm": "admin_level 7"
   },
   {
    "name": "Louth",
    "level": "county",
    "pop": 87247,
-   "cum": 0.7943
+   "cum": 0.7943,
+   "osm": "admin_level 6"
   },
   {
    "name": "County Galway",
    "level": "county",
    "pop": 85910,
-   "cum": 0.8259
+   "cum": 0.8259,
+   "osm": "admin_level 6"
   },
   {
    "name": "County Waterford",
    "level": "county",
    "pop": 60079,
-   "cum": 0.848
+   "cum": 0.848,
+   "osm": "admin_level 6"
   },
   {
    "name": "Wicklow",
    "level": "county",
    "pop": 55521,
-   "cum": 0.8684
+   "cum": 0.8684,
+   "osm": "admin_level 6"
   },
   {
    "name": "Dún Laoghaire-Rathdown",
-   "level": "county",
+   "level": "city",
    "pop": 53527,
-   "cum": 0.8881
+   "cum": 0.8881,
+   "osm": "admin_level 7"
   },
   {
    "name": "Westmeath",
    "level": "county",
    "pop": 45536,
-   "cum": 0.9048
+   "cum": 0.9048,
+   "osm": "admin_level 6"
   },
   {
    "name": "Meath",
    "level": "county",
    "pop": 33886,
-   "cum": 0.9173
+   "cum": 0.9173,
+   "osm": "admin_level 6"
   },
   {
    "name": "Clare",
    "level": "county",
    "pop": 27923,
-   "cum": 0.9275
+   "cum": 0.9275,
+   "osm": "kein Polygon (waterway/river)"
   },
   {
    "name": "County Carlow",
    "level": "county",
    "pop": 27351,
-   "cum": 0.9376
+   "cum": 0.9376,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kerry",
    "level": "county",
    "pop": 26079,
-   "cum": 0.9472
+   "cum": 0.9472,
+   "osm": "admin_level 6"
   },
   {
    "name": "Laois",
    "level": "county",
    "pop": 23494,
-   "cum": 0.9558
+   "cum": 0.9558,
+   "osm": "admin_level 6"
   },
   {
    "name": "County Donegal",
    "level": "county",
    "pop": 22549,
-   "cum": 0.9641
+   "cum": 0.9641,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kilkenny",
    "level": "county",
    "pop": 21589,
-   "cum": 0.972
+   "cum": 0.972,
+   "osm": "admin_level 6"
   },
   {
    "name": "Wexford",
    "level": "county",
    "pop": 21524,
-   "cum": 0.9799
+   "cum": 0.9799,
+   "osm": "admin_level 6"
   },
   {
    "name": "Sligo",
    "level": "county",
    "pop": 20608,
-   "cum": 0.9875
+   "cum": 0.9875,
+   "osm": "admin_level 6"
   },
   {
    "name": "County Tipperary",
    "level": "county",
    "pop": 18369,
-   "cum": 0.9943
+   "cum": 0.9943,
+   "osm": "admin_level 6"
   },
   {
    "name": "Uíbh Fhailí",
    "level": "county",
    "pop": 15598,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 6"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 17 von 23 passen"
 }

@@ -12,49 +12,58 @@
    "name": "New South Wales",
    "level": "state",
    "pop": 7483356,
-   "cum": 0.3052
+   "cum": 0.3052,
+   "osm": "admin_level 4"
   },
   {
    "name": "Victoria",
    "level": "state",
    "pop": 6364949,
-   "cum": 0.5648
+   "cum": 0.5648,
+   "osm": "admin_level 4"
   },
   {
    "name": "Queensland",
    "level": "state",
    "pop": 5216673,
-   "cum": 0.7775
+   "cum": 0.7775,
+   "osm": "admin_level 4"
   },
   {
    "name": "Western Australia",
    "level": "state",
    "pop": 2776475,
-   "cum": 0.8908
+   "cum": 0.8908,
+   "osm": "admin_level 4"
   },
   {
    "name": "South Australia",
    "level": "state",
    "pop": 1629454,
-   "cum": 0.9572
+   "cum": 0.9572,
+   "osm": "admin_level 4"
   },
   {
    "name": "Australian Capital Territory",
    "level": "state",
    "pop": 457213,
-   "cum": 0.9759
+   "cum": 0.9759,
+   "osm": "admin_level 4"
   },
   {
    "name": "Tasmania",
    "level": "state",
    "pop": 392450,
-   "cum": 0.9919
+   "cum": 0.9919,
+   "osm": "admin_level 4"
   },
   {
    "name": "Northern Territory",
    "level": "state",
    "pop": 199509,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 4"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung, 8 von 8 passen"
 }
