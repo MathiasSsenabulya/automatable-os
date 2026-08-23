@@ -1190,9 +1190,17 @@
     grid.</b> "Auckland" is not a county, so that run failed outright; as a city it returned
     17 businesses for a third of the country, because an automatic city boundary stops at the
     city limit and leaves the suburbs out. Handing over the country avoids the whole question.
-    <b>Where the region list has been checked by hand, the opposite holds</b> — the UK is
-    scraped county by county, because those names resolve properly and a run that dies at
-    county 40 picks up at 41 instead of starting over.</p>
+    <b>Where the region list has been checked, the opposite holds</b> — the UK is scraped
+    county by county, because those names resolve properly and a run that dies at county 40
+    picks up at 41 instead of starting over.</p>
+
+  <p class="note"><b>So the names get checked before the first dollar.</b> The scraper resolves
+  an area through OpenStreetMap boundaries, and the same database is free to query. Every
+  region name in every country is now looked up first: does it point at an <em>area</em>, and
+  at which administrative level. It found three broken lists nobody would have noticed
+  otherwise — 185 of the 206 Dutch names resolved to nothing at all, because they carried a
+  "Gemeente" prefix that neither OpenStreetMap nor Google recognises. Twelve minutes, no cost,
+  and the UK list now checks out at 46 of 46.</p>
   </div>
 
   <div class="cards">
