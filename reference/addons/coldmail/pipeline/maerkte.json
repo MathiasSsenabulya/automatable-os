@@ -30,7 +30,7 @@
       "regions": 23, "region_file": "regions/IE.json", "region_level": "county",
       "light": "green", "regime": "ePrivacy Regulations 2011",
       "rule": "To companies as in the UK, with a working opt-out.",
-      "catch": "Small market -- three regions hold 60% of it.",
+      "catch": "Small market: three regions hold 60% of it.",
       "status": "region file built, never scraped"
     },
     {
@@ -38,7 +38,7 @@
       "regions": 1, "region_file": "regions/SG.json", "region_level": "city-state, one run",
       "light": "green", "regime": "PDPA",
       "rule": "The PDPA excludes business contact information from personal data altogether, which makes Singapore one of the most permissive developed markets for B2B mail. Sender identification and opt-out still apply.",
-      "catch": "The same sources that say this also say collecting addresses by scraping needs its own lawful basis -- which is exactly how this pipeline gets them. That tension is unresolved.",
+      "catch": "The same sources that say this also say collecting addresses by scraping needs its own lawful basis, which is exactly how this pipeline gets them. That tension is unresolved.",
       "status": "region file built, never scraped"
     },
     {
@@ -54,7 +54,7 @@
       "regions": 96, "region_file": "regions/FR.json", "region_level": "department",
       "light": "green", "regime": "LCEN art. 22 + CNIL guidance",
       "rule": "B2B prospecting to a professional address runs on an opt-out basis: no prior consent needed, provided the message relates to the recipient's job, the sender is identified at first contact, and a one-click opt-out is honoured.",
-      "catch": "The copy has to be French. Every building block, checker and subject line in this pipeline is written in English -- this is a translation project, not a config change.",
+      "catch": "The copy has to be French. Every building block, checker and subject line in this pipeline is written in English, so this is a translation project, not a config change.",
       "status": "region file built, never scraped"
     },
     {
@@ -62,7 +62,7 @@
       "regions": 206, "region_file": "regions/NL.json", "region_level": "municipality",
       "light": "green", "regime": "Telecommunicatiewet art. 11.7",
       "rule": "Legal entities (BV, NV, stichting, vereniging) may be mailed without prior consent, with sender identification and a working opt-out.",
-      "catch": "Natural persons -- ZZP sole traders, VOF partners -- need prior consent, and Dutch trades are full of them. Copy has to be Dutch.",
+      "catch": "Natural persons (ZZP sole traders, VOF partners) need prior consent, and Dutch trades are full of them. Copy has to be Dutch.",
       "status": "region file built, never scraped"
     },
     {
@@ -71,7 +71,7 @@
       "light": "amber", "regime": "Spam Act 2003",
       "rule": "Consent is required, but a published business address can amount to inferred consent where the message relates to the function that address is published for.",
       "catch": "The inference only holds while the connection is tight. Writing to a locksmith's info@ about HIS visibility fits; the same address for a web design offer does not.",
-      "status": "region file built, never scraped. Extremely concentrated -- 3 states hold 60%"
+      "status": "region file built, never scraped. Extremely concentrated: 3 states hold 60%"
     },
     {
       "code": "NZ", "name": "New Zealand", "language": "en",
