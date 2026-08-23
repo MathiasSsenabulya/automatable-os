@@ -423,6 +423,29 @@
   .queue .foot{margin:18px 0 0;font-size:12.5px;color:var(--text-3);line-height:1.5;
     padding-left:44px}
   @media (max-width:560px){ .queue .foot{padding-left:0} }
+  /* Der Risiko-Block. Zweispaltig: links der Befund, rechts was dagegen hilft --
+     ein Risiko ohne Gegenmassnahme daneben liest sich als Warnung statt als Rat. */
+  .risk{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(16px,2.5vw,26px);
+    margin-top:clamp(22px,3vw,30px);align-items:start}
+  .risk-main{border:1px solid var(--amber-border);background:var(--amber-soft);
+    border-radius:12px;padding:clamp(17px,2.2vw,22px)}
+  .risk-main .tag{display:block;font-family:-apple-system,sans-serif;font-size:11.5px;
+    text-transform:uppercase;letter-spacing:.06em;color:var(--amber);margin-bottom:11px}
+  .risk-main p{margin:0;font-size:14px;line-height:1.6;color:#5b4a30;max-width:none}
+  .risk-main p+p{margin-top:12px}
+  .risk-main .quote{font-family:var(--serif);font-size:15px;line-height:1.55;
+    font-style:italic;color:var(--text);border-left:2px solid var(--amber);
+    padding-left:14px;margin-top:14px}
+  .risk-main .quote i{display:block;font-style:normal;font-family:-apple-system,sans-serif;
+    font-size:11.5px;color:var(--text-3);margin-top:7px}
+  .risk-side{border:1px solid var(--border);border-radius:12px;background:var(--card);
+    padding:clamp(17px,2.2vw,22px)}
+  .risk-side b{display:block;font-family:var(--serif);font-size:16px;font-weight:400;
+    color:var(--text);margin-bottom:12px}
+  .risk-side p{margin:0;font-size:13px;line-height:1.55;color:var(--text-2);max-width:none}
+  .risk-side p+p{margin-top:14px;padding-top:14px;border-top:1px solid var(--border-soft)}
+  .risk-side span{display:block;color:var(--text);font-weight:600;margin-bottom:3px}
+  @media (max-width:680px){ .risk{grid-template-columns:1fr} }
   .lands{margin-top:clamp(20px,3vw,28px);border-top:1px solid var(--border)}
   /* Vier Spalten, und die schmale rechte enthaelt NUR eine Zahl. Der Gesetzesname stand
      dort zuerst und hat die Spalte gesprengt. */
@@ -1845,6 +1868,47 @@
   <p class="note">No score distributions, no coverage rates, no factor counts. Those are the
   machine's own metrics: useful while building it, noise on a morning dashboard. The test for
   any line here is whether it changes what you do today.</p>
+</section>
+
+<section>
+  <div class="sec-head">
+    <h2>The risk this page owes you</h2>
+    <p class="sub-head">Everything above describes what the machine does well. This is the
+    part that can take the whole thing down, and it is not the part most people worry about.</p>
+  </div>
+
+  <div class="risk">
+    <div class="risk-main">
+      <span class="tag">The architecture itself is the exposure</span>
+      <p>Many domains, a few mailboxes on each, a few mails per mailbox, rotating — that is
+      the setup this page recommends, and it is also <b>Spamhaus's textbook definition of
+      snowshoe spam</b>. Explicitly including at low volume per unit, because staying under
+      volume thresholds is the identifying trait rather than a side effect.</p>
+      <p class="quote">"By definition, there is no difference between cold email and spam —
+      no consent, no commercial relationship, and often some form of bulk delivery."<i>Spamhaus,
+      19 June 2025 — the operator of the blocklist millions of mail servers query</i></p>
+      <p>Both mailbox providers forbid the case in their own terms, and the mailboxes Zapmail
+      supplies are Google Workspace accounts. <b>So the realistic failure is not "lands in
+      spam". It is the accounts being closed mid-campaign, with a 7–14 day appeal and no
+      guaranteed outcome.</b></p>
+    </div>
+    <div class="risk-side">
+      <b>What actually reduces it</b>
+      <p><span>Waves of 200–300, not 2,500 in one go.</span> Measured across 11 million mails:
+      5.8% reply rate at 50 recipients or fewer, 2.1% at 1,000 or more. The largest single
+      lever in any of the data, it costs nothing, and a burned wave is a tenth of the list
+      instead of all of it.</p>
+      <p><span>Measure per mailbox, never aggregated.</span> Bounce rate with an alarm at 2%,
+      replies per 100 sends, a private Gmail and Outlook seed inside the live campaign. At 30
+      mails a day per domain, Google's own Postmaster Tools is structurally blind — the reply
+      and bounce curve per mailbox is the only early warning there is.</p>
+    </div>
+  </div>
+
+  <p class="note"><b>None of this makes the approach unworkable</b> — it is how essentially
+  every outbound team operates, and the providers sell the tooling for it. But the cost of
+  being wrong is the sending infrastructure, not a bad week, and a page that argues for
+  honesty everywhere else has to say so before you buy rather than after.</p>
 </section>
 
 <section>
