@@ -495,22 +495,10 @@
   .race h4{font-family:var(--serif);font-size:clamp(17px,2vw,20px);font-weight:400;
     margin:0 0 6px;color:var(--text)}
   .race-lead{font-size:14.5px;color:var(--text-2);line-height:1.55;margin:0}
-  .race-pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,20px);
-    margin-top:18px}
-  .race-pair>div{border:1px solid var(--border);border-radius:11px;padding:16px 18px 18px;
-    background:var(--card)}
-  .race-pair>div.won{border-color:var(--accent);background:var(--accent-soft)}
-  .race .tag{display:block;font-family:-apple-system,sans-serif;font-size:11.5px;
-    text-transform:uppercase;letter-spacing:.06em;color:var(--text-3);margin-bottom:10px}
-  .race .won .tag{color:var(--accent-deep)}
-  .race-pair b{font-family:var(--serif);font-size:clamp(32px,4.5vw,42px);font-weight:400;
-    color:var(--text-3);line-height:1;display:inline-block}
-  .race .won b{color:var(--accent-deep)}
-  .race-pair i{font-style:normal;font-size:13px;color:var(--text-3);margin-left:9px}
-  .race-pair p{margin:12px 0 0;font-size:12.5px;color:var(--text-3);
-    font-family:-apple-system,sans-serif}
-  .race-pair p span{color:var(--text-2);font-weight:600}
-  @media (max-width:600px){ .race-pair{grid-template-columns:1fr} }
+  .race-three{margin-top:20px}
+  .race-three svg{display:block;width:100%;height:auto;overflow:visible}
+  @media (max-width:560px){ .race-three{overflow-x:auto}
+    .race-three svg{min-width:520px} }
   .funnel{margin-top:clamp(24px,3.5vw,36px)}
   .funnel svg{display:block;width:100%;height:auto;overflow:visible}
   /* Karten statt Textzeilen: vier kurze Antworten nebeneinander lesen sich als vier,
@@ -1172,35 +1160,48 @@
 
   <div class="race">
     <h4>How big an area can go in at once</h4>
-    <p class="race-lead">A whole country, as it turns out — which was worth measuring rather
-    than assuming. Both of these are the same trade in the same country on the same day.</p>
-    <div class="race-pair">
-      <div class="won">
-        <span class="tag">one run, the whole country</span>
-        <b>330</b><i>businesses found</i>
-        <p><span>$1.65</span> · 6 minutes · 1 call</p>
-      </div>
-      <div>
-        <span class="tag">region by region</span>
-        <b>97</b><i>businesses found</i>
-        <p><span>$0.52</span> · 9 of 31 regions before it was called off</p>
-      </div>
-    </div>
-    <p class="note" style="margin-top:18px"><b>The region names were the problem, not the
-    grid.</b> "Auckland" is not a county, so that run failed outright; as a city it returned
-    17 businesses for a third of the country, because an automatic city boundary stops at the
-    city limit and leaves the suburbs out. Handing over the country avoids the whole question.
-    <b>Where the region list has been checked, the opposite holds</b> — the UK is scraped
-    county by county, because those names resolve properly and a run that dies at county 40
-    picks up at 41 instead of starting over.</p>
+    <p class="race-lead">A whole country, if you hand it over as an <em>area</em> rather than
+    typing it into the search box. But the bigger lever turned out to be something else
+    entirely — all three of these are the same trade, scraped the same way.</p>
 
-  <p class="note"><b>So the names get checked before the first dollar.</b> The scraper resolves
-  an area through OpenStreetMap boundaries, and the same database is free to query. Every
-  region name in every country is now looked up first: does it point at an <em>area</em>, and
-  at which administrative level. It found three broken lists nobody would have noticed
-  otherwise — 185 of the 206 Dutch names resolved to nothing at all, because they carried a
-  "Gemeente" prefix that neither OpenStreetMap nor Google recognises. Twelve minutes, no cost,
-  and the UK list now checks out at 46 of 46.</p>
+    <div class="race-three" aria-hidden="true">
+      <svg viewBox="0 0 760 262" role="img">
+        <g font-family="-apple-system,sans-serif">
+          <text x="150" y="26" font-size="11.5" fill="var(--text-3)" text-anchor="end">ONE COUNTRY-WIDE RUN</text>
+          <rect x="162" y="12" width="42" height="26" rx="5" fill="var(--card)" stroke="var(--border-strong)" stroke-width="1.4"/>
+          <text x="214" y="31" font-size="15" fill="var(--text-2)" font-family="Georgia,serif">330</text>
+          <text x="150" y="46" font-size="10.5" fill="var(--text-3)" text-anchor="end">New Zealand, $1.65, 6 minutes</text>
+
+          <text x="150" y="94" font-size="11.5" fill="var(--text-3)" text-anchor="end">UNCHECKED REGION LIST</text>
+          <rect x="162" y="80" width="13" height="26" rx="5" fill="var(--card)" stroke="var(--border-strong)" stroke-width="1.4"/>
+          <text x="185" y="99" font-size="15" fill="var(--text-3)" font-family="Georgia,serif">97</text>
+          <text x="150" y="114" font-size="10.5" fill="var(--text-3)" text-anchor="end">same country, 9 of 31 regions</text>
+
+          <text x="150" y="162" font-size="11.5" fill="var(--accent-deep)" text-anchor="end">CHECKED REGION LIST</text>
+          <rect x="162" y="148" width="604" height="26" rx="5" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="176" y="167" font-size="16" fill="var(--accent-deep)" font-family="Georgia,serif">4,746</text>
+          <text x="150" y="182" font-size="10.5" fill="var(--text-3)" text-anchor="end">United Kingdom, 46 counties</text>
+        </g>
+        <line x1="162" y1="206" x2="760" y2="206" stroke="var(--border)" stroke-width="1"/>
+        <text x="162" y="228" font-size="13" fill="var(--text)" font-family="Georgia,serif">
+          The gap between the middle bar and the bottom one is not the method.</text>
+        <text x="162" y="248" font-size="13" fill="var(--text)" font-family="Georgia,serif">
+          It is whether the region names were right.</text>
+      </svg>
+    </div>
+
+    <p class="note" style="margin-top:18px"><b>"Auckland" was filed as a county. It is a
+    state.</b> So that run failed outright, fell back to city, and returned 17 businesses for
+    a third of the country — an automatic city boundary stops at the city limit. One wrong
+    word in a list, and the whole approach looked worse than it is.</p>
+
+    <p class="note"><b>Which is why the names are now checked before the first dollar.</b>
+    The scraper resolves an area through OpenStreetMap boundaries, and that database is free
+    to query — so every region name in every country gets looked up first: does it point at an
+    area, and at which level. Twelve minutes for all sixteen countries, no cost. It found
+    three broken lists: <b>185 of the 206 Dutch names resolved to nothing at all</b>, carrying
+    a "Gemeente" prefix that neither OpenStreetMap nor Google recognises. The UK list now
+    checks out at 46 of 46.</p>
   </div>
 
   <div class="cards">
