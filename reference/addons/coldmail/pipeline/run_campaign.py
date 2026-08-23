@@ -307,10 +307,10 @@ DOLLAR_JE_TREFFER = 0.005   # Neuseeland landweit: 330 Treffer fuer $1.65
 def schaetze_kosten(rgeo, n_branchen, cc_key):
     """Was der Lauf ungefaehr kostet -- gesagt, BEVOR er laeuft.
 
-    Der Anlass (Luka, 23.08.2026): "verbrate jetzt nicht alle meine Apify-Credits."
-    Ein Befehl, der 17 Branchen ueber ein Land schickt, kann dreistellig werden, und man
-    sah es vorher nirgends. Die Schaetzung ist grob -- Schluesseldienste sind dichter
-    gesaet als Dachdecker -- aber die Groessenordnung stimmt, und die entscheidet.
+    Der Anlass, 23.08.2026: "verbrate jetzt nicht alle meine Apify-Credits." Ein Befehl,
+    der 17 Branchen ueber ein Land schickt, kann dreistellig werden, und man sah es vorher
+    nirgends. Die Schaetzung ist grob -- Schluesseldienste sind dichter gesaet als
+    Dachdecker -- aber die Groessenordnung stimmt, und die entscheidet.
     """
     pop = rgeo.get('_urban_pop')
     if not pop:
