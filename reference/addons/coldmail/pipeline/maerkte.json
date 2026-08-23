@@ -2,168 +2,467 @@
   "_what": "Which countries and which trades this pipeline can be pointed at -- and which it cannot.",
   "_why": "The question 'where next' kept being answered by gut feel and market size. The filter that actually decides is a different one: first, whether cold mail to businesses is lawful there at all, and second, whether the Google profile IS the sales channel in that trade. Both live here, next to the region files that make a country scrapeable.",
   "_updated": "2026-08-23",
-
   "_not_legal_advice": "The legal column names the regime and what it requires in substance. It is desk research from public sources, not reviewed by a lawyer, and it does not cover your specific case. Note also that most secondary sources on this topic are published by companies selling cold-email tools, whose bias runs towards 'this is allowed' -- so the statutes are named here and the blogs are not. Before sending into any market below, confirm it for yourself.",
-
   "_the_catch_that_applies_almost_everywhere": "In nearly every country that permits B2B cold mail, the permission covers REGISTERED COMPANIES and not sole traders. UK PECR protects individual subscribers, which includes sole traders and partnerships; the Dutch Telecommunicatiewet exempts BV/NV but not the one-person ZZP; Sweden's enskild näringsidkare, Estonia's FIE and Finland's toiminimi are all natural persons. And the trades this system is best at -- locksmiths, plumbers, electricians -- are disproportionately sole traders. The scrape does not know the legal form. Across a survey of roughly fifty jurisdictions (23.08.2026) exactly one exception turned up: Mexico writes sole traders into the exemption explicitly.",
-
   "_and_the_way_around_it": "Write to the SHARED INBOX, not to a person. Norway's consumer authority says so outright -- the ban covers natural persons, and post@firma.no is named as the permitted example -- and Finland exempts generic addresses from its role-relevance test the same way. Both then turn on the ADDRESS FORM, which the scrape can see, rather than the legal form, which it cannot. A rule of 'no personal name in the local part' is one filter in the pipeline and settles the question in the two countries where it is otherwise hardest. It does not fix the UK or the Netherlands, where the protection follows the subscriber and not the address.",
-
   "countries": [
     {
-      "code": "UK", "name": "United Kingdom", "language": "en",
-      "regions": 46, "region_file": "regions/UK.json", "region_level": "county (curated)",
-      "light": "green", "regime": "PECR",
+      "code": "UK",
+      "name": "United Kingdom",
+      "language": "en",
+      "regions": 46,
+      "region_file": "regions/UK.json",
+      "region_level": "county (curated)",
+      "light": "green",
+      "regime": "PECR",
       "rule": "Cold mail to corporate subscribers (Ltd, PLC, LLP) needs no prior consent, provided the sender is identified and an opt-out works.",
       "catch": "Sole traders and partnerships count as individual subscribers and are NOT covered.",
       "status": "running -- 4,746 locksmiths scraped, the numbers on the page come from here"
     },
     {
-      "code": "US", "name": "United States", "language": "en",
-      "regions": 195, "region_file": "regions/US.json",
+      "code": "US",
+      "name": "United States",
+      "language": "en",
+      "regions": 195,
+      "region_file": "regions/US.json",
       "region_level": "state, with California / New York / Texas split into counties",
-      "light": "green", "regime": "CAN-SPAM",
+      "light": "green",
+      "regime": "CAN-SPAM",
       "rule": "Lawful. Requires a truthful sender and subject line, a working opt-out, and a valid POSTAL ADDRESS in the footer.",
       "catch": "The postal address is mandatory and the thing most often left out. Some states add their own rules on top.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "IE", "name": "Ireland", "language": "en",
-      "regions": 23, "region_file": "regions/IE.json", "region_level": "county",
-      "light": "green", "regime": "ePrivacy Regulations 2011",
+      "code": "IE",
+      "name": "Ireland",
+      "language": "en",
+      "regions": 23,
+      "region_file": "regions/IE.json",
+      "region_level": "county",
+      "light": "green",
+      "regime": "ePrivacy Regulations 2011",
       "rule": "To companies as in the UK, with a working opt-out.",
       "catch": "Small market: three regions hold 60% of it.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "SE", "name": "Sweden", "language": "en",
-      "regions": 21, "region_file": "regions/SE.json", "region_level": "county",
-      "light": "green", "regime": "Marknadsföringslagen 19 §",
+      "code": "SE",
+      "name": "Sweden",
+      "language": "en",
+      "regions": 21,
+      "region_file": "regions/SE.json",
+      "region_level": "county",
+      "light": "green",
+      "regime": "Marknadsföringslagen 19 §",
       "rule": "The consent requirement applies only to natural persons, so corporate recipients need no prior consent. Every mail must carry a working address at which the recipient can demand it stops.",
       "catch": "Enskild näringsidkare (sole trader) is a natural person and IS covered by the consent requirement. English is effectively a second business language, so no translation is needed.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "EE", "name": "Estonia", "language": "en",
-      "regions": 5, "region_file": "regions/EE.json", "region_level": "county",
-      "light": "green", "regime": "Elektroonilise side seadus § 103",
+      "code": "EE",
+      "name": "Estonia",
+      "language": "en",
+      "regions": 5,
+      "region_file": "regions/EE.json",
+      "region_level": "county",
+      "light": "green",
+      "regime": "Elektroonilise side seadus § 103",
       "rule": "Opt-out for legal persons: no prior consent needed, provided it is clear who sends and on whose behalf, the commercial nature is obvious, and every mail carries a free electronic opt-out.",
       "catch": "FIE (sole trader) is a natural person and needs opt-in. Estonia's company register is fully digital, so the legal form can be filtered by machine, which makes exactly the filter cheap that Sweden also needs.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "SG", "name": "Singapore", "language": "en",
-      "regions": 1, "region_file": "regions/SG.json", "region_level": "city-state, one run",
-      "light": "green", "regime": "PDPA",
+      "code": "SG",
+      "name": "Singapore",
+      "language": "en",
+      "regions": 1,
+      "region_file": "regions/SG.json",
+      "region_level": "city-state, one run",
+      "light": "green",
+      "regime": "PDPA",
       "rule": "The PDPA excludes business contact information from personal data altogether, which makes Singapore one of the most permissive developed markets for B2B mail. Sender identification and opt-out still apply.",
       "catch": "The same sources that say this also say collecting addresses by scraping needs its own lawful basis, which is exactly how this pipeline gets them. That tension is unresolved.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "HK", "name": "Hong Kong", "language": "en",
-      "regions": 1, "region_file": "regions/HK.json", "region_level": "city-state, one run",
-      "light": "green", "regime": "UEMO",
+      "code": "HK",
+      "name": "Hong Kong",
+      "language": "en",
+      "regions": 1,
+      "region_file": "regions/HK.json",
+      "region_level": "city-state, one run",
+      "light": "green",
+      "regime": "UEMO",
       "rule": "Commercial mail to business addresses is permitted with clear sender identification and opt-out. Business contact data sits outside the PDPO.",
       "catch": "Sender contact details must stay valid for 30 days after sending. Penalties run to HK$1m.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "FR", "name": "France", "language": "fr",
-      "regions": 96, "region_file": "regions/FR.json", "region_level": "department",
-      "light": "green", "regime": "LCEN art. 22 + CNIL guidance",
+      "code": "FR",
+      "name": "France",
+      "language": "fr",
+      "regions": 96,
+      "region_file": "regions/FR.json",
+      "region_level": "department",
+      "light": "green",
+      "regime": "LCEN art. 22 + CNIL guidance",
       "rule": "B2B prospecting to a professional address runs on an opt-out basis: no prior consent needed, provided the message relates to the recipient's job, the sender is identified at first contact, and a one-click opt-out is honoured.",
       "catch": "The copy has to be French. Every building block, checker and subject line in this pipeline is written in English, so this is a translation project, not a config change.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "NL", "name": "Netherlands", "language": "nl",
-      "regions": 206, "region_file": "regions/NL.json", "region_level": "municipality",
-      "light": "green", "regime": "Telecommunicatiewet art. 11.7",
+      "code": "NL",
+      "name": "Netherlands",
+      "language": "nl",
+      "regions": 206,
+      "region_file": "regions/NL.json",
+      "region_level": "municipality",
+      "light": "green",
+      "regime": "Telecommunicatiewet art. 11.7",
       "rule": "Legal entities (BV, NV, stichting, vereniging) may be mailed without prior consent, with sender identification and a working opt-out.",
       "catch": "Natural persons (ZZP sole traders, VOF partners) need prior consent, and Dutch trades are full of them. Copy has to be Dutch.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "NO", "name": "Norway", "language": "en",
-      "regions": 15, "region_file": "regions/NO.json", "region_level": "county",
-      "light": "amber", "regime": "Markedsføringsloven § 15",
+      "code": "NO",
+      "name": "Norway",
+      "language": "en",
+      "regions": 15,
+      "region_file": "regions/NO.json",
+      "region_level": "county",
+      "light": "amber",
+      "regime": "Markedsføringsloven § 15",
       "rule": "The ban covers marketing to NATURAL PERSONS. The consumer authority states plainly that mail to addresses not belonging to a specific person is permitted, naming post@firmaX.no as the example.",
       "catch": "A firstname.lastname@ address falls back under the ban. In practice this is the easiest of the four: trades almost always run a shared inbox, and a rule of 'no personal names in the local part' settles the sole-trader question by address form instead of legal form.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "FI", "name": "Finland", "language": "en",
-      "regions": 18, "region_file": "regions/FI.json", "region_level": "region",
-      "light": "amber", "regime": "Laki sähköisen viestinnän palveluista § 200 / § 202",
+      "code": "FI",
+      "name": "Finland",
+      "language": "en",
+      "regions": 18,
+      "region_file": "regions/FI.json",
+      "region_level": "region",
+      "light": "amber",
+      "regime": "Laki sähköisen viestinnän palveluista § 200 / § 202",
       "rule": "Opt-out towards organisations. Generic addresses (info@) are free to write to.",
       "catch": "Writing to a NAMED work address requires that the recipient's role fits the offer, and the sender must be able to demonstrate that afterwards. Finland's authority is the most active in the field, with six-figure fines on record. Sticking to generic addresses avoids the whole test.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "AU", "name": "Australia", "language": "en",
-      "regions": 8, "region_file": "regions/AU.json", "region_level": "state",
-      "light": "amber", "regime": "Spam Act 2003",
+      "code": "AU",
+      "name": "Australia",
+      "language": "en",
+      "regions": 8,
+      "region_file": "regions/AU.json",
+      "region_level": "state",
+      "light": "amber",
+      "regime": "Spam Act 2003",
       "rule": "Consent is required, but a published business address can amount to inferred consent where the message relates to the function that address is published for.",
       "catch": "The inference only holds while the connection is tight. Writing to a locksmith's info@ about HIS visibility fits; the same address for a web design offer does not.",
       "status": "region file built, never scraped. Extremely concentrated: 3 states hold 60%"
     },
     {
-      "code": "NZ", "name": "New Zealand", "language": "en",
-      "regions": 31, "region_file": "regions/NZ.json", "region_level": "district",
-      "light": "amber", "regime": "Unsolicited Electronic Messages Act 2007",
+      "code": "NZ",
+      "name": "New Zealand",
+      "language": "en",
+      "regions": 31,
+      "region_file": "regions/NZ.json",
+      "region_level": "district",
+      "light": "amber",
+      "regime": "Unsolicited Electronic Messages Act 2007",
       "rule": "As Australia, on the same inference from a published business address.",
       "catch": "Small market. Auckland alone is most of it.",
       "status": "region file built -- being used right now to test whether one country-wide run replaces the per-region loop"
     },
     {
-      "code": "ZA", "name": "South Africa", "language": "en",
-      "regions": 14, "region_file": "regions/ZA.json", "region_level": "province, Gauteng split",
-      "light": "amber", "regime": "POPIA s.69",
+      "code": "ZA",
+      "name": "South Africa",
+      "language": "en",
+      "regions": 14,
+      "region_file": "regions/ZA.json",
+      "region_level": "province, Gauteng split",
+      "light": "amber",
+      "regime": "POPIA s.69",
       "rule": "POPIA requires opt-in and has no B2B carve-out. The December 2024 guidance note carved out one narrow path: role addresses (info@, sales@) written to the legal entity rather than a named person sit outside the strictest consent requirement.",
       "catch": "That path is narrow and recent, and it collapses the moment the mail is addressed to a person. Buying or renting lists is prohibited outright.",
       "status": "region file built, never scraped"
     },
     {
-      "code": "CA", "name": "Canada", "language": "en/fr",
-      "regions": 12, "region_file": "regions/CA.json", "region_level": "province",
-      "light": "red", "regime": "CASL",
+      "code": "CA",
+      "name": "Canada",
+      "language": "en/fr",
+      "regions": 12,
+      "region_file": "regions/CA.json",
+      "region_level": "province",
+      "light": "red",
+      "regime": "CASL",
       "rule": "Requires express or narrowly-defined implied consent BEFORE sending. A published address qualifies only under tight conditions and only for messages relevant to the role.",
       "catch": "Penalties reach into the millions and the regulator enforces actively. The most attractive English-speaking market you leave alone anyway.",
       "status": "region file exists, sending not recommended"
     }
   ],
-
   "_avoid": {
     "DACH": "Germany, Austria, Switzerland. German UWG § 7(2) treats commercial mail without prior express consent as unreasonable harassment, and unlike the UK's PECR there is no B2B exception. Sending warning letters is itself a business model there. regions/DE.json exists from earlier work and is not a recommendation.",
     "opt_in_EU": "Spain, Italy, Poland, Denmark, Belgium apply consumer-grade consent rules to B2B as well; several require double opt-in. Sweden is the notable exception, allowing opt-out where the mail clearly relates to the recipient's professional role.",
     "UAE": "The RUEC requires opt-in consent for B2B, plus full business details including a UAE physical address."
   },
-
   "_niche_test": "Three properties decide whether a trade suits this machine. URGENT: it is searched for in the moment of need, not during planning. LOCAL: the provider has to travel, so the map is what gets searched. NO COMPARISON: the first usable result wins the job. A trade with all three sells through its Google profile whether it means to or not -- which is exactly what the mail is about. In a trade that runs on referral (accountants, agencies, consultants), the score measures something the recipient does not care about.",
-
+  "_but_that_test_is_only_half": "All three criteria above describe the END CUSTOMER, none of them describes the person receiving the mail. Whether somebody searches like an emergency is one question; whether the business BUYS is another, and it turns on three things the test never asks. TICKET SIZE: a locksmith call-out is worth about 85 pounds plus the lock, a drain repair closer to 850, a garage door replacement 1,200 to 4,500 dollars. The same visibility argument is worth ten times more to the second. AGENCY PRESSURE: dentists, lawyers and cosmetic clinics get cold-mailed by SEO agencies every week, so ours is the tenth of its kind; nobody calls drainage or septic firms. CAPACITY: a trade that is booked out does not want more leads, and a one-van operation has neither budget nor a gap to fill. Added 23.08.2026 after a survey of sixty trades found the original test could not tell a locksmith from a funeral director, though only one of them has a marketing budget.",
   "niches": [
-    { "slug": "locksmith", "name": "Locksmiths", "emergency": true, "terms": ["locksmith", "emergency locksmith", "auto locksmith"], "status": "measured (UK: 4,746 scraped)" },
-    { "slug": "emergency-plumber", "name": "Emergency plumbers", "emergency": true, "terms": ["emergency plumber", "burst pipe", "24 hour plumber"], "status": "open" },
-    { "slug": "water-damage", "name": "Water damage restoration", "emergency": true, "terms": ["water damage restoration", "flood damage", "leak detection"], "status": "open" },
-    { "slug": "emergency-electrician", "name": "Emergency electricians", "emergency": true, "terms": ["emergency electrician", "24 hour electrician", "fuse box"], "status": "open" },
-    { "slug": "boiler-repair", "name": "Boiler and heating repair", "emergency": true, "terms": ["boiler repair", "emergency heating engineer", "no hot water"], "status": "open" },
-    { "slug": "glazier", "name": "Emergency glaziers", "emergency": true, "terms": ["emergency glazier", "boarding up", "broken window repair"], "status": "open" },
-    { "slug": "drain-unblocking", "name": "Drain and sewer clearance", "emergency": true, "terms": ["blocked drain", "drain unblocking", "sewer cleaning"], "status": "open" },
-    { "slug": "towing", "name": "Towing and vehicle recovery", "emergency": true, "terms": ["towing", "vehicle recovery", "roadside assistance"], "status": "open" },
-    { "slug": "garage-door", "name": "Garage door repair", "emergency": true, "terms": ["garage door repair", "garage door spring"], "status": "open" },
-    { "slug": "pest-control", "name": "Pest control", "emergency": true, "terms": ["pest control", "wasp nest removal", "rat removal"], "status": "open" },
-    { "slug": "tree-surgeon", "name": "Tree surgeons", "emergency": true, "terms": ["tree surgeon", "emergency tree removal", "storm damage tree"], "status": "open" },
-    { "slug": "roofing", "name": "Roofing and storm damage", "emergency": true, "terms": ["emergency roof repair", "storm damage roofing", "roof leak"], "status": "open" },
-    { "slug": "fire-flood-restoration", "name": "Fire and flood restoration", "emergency": true, "terms": ["fire damage restoration", "flood restoration", "smoke damage"], "status": "open" },
-    { "slug": "appliance-repair", "name": "Appliance repair", "emergency": true, "terms": ["appliance repair", "washing machine repair", "fridge repair"], "status": "open" },
-    { "slug": "windscreen", "name": "Windscreen repair", "emergency": true, "terms": ["windscreen repair", "auto glass", "chip repair"], "status": "open" },
-    { "slug": "emergency-dentist", "name": "Emergency dentists", "emergency": true, "terms": ["emergency dentist", "toothache same day"], "status": "open -- healthcare, the tone needs rethinking" },
-    { "slug": "emergency-vet", "name": "Emergency vets", "emergency": true, "terms": ["emergency vet", "24 hour veterinary"], "status": "open -- healthcare, the tone needs rethinking" },
-
-    { "slug": "cleaning", "name": "Commercial cleaning", "emergency": false, "terms": ["office cleaning", "commercial cleaning"], "status": "scraped (UK: 3,793), never mailed" },
-    { "slug": "removals", "name": "Removals", "emergency": false, "terms": ["removals", "man and van", "house clearance"], "status": "open" },
-    { "slug": "scaffolding", "name": "Scaffolding", "emergency": false, "terms": ["scaffolding hire", "scaffolders"], "status": "open" }
+    {
+      "slug": "locksmith",
+      "name": "Locksmiths",
+      "emergency": true,
+      "terms": [
+        "locksmith",
+        "emergency locksmith",
+        "auto locksmith"
+      ],
+      "status": "measured (UK: 4,746 scraped)"
+    },
+    {
+      "slug": "emergency-plumber",
+      "name": "Emergency plumbers",
+      "emergency": true,
+      "terms": [
+        "emergency plumber",
+        "burst pipe",
+        "24 hour plumber"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "water-damage",
+      "name": "Water damage restoration",
+      "emergency": true,
+      "terms": [
+        "water damage restoration",
+        "flood damage",
+        "leak detection"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "emergency-electrician",
+      "name": "Emergency electricians",
+      "emergency": true,
+      "terms": [
+        "emergency electrician",
+        "24 hour electrician",
+        "fuse box"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "boiler-repair",
+      "name": "Boiler and heating repair",
+      "emergency": true,
+      "terms": [
+        "boiler repair",
+        "emergency heating engineer",
+        "no hot water"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "glazier",
+      "name": "Emergency glaziers",
+      "emergency": true,
+      "terms": [
+        "emergency glazier",
+        "boarding up",
+        "broken window repair"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "drain-unblocking",
+      "name": "Drain and sewer clearance",
+      "emergency": true,
+      "terms": [
+        "blocked drain",
+        "drain unblocking",
+        "sewer cleaning"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "towing",
+      "name": "Towing and vehicle recovery",
+      "emergency": true,
+      "terms": [
+        "towing",
+        "vehicle recovery",
+        "roadside assistance"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "garage-door",
+      "name": "Garage door repair",
+      "emergency": true,
+      "terms": [
+        "garage door repair",
+        "garage door spring"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "pest-control",
+      "name": "Pest control",
+      "emergency": true,
+      "terms": [
+        "pest control",
+        "wasp nest removal",
+        "rat removal"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "tree-surgeon",
+      "name": "Tree surgeons",
+      "emergency": true,
+      "terms": [
+        "tree surgeon",
+        "emergency tree removal",
+        "storm damage tree"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "roofing",
+      "name": "Roofing and storm damage",
+      "emergency": true,
+      "terms": [
+        "emergency roof repair",
+        "storm damage roofing",
+        "roof leak"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "fire-flood-restoration",
+      "name": "Fire and flood restoration",
+      "emergency": true,
+      "terms": [
+        "fire damage restoration",
+        "flood restoration",
+        "smoke damage"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "appliance-repair",
+      "name": "Appliance repair",
+      "emergency": true,
+      "terms": [
+        "appliance repair",
+        "washing machine repair",
+        "fridge repair"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "windscreen",
+      "name": "Windscreen repair",
+      "emergency": true,
+      "terms": [
+        "windscreen repair",
+        "auto glass",
+        "chip repair"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "emergency-dentist",
+      "name": "Emergency dentists",
+      "emergency": true,
+      "terms": [
+        "emergency dentist",
+        "toothache same day"
+      ],
+      "status": "open -- healthcare, the tone needs rethinking"
+    },
+    {
+      "slug": "emergency-vet",
+      "name": "Emergency vets",
+      "emergency": true,
+      "terms": [
+        "emergency vet",
+        "24 hour veterinary"
+      ],
+      "status": "open -- healthcare, the tone needs rethinking"
+    },
+    {
+      "slug": "self-storage",
+      "name": "Self storage",
+      "emergency": false,
+      "terms": [
+        "self storage",
+        "storage units"
+      ],
+      "status": "open -- the deliberate test against the rule above: not urgent, but ~80% of its customers come from search or driving past, and 67% of operators name SEO as their preferred channel. Recurring revenue, so a real budget"
+    },
+    {
+      "slug": "funeral",
+      "name": "Funeral directors",
+      "emergency": true,
+      "terms": [
+        "funeral director",
+        "funeral home"
+      ],
+      "status": "open -- high urgency and still 60% independent (4,200 UK homes against Co-op's 800). Needs a different tone: 'you are below the median' does not work, 'families search at night and your hours are missing' does"
+    },
+    {
+      "slug": "septic",
+      "name": "Septic tank and cesspit emptying",
+      "emergency": true,
+      "terms": [
+        "septic tank emptying",
+        "cesspit emptying"
+      ],
+      "status": "open -- zero agency pressure, licensed (so findable and usually incorporated), urgent when it overflows. Small market"
+    },
+    {
+      "slug": "cleaning",
+      "name": "Commercial cleaning",
+      "emergency": false,
+      "terms": [
+        "office cleaning",
+        "commercial cleaning"
+      ],
+      "status": "scraped (UK: 3,793), never mailed"
+    },
+    {
+      "slug": "removals",
+      "name": "Removals",
+      "emergency": false,
+      "terms": [
+        "removals",
+        "man and van",
+        "house clearance"
+      ],
+      "status": "open"
+    },
+    {
+      "slug": "scaffolding",
+      "name": "Scaffolding",
+      "emergency": false,
+      "terms": [
+        "scaffolding hire",
+        "scaffolders"
+      ],
+      "status": "open"
+    }
   ],
-
+  "_next_five": [
+    "1. DRAIN AND SEWER, UK then US. Same mechanics as locksmiths, one rung up in ticket size and escalating: a jetting job starts around 175 pounds, a camera survey 90-250, the repair that follows closer to 850. Needs a tanker, so capital, so mostly limited companies rather than sole traders, which is the decisive legal filter in the UK. Agency pressure is moderate: drainage is not on the standard target list the way plumbers and HVAC are.",
+    "2. EMERGENCY GLAZIERS, UK. The technical twin: same trigger (break-in, storm), same night-time search, same first-result-wins. Higher ticket than a locksmith call-out, same region files, and everything learned from 4,746 locksmith records transfers almost one to one. Lowest set-up cost of any candidate.",
+    "3. GARAGE DOOR REPAIR, but in the US and not the UK. Highest ticket of the emergency group: repair averages $264, replacement $1,200-4,500. The market depends on attached garages, so on American building style. The US region file exists and has never been used, and CAN-SPAM is the easiest regime on the list. Named openly: Local Services Ads already dominate there at $25-45 a lead, which makes the sale easier and the price lower.",
+    "4. SELF STORAGE, UK and US. The deliberate test against the niche rule: not urgent, but around 80% of customers come from search or driving past, and 67% of operators name SEO as their preferred channel. Recurring revenue instead of one-off jobs, so a genuine marketing budget, and a property behind it, so incorporated. If this works, 'urgent' is proven not to be a necessary criterion.",
+    "5. FUNERAL DIRECTORS, UK. High occasion value, real urgency, and consolidation has not swallowed it: independents hold 4,200 homes, 60% of all locations, against Co-op's 800. The tone has to change though. If that cannot be got right, take SEPTIC TANK EMPTYING instead: no agency pressure, licensed, urgent on overflow, but a small market.",
+    "Cheap to add without a new scrape: auto locksmiths are largely a SUBSET of the 4,746 already scraped. Segment rather than re-scrape."
+  ],
   "_order": "Green countries first, and inside them the biggest emergency trades. The UK is running; the United States is the same legal regime at roughly ten times the size and now has a region file. Market sizes are deliberately absent -- they fall out of the first scrape, and a guessed figure is exactly the kind of claim this pipeline refuses to put in a mail."
 }
