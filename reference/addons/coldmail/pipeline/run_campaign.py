@@ -54,16 +54,26 @@ def sbkey():
     sys.exit("no POCKET_DASH_SUPABASE_SERVICE_ROLE")
 
 
-def done_regions(niche):
-    """Regions already in Supabase for this niche = already scraped+ingested (authoritative).
+def done_regions(niche, iso=''):
+    """Regions already in Supabase for this niche+country = scraped and ingested.
 
     PostgREST caps a response at 1000 rows; a busy niche (locksmith London alone is
     ~950) blows past that, so a single GET would SILENTLY MISS done regions and we'd
-    re-scrape (= wasted Apify spend). Paginate via Range until a short page returns."""
+    re-scrape (= wasted Apify spend). Paginate via Range until a short page returns.
+
+    Der Laenderfilter kam am 23.08.2026 dazu. Vorher zaehlte allein die Nische, was
+    solange gutging, wie es zwei Laender gab, deren Regionen sich nicht ueberschneiden.
+    Mit elf Laendern tut es das: 'Victoria' liegt in Australien UND in Kanada, 'Hamilton'
+    in Neuseeland, Kanada und Schottland. Ohne den Filter haette der erste Lauf den
+    zweiten still uebersprungen -- und ein uebersprungener Scrape sieht aus wie ein
+    fertiger."""
     key = sbkey()
     out, step, off = set(), 1000, 0
     while True:
-        q = urllib.parse.urlencode({'select': 'region', 'niche': f'eq.{niche}'})
+        f = {'select': 'region', 'niche': f'eq.{niche}'}
+        if iso:
+            f['country'] = f'eq.{iso}'
+        q = urllib.parse.urlencode(f)
         req = urllib.request.Request(f"https://{REF}.supabase.co/rest/v1/industry_operators?{q}",
                                      headers={'apikey': key, 'Authorization': f'Bearer {key}',
                                               'Range-Unit': 'items', 'Range': f'{off}-{off+step-1}'})
@@ -103,8 +113,29 @@ def ledger_append(niche, country, region, operators, genuine):
             w.writerow([niche, region, datetime.date.today().isoformat(), operators, genuine])
 
 
-# country -> ISO code the actor expects (gb not uk) + the regions file
-COUNTRY = {"UK": ("GB", "UK.json"), "GB": ("GB", "UK.json"), "DE": ("DE", "DE.json")}
+# Ein paar Laender heissen hier anders als bei GeoNames oder beim Actor.
+ALIAS = {"GB": "UK"}
+
+
+def land_info(cc_key):
+    """ISO code the actor wants + the regions file, read from regions/<C>.json.
+
+    Das war bis zum 23.08.2026 ein festes Dict mit UK, GB und DE. Damit lief die Kampagne
+    fuer genau zwei Laender, egal wie viele Regionsdateien daneben lagen -- und ein neues
+    Land bedeutete, diese Zeile zu finden. Jetzt ist die Regionsdatei selbst die Wahrheit:
+    liegt sie da, ist das Land bespielbar.
+    """
+    cc_key = ALIAS.get(cc_key.upper(), cc_key.upper())
+    pfad = os.path.join(HERE, 'regions', f'{cc_key}.json')
+    if not os.path.exists(pfad):
+        da = sorted(f[:-5] for f in os.listdir(os.path.join(HERE, 'regions'))
+                    if f.endswith('.json'))
+        sys.exit(f"[fatal] keine regions/{cc_key}.json.\n"
+                 f"        vorhanden: {', '.join(da)}\n"
+                 f"        bauen:     python3 build_regions.py {cc_key}\n"
+                 f"        (build_regions.py --list zeigt auch, wie jedes Land rechtlich steht)")
+    d = json.load(open(pfad, encoding='utf-8'))
+    return cc_key, (d.get('countryCode') or cc_key).upper(), f'{cc_key}.json', d
 
 
 def load_cred(name):
@@ -140,7 +171,9 @@ def process_region(c, label, a, iso, terms, cc_key, allow_decompose=True):
     """Full per-region pipeline: scrape -> ingest -> ledger -> export -> Firecrawl recover.
     If the scrape yields no raw and the region has a known admin decomposition, scrape its
     sub-units instead so ceremonial counties never silently drop out. Returns a status str."""
-    rd = f"{HERE}/output/{slug(c)}-region-{slug(a.niche)}/raw.json"
+    landweit = getattr(a, 'country_wide', False)
+    rd = (f"{HERE}/output/{cc_key.lower()}-{slug(a.niche)}-countrywide/raw.json" if landweit
+          else f"{HERE}/output/{slug(c)}-region-{slug(a.niche)}/raw.json")
     print(f"\n========== {label} {c} ==========", flush=True)
     if not os.path.exists(rd):
         # --cold-email = --details --contacts --leads 1. seo_scrape_adaptive nennt --details
@@ -149,7 +182,8 @@ def process_region(c, label, a, iso, terms, cc_key, allow_decompose=True):
         # zurueck, und ein ungeschuetzter Check macht daraus "Ihnen fehlen die
         # Oeffnungszeiten" fuer alle. Kosten: +2$/1000 fuer details, +2$/1000 fuer contacts.
         cmd = [sys.executable, f'{HERE}/seo_scrape_adaptive.py',
-               '--keyword', a.niche, '--country', cc_key, '--state', c]
+               '--keyword', a.niche, '--country', cc_key]
+        cmd += ['--country-wide'] if landweit else ['--state', c]
         if not a.cheap_scrape:
             cmd.append('--cold-email')
         subprocess.run(cmd)
@@ -190,8 +224,22 @@ def process_region(c, label, a, iso, terms, cc_key, allow_decompose=True):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--niche', required=True, help="e.g. locksmith / schluesseldienst / dentist")
-    ap.add_argument('--country', default='UK', help="UK or DE (drives regions/<CC>.json + the ISO code)")
+    ap.add_argument('--niche', help="e.g. locksmith / schluesseldienst / dentist")
+    ap.add_argument('--niches', default='',
+                    help="statt --niche: all | emergency | slug,slug aus maerkte.json. "
+                         "Laeuft die Branchen nacheinander durch, jede mit eigenem Scrape "
+                         "und eigener Kohorte.")
+    ap.add_argument('--country', default='UK',
+                    help="Laenderkuerzel; es zaehlt, ob regions/<CC>.json existiert "
+                         "(build_regions.py --list zeigt die vorhandenen)")
+    ap.add_argument('--country-wide', action='store_true',
+                    help="EIN Scrape-Lauf fuer das ganze Land statt Region fuer Region. "
+                         "Gemessen an Neuseeland (23.08.2026): ein Landlauf fand 330 Betriebe "
+                         "fuer 1,65$, dieselbe Nische ueber die generierte Regionsliste kam "
+                         "nach 9 von 31 Laeufen auf 97. Grund: die automatischen Polygone fuer "
+                         "generierte Regionsnamen sind zu eng -- 'Auckland' als city gab 17 "
+                         "Treffer fuer ein Drittel des Landes. Bei einer KURATIERTEN Liste (UK) "
+                         "gilt das nicht, dort ist der Regionsweg genauer und wiederaufnehmbar.")
     ap.add_argument('--terms', default='', help="comma niche-match synonyms for the filter; default = niche + stem")
     ap.add_argument('--limit', type=int, default=15)
     ap.add_argument('--dry-run', action='store_true')
@@ -210,19 +258,97 @@ def main():
     if not a.no_recover and not load_cred('FIRECRAWL_API_KEY'):
         print("[warn] FIRECRAWL_API_KEY not in env or credentials.env — email recovery will skip", flush=True)
 
-    cc_key = a.country.upper()
-    if cc_key not in COUNTRY:
-        sys.exit(f"unknown --country {a.country!r}; known: {', '.join(COUNTRY)}")
-    iso, regions_file = COUNTRY[cc_key]
-    terms = a.terms or f"{a.niche},{a.niche.rstrip('s')}"
+    if bool(a.niche) == bool(a.niches):
+        sys.exit("[fatal] entweder --niche \"<begriff>\" oder "
+                 "--niches all|emergency|<slug,slug>.")
+    cc_key, iso, regions_file, rgeo = land_info(a.country)
 
-    rf = f'{HERE}/regions/{regions_file}'
-    regions = [r['name'] for r in json.load(open(rf))['regions']]
+    # Rechtslage einmal ansagen, bevor Geld ausgegeben wird. Scrapen ist ueberall zulaessig,
+    # anschreiben nicht -- und wer das erst nach dem Versand merkt, hat das falsche Problem.
+    markt = os.path.join(HERE, 'maerkte.json')
+    if os.path.exists(markt):
+        eintrag = next((l for l in json.load(open(markt, encoding='utf-8'))['countries']
+                        if l['code'] == cc_key), None)
+        if eintrag and eintrag['light'] != 'green':
+            wort = {'amber': 'nur bedingt', 'red': 'nicht empfohlen'}[eintrag['light']]
+            print(f"[legal] {eintrag['name']}: Kaltmail {wort} ({eintrag['regime']}). "
+                  f"{eintrag['catch']}\n"
+                  f"        Scrapen ist davon unberuehrt -- der Versand ist die Frage.",
+                  flush=True)
+        elif not eintrag:
+            print(f"[legal] {cc_key} steht nicht in maerkte.json -- Rechtslage ungeprueft.",
+                  flush=True)
+
+    # Eine Branche oder viele. Bei mehreren laeuft der ganze Block je Branche einmal
+    # durch -- eigener Scrape, eigene Kohorte, eigenes Ledger.
+    if a.niche:
+        branchen = [(slug(a.niche), a.niche.strip().lower())]
+    else:
+        from seo_scrape_adaptive import nischen_aufloesen
+        branchen = nischen_aufloesen(a.niches)
+        print(f"[campaign] {len(branchen)} Branchen ueber {rgeo.get('country', cc_key)}: "
+              f"{', '.join(k for _, k in branchen)}", flush=True)
+
+    schaetze_kosten(rgeo, len(branchen), cc_key)
+    for nr, (_, branche) in enumerate(branchen, 1):
+        if len(branchen) > 1:
+            print(f"\n{'#' * 70}\n### {nr}/{len(branchen)}  {branche}\n{'#' * 70}", flush=True)
+        a.niche = branche
+        eine_branche(a, cc_key, iso, rgeo)
+
+
+# Zwei gemessene Groessen, aus denen sich der Preis eines Laufs vorher abschaetzen laesst.
+# Beide stehen hier statt in einem Kommentar, damit sie korrigierbar sind, wenn ein Lauf
+# etwas anderes zeigt.
+TREFFER_JE_MIO = 87      # Greater London: 1.359 Schluesseldienste auf 15,7 Mio Stadtbevoelkerung
+DOLLAR_JE_TREFFER = 0.005   # Neuseeland landweit: 330 Treffer fuer $1.65
+
+
+def schaetze_kosten(rgeo, n_branchen, cc_key):
+    """Was der Lauf ungefaehr kostet -- gesagt, BEVOR er laeuft.
+
+    Der Anlass (Luka, 23.08.2026): "verbrate jetzt nicht alle meine Apify-Credits."
+    Ein Befehl, der 17 Branchen ueber ein Land schickt, kann dreistellig werden, und man
+    sah es vorher nirgends. Die Schaetzung ist grob -- Schluesseldienste sind dichter
+    gesaet als Dachdecker -- aber die Groessenordnung stimmt, und die entscheidet.
+    """
+    pop = rgeo.get('_urban_pop')
+    if not pop:
+        return
+    treffer = pop / 1e6 * TREFFER_JE_MIO
+    dollar = treffer * DOLLAR_JE_TREFFER * n_branchen
+    je = f", ~${dollar / n_branchen:.0f} je Branche" if n_branchen > 1 else ""
+    print(f"[kosten] geschaetzt ~${dollar:.0f} fuer {n_branchen} Branche(n) ueber {cc_key}"
+          f"{je} -- rund {treffer:,.0f} Betriebe je Branche erwartet.".replace(',', '.'),
+          flush=True)
+    print(f"         Grundlage: {TREFFER_JE_MIO} Betriebe je Mio Stadtbevoelkerung "
+          f"(Schluesseldienste London) und ${DOLLAR_JE_TREFFER}/Treffer (Neuseeland landweit). "
+          f"Eine duennere Branche kostet weniger.", flush=True)
+
+
+def eine_branche(a, cc_key, iso, rgeo):
+    """Ein Gewerbe ueber ein Land -- landweit in einem Lauf oder Region fuer Region."""
+    terms = a.terms or f"{a.niche},{a.niche.rstrip('s')}"
+    # Landweit ist die "Region" das Land selbst: eine Einheit, ein Lauf, ein Ledger-Eintrag.
+    if a.country_wide:
+        land = rgeo.get('country', cc_key)
+        if not a.force_region and land in done_regions(a.niche, iso):
+            print(f"[campaign] {a.niche} {cc_key}: landweit bereits gescrapt, uebersprungen. "
+                  f"(--force-region \"{land}\" erzwingt neu)", flush=True)
+            return
+        print(f"[campaign] {a.niche} {cc_key} · EIN Lauf ueber {land}", flush=True)
+        if a.dry_run:
+            print("[dry-run] no scrape/ingest.")
+            return
+        process_region(land, "[1/1]", a, iso, terms, cc_key, allow_decompose=False)
+        return
+
+    regions = [r['name'] for r in rgeo['regions']]
     if a.force_region:
         todo = [a.force_region]
         done = set()
     else:
-        done = done_regions(a.niche)
+        done = done_regions(a.niche, iso)
         # a ceremonial county counts as done once all its decomposition sub-units are scraped
         # (it never gets a Supabase row under its own name), else it re-attempts forever.
         def is_done(c):

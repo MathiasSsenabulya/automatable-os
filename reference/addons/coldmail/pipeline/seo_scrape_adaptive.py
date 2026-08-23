@@ -19,15 +19,28 @@ WHY REGION-LEVEL (verified live 2026-06-13):
   --state auto-detects (tries state, then county; an invalid level fails validation at $0).
 
 USAGE
-  # whole country (loop every region in regions/<C>.json), resumable:
+  # a whole country in ONE run -- the actor splits it into subregions itself:
+  seo_scrape_adaptive.py --keyword locksmith --country NZ --country-wide
+  # a whole country by looping its region list, resumable region by region:
   seo_scrape_adaptive.py --keyword locksmith --country UK --all-regions
-  seo_scrape_adaptive.py --keyword Schlüsseldienst --country DE --all-regions
+  # every emergency trade in maerkte.json, one country, one command:
+  seo_scrape_adaptive.py --niches emergency --country AU --country-wide --cold-email
   # one region:
   seo_scrape_adaptive.py --keyword locksmith --country UK --state "West Midlands"
   # always --dry-run first for the plan.
 
-  Adding a country = build a small regions/<C>.json (build_regions.py, from GeoNames).
-  Adding an industry = just change --keyword. Filter after with filter_niche.py.
+  Adding a country = python3 build_regions.py <C>   (--list rates them legally too)
+  Adding an industry = --keyword, or add it to maerkte.json and use --niches.
+  Filter after with filter_niche.py.
+
+WHICH MODE
+  --country-wide is one call and does not depend on region names resolving, which is where
+  a generated region list goes wrong (measured on NZ: 'Auckland' fails as a county, and as
+  a city it returns a fraction of the metro because the actor's automatic city polygons
+  exclude the agglomeration). It is all-or-nothing though: a failed run loses the lot.
+  --all-regions saves after every region and resumes, which is what you want when a run is
+  worth 40 dollars. Use it with a CURATED region list (UK is one); with a generated list,
+  prefer --country-wide.
 
 OUTPUT (output/<...>-<kw>/):
   raw.json       union of all regions, deduped by placeId  (-> filter_niche.py -> enrich)
@@ -85,7 +98,11 @@ def scrape_region(kw, region, level_hint, cc, lang, keep_no_website, per_region,
     a = addons or {}
     items, cost, status = [], 0, 'FAILED'
     for level in levels:
-        b = {'searchStringsArray': [kw], level: region, 'countryCode': cc, 'language': lang,
+        # 'country' is not an actor field: a whole country goes in through locationQuery,
+        # which the actor splits into subregions itself (its own input schema says so, and
+        # --country-wide is where that gets used).
+        feld = 'locationQuery' if level == 'country' else level
+        b = {'searchStringsArray': [kw], feld: region, 'countryCode': cc, 'language': lang,
              # Add-ons default OFF (cheap discovery run). Turn on per skills/scrape-gmaps/
              # references/actor-config.md — a cold-email scrape needs --details at minimum,
              # otherwise services/reviewsTags/peopleAlsoSearch come back empty and every mail
@@ -137,10 +154,44 @@ def finalize(run_dir, union, region_rows, kw, rgeo, country):
     return raw_path, nocity
 
 
+def nischen_aufloesen(auswahl):
+    """--niches all | emergency | slug,slug -> [(slug, search term), ...] from maerkte.json.
+
+    The point of scraping a country is rarely one trade. maerkte.json already lists 20 with
+    their Maps search terms and which of them are emergency work, so the list lives there
+    rather than being retyped on the command line every time.
+    """
+    pfad = os.path.join(HERE, 'maerkte.json')
+    if not os.path.exists(pfad):
+        sys.exit("[fatal] maerkte.json fehlt -- ohne sie kennt --niches keine Branchen.")
+    alle = json.load(open(pfad, encoding='utf-8'))['niches']
+    if auswahl == 'all':
+        gewaehlt = alle
+    elif auswahl == 'emergency':
+        gewaehlt = [n for n in alle if n.get('emergency')]
+    else:
+        wunsch = [s.strip() for s in auswahl.split(',') if s.strip()]
+        bekannt = {n['slug']: n for n in alle}
+        fehlt = [s for s in wunsch if s not in bekannt]
+        if fehlt:
+            sys.exit(f"[fatal] unbekannte Nische(n): {', '.join(fehlt)}\n"
+                     f"        bekannt: {', '.join(sorted(bekannt))}")
+        gewaehlt = [bekannt[s] for s in wunsch]
+    return [(n['slug'], n['terms'][0]) for n in gewaehlt]
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--keyword', required=True, help='the Maps search term / niche, e.g. "locksmith"')
+    ap.add_argument('--keyword', help='the Maps search term / niche, e.g. "locksmith"')
+    ap.add_argument('--niches', default='',
+                    help='instead of --keyword: all | emergency | slug,slug -- the trades '
+                         'from maerkte.json, scraped one after another into their own runs.')
     ap.add_argument('--country', required=True, help='matches regions/<C>.json, e.g. UK or DE')
+    ap.add_argument('--country-wide', action='store_true',
+                    help='ONE run for the whole country instead of looping regions. The actor '
+                         'splits the country into subregions itself. Cheaper in wall-clock and '
+                         'in calls, and it does not depend on the region names resolving -- but '
+                         'a single failed run loses everything, where --all-regions resumes.')
     ap.add_argument('--all-regions', action='store_true', help='WHOLE COUNTRY: loop every region in regions/<C>.json, union all. Resumable (skips done regions; --force to redo).')
     ap.add_argument('--state', default='', help='ONE region (e.g. "Bayern", "West Midlands"). Auto-detects state vs county.')
     ap.add_argument('--region-level', default='', choices=['', 'state', 'county', 'city'], help='force the admin level for --state (default auto: state then county then city).')
@@ -155,8 +206,11 @@ def main():
     ap.add_argument('--dry-run', action='store_true', help='show the plan, no Apify call')
     a = ap.parse_args()
 
-    if not (a.all_regions or a.state):
-        sys.exit("[fatal] choose --all-regions (whole country) or --state \"<region>\" (one region).")
+    if not (a.all_regions or a.state or a.country_wide):
+        sys.exit("[fatal] choose --country-wide (one run for the country), --all-regions "
+                 "(loop the region list) or --state \"<region>\" (one region).")
+    if bool(a.keyword) == bool(a.niches):
+        sys.exit("[fatal] choose --keyword \"<term>\" or --niches all|emergency|<slug,slug>.")
 
     if a.cold_email:
         a.details, a.contacts = True, True
@@ -173,15 +227,52 @@ def main():
         print(f"[legal] {a.country.upper()}: cold email needs prior opt-in (§7 UWG). "
               "Scrape is fine, but this list feeds a phone/post motion, not Instantly.")
 
-    kw = a.keyword.strip().lower()
     rfile = f'{HERE}/regions/{a.country}.json'
     if not os.path.exists(rfile):
-        sys.exit(f"[fatal] no regions/{a.country}.json — build it: "
-                 f"python3 build_regions.py {a.country} admin1|admin2 <cc> \"<Country>\" <TZ>")
+        sys.exit(f"[fatal] no regions/{a.country}.json — build it:\n"
+                 f"        python3 build_regions.py {a.country}\n"
+                 f"        (python3 build_regions.py --list shows which countries are rated, "
+                 f"and how each one stands legally)")
     rgeo = json.load(open(rfile))
     cc = rgeo.get('countryCode') or CC.get(a.country, '')
     lang = rgeo.get('language', 'en')
     country = rgeo.get('country', a.country)
+
+    # Eine Nische oder viele -- der Rest laeuft je Nische identisch ab.
+    nischen = ([(slug(a.keyword), a.keyword.strip().lower())] if a.keyword
+               else nischen_aufloesen(a.niches))
+    if len(nischen) > 1:
+        print(f"[plan] {len(nischen)} Branchen ueber {country}: "
+              f"{', '.join(k for _, k in nischen)}")
+    for i, (_, kw) in enumerate(nischen, 1):
+        if len(nischen) > 1:
+            print(f"\n{'=' * 70}\n=== {i}/{len(nischen)}  {kw}\n{'=' * 70}")
+        ein_durchlauf(a, kw, addons, rgeo, cc, lang, country)
+
+
+def ein_durchlauf(a, kw, addons, rgeo, cc, lang, country):
+    """One trade over one country, whichever of the three modes was chosen."""
+    # ---- whole country in a single run ----
+    if a.country_wide:
+        run_dir = os.path.join(HERE, 'output', f"{a.country.lower()}-{slug(kw)}-countrywide")
+        os.makedirs(run_dir, exist_ok=True)
+        print(f"[plan] COUNTRY-WIDE '{country}' · '{kw}' · one run, the actor splits it itself")
+        if a.dry_run:
+            print("[dry-run] 1 run. No Apify call.")
+            return
+        items, cost, status, _ = scrape_region(kw, country, 'country', cc, lang,
+                                               a.keep_no_website, a.per_region, addons)
+        union = {}
+        union_add(union, items)
+        rows = [{'region': country, 'level': 'country', 'returned': len(items),
+                 'net_new': len(union), 'cost': cost, 'status': status}]
+        finalize(run_dir, union, rows, kw, rgeo, country)
+        flag = '' if status == 'SUCCEEDED' else f'  ⚠️ {status}'
+        print(f"\n=== COUNTRY-WIDE {country}: {len(union)} unique places | ${cost:.2f} ==={flag}")
+        print(f"raw -> {os.path.join(run_dir, 'raw.json')}")
+        print(f"NEXT: filter_niche.py {os.path.join(run_dir, 'raw.json')} --keyword {kw} "
+              f"--terms \"<synonyms>\"")
+        return
 
     # ---- one region ----
     if a.state and not a.all_regions:
