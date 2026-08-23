@@ -3,151 +3,16 @@
  "countryCode": "hk",
  "language": "en",
  "timezone": "Asia/Hong_Kong",
- "level": "county",
- "_source": "GeoNames admin2 + cities15000, sorted by urban population",
+ "level": "city",
+ "_source": "city-state, single run; GeoNames + cities15000, sorted by urban population",
  "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
- "_urban_pop": 24678261,
+ "_urban_pop": 7396076,
  "regions": [
-  {
-   "name": "New Territories",
-   "level": "city",
-   "pop": 7411945,
-   "cum": 0.3003,
-   "osm": "nicht gefunden"
-  },
   {
    "name": "Hong Kong",
    "level": "city",
    "pop": 7396076,
-   "cum": 0.6,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Tin Shui Wai",
-   "level": "city",
-   "pop": 1102185,
-   "cum": 0.6447,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Sha Tin",
-   "level": "city",
-   "pop": 1083748,
-   "cum": 0.6886,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Victoria",
-   "level": "city",
-   "pop": 1045496,
-   "cum": 0.731,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Kowloon City",
-   "level": "city",
-   "pop": 1039749,
-   "cum": 0.7731,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Sham Shui Po",
-   "level": "city",
-   "pop": 737741,
-   "cum": 0.803,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Wong Tai Sin",
-   "level": "city",
-   "pop": 691394,
-   "cum": 0.831,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Kwai Chung",
-   "level": "city",
-   "pop": 566336,
-   "cum": 0.854,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Tuen Mun",
-   "level": "city",
-   "pop": 559209,
-   "cum": 0.8766,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Tseung Kwan O",
-   "level": "city",
-   "pop": 535229,
-   "cum": 0.8983,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Aberdeen",
-   "level": "city",
-   "pop": 438764,
-   "cum": 0.9161,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Tsuen Wan",
-   "level": "city",
-   "pop": 395379,
-   "cum": 0.9321,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Tai Po",
-   "level": "city",
-   "pop": 334498,
-   "cum": 0.9457,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Fanling",
-   "level": "city",
-   "pop": 283714,
-   "cum": 0.9572,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "San Tung Chung Hang",
-   "level": "city",
-   "pop": 269205,
-   "cum": 0.9681,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Tai Koo",
-   "level": "city",
-   "pop": 205542,
-   "cum": 0.9764,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Sau Mau Ping",
-   "level": "city",
-   "pop": 198874,
-   "cum": 0.9845,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Wan Chai",
-   "level": "city",
-   "pop": 195855,
-   "cum": 0.9924,
-   "osm": "nicht gefunden"
-  },
-  {
-   "name": "Mong Kok",
-   "level": "city",
-   "pop": 187322,
-   "cum": 1.0,
-   "osm": "nicht gefunden"
+   "cum": 1.0
   }
- ],
- "_geprueft": "OSM-Namenspruefung, 0 von 20 passen"
+ ]
 }

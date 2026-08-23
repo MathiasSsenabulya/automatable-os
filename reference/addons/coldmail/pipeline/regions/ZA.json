@@ -12,85 +12,100 @@
    "name": "City of Johannesburg Metropolitan Municipality",
    "level": "county",
    "pop": 11864086,
-   "cum": 0.2544
+   "cum": 0.2544,
+   "osm": "admin_level 6"
   },
   {
    "name": "Western Cape",
    "level": "state",
    "pop": 6885730,
-   "cum": 0.4021
+   "cum": 0.4021,
+   "osm": "admin_level 4"
   },
   {
    "name": "KwaZulu-Natal",
    "level": "state",
    "pop": 6647329,
-   "cum": 0.5446
+   "cum": 0.5446,
+   "osm": "admin_level 4"
   },
   {
    "name": "City of Tshwane Metropolitan Municipality",
    "level": "county",
    "pop": 3465949,
-   "cum": 0.6189
+   "cum": 0.6189,
+   "osm": "admin_level 6"
   },
   {
    "name": "Eastern Cape",
    "level": "state",
    "pop": 3358601,
-   "cum": 0.691
+   "cum": 0.691,
+   "osm": "admin_level 4"
   },
   {
    "name": "Free State",
    "level": "state",
    "pop": 2975532,
-   "cum": 0.7548
+   "cum": 0.7548,
+   "osm": "admin_level 4"
   },
   {
    "name": "Ekurhuleni Metropolitan Municipality",
    "level": "county",
    "pop": 2612060,
-   "cum": 0.8108
+   "cum": 0.8108,
+   "osm": "kein Polygon (amenity/townhall)"
   },
   {
    "name": "Mpumalanga",
    "level": "state",
    "pop": 2496788,
-   "cum": 0.8643
+   "cum": 0.8643,
+   "osm": "admin_level 4"
   },
   {
    "name": "North West",
    "level": "state",
    "pop": 2069183,
-   "cum": 0.9087
+   "cum": 0.9087,
+   "osm": "admin_level 4"
   },
   {
    "name": "Sedibeng District Municipality",
    "level": "county",
    "pop": 1638761,
-   "cum": 0.9438
+   "cum": 0.9438,
+   "osm": "admin_level 6"
   },
   {
    "name": "Limpopo",
    "level": "state",
    "pop": 1414718,
-   "cum": 0.9742
+   "cum": 0.9742,
+   "osm": "admin_level 4"
   },
   {
    "name": "West Rand District Municipality",
    "level": "county",
    "pop": 867697,
-   "cum": 0.9928
+   "cum": 0.9928,
+   "osm": "admin_level 6"
   },
   {
    "name": "Northern Cape",
    "level": "state",
    "pop": 315522,
-   "cum": 0.9995
+   "cum": 0.9995,
+   "osm": "admin_level 4"
   },
   {
    "name": "Verena",
    "level": "city",
    "pop": 21252,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "kein Polygon (place/town)"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung 23.08.2026: 12 von 14 passen auf Anhieb; abweichende Ebenen wurden dabei korrigiert, Namen ohne Flaeche stehen je Region unter 'osm'."
 }

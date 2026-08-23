@@ -14,7 +14,7 @@
   {
    "name": "West Midlands",
    "level": "county",
-   "osm": "admin_level 5"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Greater Manchester",
@@ -24,47 +24,47 @@
   {
    "name": "West Yorkshire",
    "level": "county",
-   "osm": "admin_level 5"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Merseyside",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "South Yorkshire",
    "level": "county",
-   "osm": "admin_level 5"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Tyne and Wear",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Kent",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Essex",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Hampshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Lancashire",
    "level": "county",
-   "osm": "admin_level 5"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Surrey",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Hertfordshire",
@@ -74,17 +74,17 @@
   {
    "name": "Staffordshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Cheshire",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Nottinghamshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Derbyshire",
@@ -94,12 +94,12 @@
   {
    "name": "Devon",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Leicestershire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Norfolk",
@@ -109,7 +109,7 @@
   {
    "name": "Lincolnshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Suffolk",
@@ -129,12 +129,12 @@
   {
    "name": "Cambridgeshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Gloucestershire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Oxfordshire",
@@ -144,22 +144,22 @@
   {
    "name": "Somerset",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Berkshire",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Buckinghamshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Northamptonshire",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Durham",
@@ -169,7 +169,7 @@
   {
    "name": "East Sussex",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "West Sussex",
@@ -189,32 +189,32 @@
   {
    "name": "Cumbria",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Dorset",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Wiltshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Bedfordshire",
    "level": "county",
-   "osm": "kein Polygon (boundary/ceremonial)"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "North Yorkshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Shropshire",
    "level": "county",
-   "osm": "admin_level 6"
+   "osm": "Flaeche ohne admin_level (ceremonial)"
   },
   {
    "name": "Herefordshire",
@@ -237,5 +237,5 @@
    "osm": "admin_level 6"
   }
  ],
- "_geprueft": "OSM-Namenspruefung, 38 von 46 passen"
+ "_geprueft": "OSM-Namenspruefung 23.08.2026: 46 von 46 passen auf Anhieb; abweichende Ebenen wurden dabei korrigiert, Namen ohne Flaeche stehen je Region unter 'osm'."
 }

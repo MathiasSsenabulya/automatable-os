@@ -81,9 +81,16 @@ def frage(name, land_cc):
         treffer = json.load(urllib.request.urlopen(req, timeout=30))
     except Exception as e:
         return {'fehler': f"{type(e).__name__}: {str(e)[:60]}"}
-    # Verwaltungsgrenzen zuerst: nur die haben eine Flaeche, die der Actor rastern kann.
+    # Grenzen zuerst: nur die haben eine Flaeche, die der Actor rastern kann.
+    #
+    # `ceremonial` gehoert ausdruecklich dazu, und das ist keine Kleinigkeit: englische
+    # Countys wie Essex fuehrt OSM als ceremonial statt administrative, und ein Filter nur
+    # auf administrative meldete sie als "kein Polygon". Essex hat im echten Lauf 316
+    # Betriebe geliefert -- die Pruefung war also strenger als die Wirklichkeit und haette
+    # acht funktionierende UK-Regionen verdaechtigt.
+    ARTEN = ('administrative', 'ceremonial')
     flaechen = [t for t in treffer
-                if t.get('category') == 'boundary' and t.get('type') == 'administrative']
+                if t.get('category') == 'boundary' and t.get('type') in ARTEN]
     if not flaechen:
         if not treffer:
             return None
@@ -121,6 +128,14 @@ def pruefe_land(code, schreiben=False):
             r['osm'] = f"kein Polygon ({erg['typ']})"
             fehlt += 1
             print(f"  ✗ {r['name'][:34]:36} nur ein Punkt: {erg['typ']}", flush=True)
+        elif erg['feld'] is None:
+            # Eine Flaeche ohne admin_level -- typisch fuer englische ceremonial counties.
+            # Sie ist rasterbar, nur laesst sich die Ebene daraus nicht ableiten. Also
+            # gilt sie als in Ordnung und die bestehende Ebene bleibt stehen. Frueher fiel
+            # sie in den Zweig unten und haette mit --schreiben `level: None` eingetragen,
+            # was die geprueft UK-Liste stillschweigend zerstoert haette.
+            r['osm'] = "Flaeche ohne admin_level (ceremonial)"
+            gut += 1
         else:
             soll, ist = r.get('level'), erg['feld']
             r['osm'] = f"admin_level {erg['level']}"
@@ -141,8 +156,12 @@ def pruefe_land(code, schreiben=False):
 
     if schreiben:
         for r in regionen:
-            if r.get('osm_level'):
-                r['level'] = r.pop('osm_level')
+            neu = r.pop('osm_level', None)
+            # Nur ueberschreiben, wenn OSM tatsaechlich eine Ebene NENNT. Ein None hier
+            # heisst "nicht ableitbar", nicht "keine Ebene" -- und eine geprueft Liste
+            # darf daran nicht kaputtgehen.
+            if neu:
+                r['level'] = neu
         d['_geprueft'] = f"OSM-Namenspruefung, {gut} von {len(regionen)} passen"
         json.dump(d, open(pfad, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
         print(f"  geschrieben -> regions/{code}.json")

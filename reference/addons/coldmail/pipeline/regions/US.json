@@ -12,1171 +12,1367 @@
    "name": "Florida",
    "level": "state",
    "pop": 13156034,
-   "cum": 0.0651
+   "cum": 0.0651,
+   "osm": "admin_level 4"
   },
   {
    "name": "Los Angeles County",
    "level": "county",
    "pop": 9541361,
-   "cum": 0.1123
+   "cum": 0.1123,
+   "osm": "admin_level 6"
   },
   {
    "name": "New York City",
-   "level": "city",
+   "level": "county",
    "pop": 8804190,
-   "cum": 0.1559
+   "cum": 0.1559,
+   "osm": "admin_level 5"
   },
   {
    "name": "Illinois",
    "level": "state",
    "pop": 8756761,
-   "cum": 0.1992
+   "cum": 0.1992,
+   "osm": "admin_level 4"
   },
   {
    "name": "Arizona",
    "level": "state",
    "pop": 5822446,
-   "cum": 0.228
+   "cum": 0.228,
+   "osm": "admin_level 4"
   },
   {
    "name": "Ohio",
    "level": "state",
    "pop": 5718753,
-   "cum": 0.2563
+   "cum": 0.2563,
+   "osm": "admin_level 4"
   },
   {
    "name": "Massachusetts",
    "level": "state",
    "pop": 5595066,
-   "cum": 0.284
+   "cum": 0.284,
+   "osm": "admin_level 4"
   },
   {
    "name": "New Jersey",
    "level": "state",
    "pop": 5114623,
-   "cum": 0.3093
+   "cum": 0.3093,
+   "osm": "admin_level 4"
   },
   {
    "name": "Washington",
    "level": "state",
    "pop": 4983162,
-   "cum": 0.334
+   "cum": 0.334,
+   "osm": "admin_level 4"
   },
   {
    "name": "North Carolina",
    "level": "state",
    "pop": 4558723,
-   "cum": 0.3565
+   "cum": 0.3565,
+   "osm": "admin_level 4"
   },
   {
    "name": "Virginia",
    "level": "state",
    "pop": 4482194,
-   "cum": 0.3787
+   "cum": 0.3787,
+   "osm": "admin_level 4"
   },
   {
    "name": "Michigan",
    "level": "state",
    "pop": 4344725,
-   "cum": 0.4002
+   "cum": 0.4002,
+   "osm": "admin_level 4"
   },
   {
    "name": "Colorado",
    "level": "state",
    "pop": 3836246,
-   "cum": 0.4192
+   "cum": 0.4192,
+   "osm": "admin_level 4"
   },
   {
    "name": "Maryland",
    "level": "state",
    "pop": 3832484,
-   "cum": 0.4382
+   "cum": 0.4382,
+   "osm": "admin_level 4"
   },
   {
    "name": "Pennsylvania",
    "level": "state",
    "pop": 3706582,
-   "cum": 0.4565
+   "cum": 0.4565,
+   "osm": "admin_level 4"
   },
   {
    "name": "Georgia",
    "level": "state",
    "pop": 3456593,
-   "cum": 0.4736
+   "cum": 0.4736,
+   "osm": "admin_level 4"
   },
   {
    "name": "Tennessee",
    "level": "state",
    "pop": 3452455,
-   "cum": 0.4907
+   "cum": 0.4907,
+   "osm": "admin_level 4"
   },
   {
    "name": "Indiana",
    "level": "state",
    "pop": 3437217,
-   "cum": 0.5077
+   "cum": 0.5077,
+   "osm": "admin_level 4"
   },
   {
    "name": "Minnesota",
    "level": "state",
    "pop": 3311457,
-   "cum": 0.5241
+   "cum": 0.5241,
+   "osm": "admin_level 4"
   },
   {
    "name": "Orange County",
    "level": "county",
    "pop": 3044090,
-   "cum": 0.5392
+   "cum": 0.5392,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Diego County",
    "level": "county",
    "pop": 2989964,
-   "cum": 0.554
+   "cum": 0.554,
+   "osm": "admin_level 6"
   },
   {
    "name": "Harris County",
    "level": "county",
    "pop": 2956023,
-   "cum": 0.5686
+   "cum": 0.5686,
+   "osm": "admin_level 6"
   },
   {
    "name": "Connecticut",
    "level": "state",
    "pop": 2807173,
-   "cum": 0.5825
+   "cum": 0.5825,
+   "osm": "admin_level 4"
   },
   {
    "name": "Dallas County",
    "level": "county",
    "pop": 2771051,
-   "cum": 0.5962
+   "cum": 0.5962,
+   "osm": "admin_level 6"
   },
   {
    "name": "Wisconsin",
    "level": "state",
    "pop": 2743148,
-   "cum": 0.6098
+   "cum": 0.6098,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kings County",
    "level": "county",
    "pop": 2736074,
-   "cum": 0.6233
+   "cum": 0.6233,
+   "osm": "admin_level 6"
   },
   {
    "name": "Missouri",
    "level": "state",
    "pop": 2696108,
-   "cum": 0.6367
+   "cum": 0.6367,
+   "osm": "admin_level 4"
   },
   {
    "name": "Nevada",
    "level": "state",
    "pop": 2514886,
-   "cum": 0.6491
+   "cum": 0.6491,
+   "osm": "admin_level 4"
   },
   {
    "name": "Oregon",
    "level": "state",
    "pop": 2475730,
-   "cum": 0.6614
+   "cum": 0.6614,
+   "osm": "admin_level 4"
   },
   {
    "name": "Kentucky",
    "level": "state",
    "pop": 2362716,
-   "cum": 0.673
+   "cum": 0.673,
+   "osm": "admin_level 4"
   },
   {
    "name": "Queens County",
    "level": "county",
    "pop": 2316841,
-   "cum": 0.6845
+   "cum": 0.6845,
+   "osm": "admin_level 6"
   },
   {
    "name": "Utah",
    "level": "state",
    "pop": 2300918,
-   "cum": 0.6959
+   "cum": 0.6959,
+   "osm": "admin_level 4"
   },
   {
    "name": "Oklahoma",
    "level": "state",
    "pop": 2264143,
-   "cum": 0.7071
+   "cum": 0.7071,
+   "osm": "admin_level 4"
   },
   {
    "name": "Alabama",
    "level": "state",
    "pop": 2019109,
-   "cum": 0.7171
+   "cum": 0.7171,
+   "osm": "admin_level 4"
   },
   {
    "name": "Riverside County",
    "level": "county",
    "pop": 1959845,
-   "cum": 0.7268
+   "cum": 0.7268,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tarrant County",
    "level": "county",
    "pop": 1955387,
-   "cum": 0.7365
+   "cum": 0.7365,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Bernardino County",
    "level": "county",
    "pop": 1855544,
-   "cum": 0.7456
+   "cum": 0.7456,
+   "osm": "admin_level 6"
   },
   {
    "name": "Louisiana",
    "level": "state",
    "pop": 1804389,
-   "cum": 0.7546
+   "cum": 0.7546,
+   "osm": "admin_level 4"
   },
   {
    "name": "Santa Clara County",
    "level": "county",
    "pop": 1794492,
-   "cum": 0.7635
+   "cum": 0.7635,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kansas",
    "level": "state",
    "pop": 1691158,
-   "cum": 0.7718
+   "cum": 0.7718,
+   "osm": "admin_level 4"
   },
   {
    "name": "Bexar County",
    "level": "county",
    "pop": 1583975,
-   "cum": 0.7797
+   "cum": 0.7797,
+   "osm": "admin_level 6"
   },
   {
    "name": "Alameda County",
    "level": "county",
    "pop": 1571763,
-   "cum": 0.7874
+   "cum": 0.7874,
+   "osm": "admin_level 6"
   },
   {
    "name": "New York County",
    "level": "county",
    "pop": 1487536,
-   "cum": 0.7948
+   "cum": 0.7948,
+   "osm": "admin_level 6"
   },
   {
    "name": "Iowa",
    "level": "state",
    "pop": 1457230,
-   "cum": 0.802
+   "cum": 0.802,
+   "osm": "admin_level 4"
   },
   {
    "name": "Sacramento County",
    "level": "county",
    "pop": 1402148,
-   "cum": 0.809
+   "cum": 0.809,
+   "osm": "admin_level 6"
   },
   {
    "name": "Bronx County",
    "level": "county",
    "pop": 1385108,
-   "cum": 0.8158
+   "cum": 0.8158,
+   "osm": "admin_level 6"
   },
   {
    "name": "South Carolina",
    "level": "state",
    "pop": 1336020,
-   "cum": 0.8224
+   "cum": 0.8224,
+   "osm": "admin_level 4"
   },
   {
    "name": "Hawaii",
    "level": "state",
    "pop": 1284501,
-   "cum": 0.8288
+   "cum": 0.8288,
+   "osm": "admin_level 4"
   },
   {
    "name": "New Mexico",
    "level": "state",
    "pop": 1253262,
-   "cum": 0.835
+   "cum": 0.835,
+   "osm": "admin_level 4"
   },
   {
    "name": "Arkansas",
    "level": "state",
    "pop": 1223985,
-   "cum": 0.841
+   "cum": 0.841,
+   "osm": "admin_level 4"
   },
   {
    "name": "District of Columbia",
    "level": "state",
    "pop": 1128429,
-   "cum": 0.8466
+   "cum": 0.8466,
+   "osm": "admin_level 4"
   },
   {
    "name": "Nebraska",
    "level": "state",
    "pop": 1079965,
-   "cum": 0.852
+   "cum": 0.852,
+   "osm": "admin_level 4"
   },
   {
    "name": "Travis County",
    "level": "county",
    "pop": 1031569,
-   "cum": 0.8571
+   "cum": 0.8571,
+   "osm": "admin_level 6"
   },
   {
    "name": "Mississippi",
    "level": "state",
    "pop": 987346,
-   "cum": 0.862
+   "cum": 0.862,
+   "osm": "admin_level 4"
   },
   {
    "name": "Contra Costa County",
    "level": "county",
    "pop": 961964,
-   "cum": 0.8667
+   "cum": 0.8667,
+   "osm": "admin_level 6"
   },
   {
    "name": "Rhode Island",
    "level": "state",
    "pop": 932048,
-   "cum": 0.8713
+   "cum": 0.8713,
+   "osm": "admin_level 4"
   },
   {
    "name": "Nassau County",
    "level": "county",
    "pop": 904113,
-   "cum": 0.8758
+   "cum": 0.8758,
+   "osm": "admin_level 6"
   },
   {
    "name": "Collin County",
    "level": "county",
    "pop": 897777,
-   "cum": 0.8802
+   "cum": 0.8802,
+   "osm": "admin_level 6"
   },
   {
    "name": "Suffolk County",
    "level": "county",
    "pop": 893396,
-   "cum": 0.8847
+   "cum": 0.8847,
+   "osm": "admin_level 6"
   },
   {
    "name": "Idaho",
    "level": "state",
    "pop": 887403,
-   "cum": 0.8891
+   "cum": 0.8891,
+   "osm": "admin_level 4"
   },
   {
    "name": "City and County of San Francisco",
    "level": "county",
    "pop": 862361,
-   "cum": 0.8933
+   "cum": 0.8933,
+   "osm": "admin_level 6"
   },
   {
    "name": "El Paso County",
    "level": "county",
    "pop": 759962,
-   "cum": 0.8971
+   "cum": 0.8971,
+   "osm": "admin_level 6"
   },
   {
    "name": "Fresno County",
    "level": "county",
    "pop": 752922,
-   "cum": 0.9008
+   "cum": 0.9008,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ventura County",
    "level": "county",
    "pop": 732379,
-   "cum": 0.9044
+   "cum": 0.9044,
+   "osm": "admin_level 6"
   },
   {
    "name": "Westchester County",
    "level": "county",
    "pop": 675500,
-   "cum": 0.9078
+   "cum": 0.9078,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Mateo County",
    "level": "county",
    "pop": 652093,
-   "cum": 0.911
+   "cum": 0.911,
+   "osm": "admin_level 6"
   },
   {
    "name": "Erie County",
    "level": "county",
    "pop": 609343,
-   "cum": 0.914
+   "cum": 0.914,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kern County",
    "level": "county",
    "pop": 586598,
-   "cum": 0.9169
+   "cum": 0.9169,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Joaquin County",
    "level": "county",
    "pop": 568794,
-   "cum": 0.9197
+   "cum": 0.9197,
+   "osm": "admin_level 6"
   },
   {
    "name": "New Hampshire",
    "level": "state",
    "pop": 540737,
-   "cum": 0.9224
+   "cum": 0.9224,
+   "osm": "admin_level 4"
   },
   {
    "name": "Hidalgo County",
    "level": "county",
    "pop": 528818,
-   "cum": 0.925
+   "cum": 0.925,
+   "osm": "admin_level 6"
   },
   {
    "name": "Richmond County",
    "level": "county",
    "pop": 468730,
-   "cum": 0.9273
+   "cum": 0.9273,
+   "osm": "admin_level 6"
   },
   {
    "name": "Denton County",
    "level": "county",
    "pop": 423603,
-   "cum": 0.9294
+   "cum": 0.9294,
+   "osm": "admin_level 6"
   },
   {
    "name": "North Dakota",
    "level": "state",
    "pop": 421219,
-   "cum": 0.9315
+   "cum": 0.9315,
+   "osm": "admin_level 4"
   },
   {
    "name": "Solano County",
    "level": "county",
    "pop": 407133,
-   "cum": 0.9335
+   "cum": 0.9335,
+   "osm": "admin_level 6"
   },
   {
    "name": "Stanislaus County",
    "level": "county",
    "pop": 399400,
-   "cum": 0.9355
+   "cum": 0.9355,
+   "osm": "admin_level 6"
   },
   {
    "name": "Alaska",
    "level": "state",
    "pop": 397755,
-   "cum": 0.9375
+   "cum": 0.9375,
+   "osm": "admin_level 4"
   },
   {
    "name": "Montana",
    "level": "state",
    "pop": 379514,
-   "cum": 0.9394
+   "cum": 0.9394,
+   "osm": "admin_level 4"
   },
   {
    "name": "Williamson County",
    "level": "county",
    "pop": 366048,
-   "cum": 0.9412
+   "cum": 0.9412,
+   "osm": "admin_level 6"
   },
   {
    "name": "Maine",
    "level": "state",
    "pop": 365066,
-   "cum": 0.943
+   "cum": 0.943,
+   "osm": "admin_level 4"
   },
   {
    "name": "Monroe County",
    "level": "county",
    "pop": 355822,
-   "cum": 0.9447
+   "cum": 0.9447,
+   "osm": "admin_level 6"
   },
   {
    "name": "Sonoma County",
    "level": "county",
    "pop": 335526,
-   "cum": 0.9464
+   "cum": 0.9464,
+   "osm": "admin_level 6"
   },
   {
    "name": "South Dakota",
    "level": "state",
    "pop": 334614,
-   "cum": 0.9481
+   "cum": 0.9481,
+   "osm": "admin_level 4"
   },
   {
    "name": "Santa Barbara County",
    "level": "county",
    "pop": 324044,
-   "cum": 0.9497
+   "cum": 0.9497,
+   "osm": "admin_level 6"
   },
   {
    "name": "Fort Bend County",
    "level": "county",
    "pop": 321257,
-   "cum": 0.9513
+   "cum": 0.9513,
+   "osm": "admin_level 6"
   },
   {
    "name": "Nueces County",
    "level": "county",
    "pop": 316239,
-   "cum": 0.9528
+   "cum": 0.9528,
+   "osm": "admin_level 6"
   },
   {
    "name": "Monterey County",
    "level": "county",
    "pop": 315393,
-   "cum": 0.9544
+   "cum": 0.9544,
+   "osm": "admin_level 6"
   },
   {
    "name": "West Virginia",
    "level": "state",
    "pop": 293089,
-   "cum": 0.9558
+   "cum": 0.9558,
+   "osm": "admin_level 4"
   },
   {
    "name": "Bell County",
    "level": "county",
    "pop": 292361,
-   "cum": 0.9573
+   "cum": 0.9573,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cameron County",
    "level": "county",
    "pop": 277008,
-   "cum": 0.9586
+   "cum": 0.9586,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tulare County",
    "level": "county",
    "pop": 272179,
-   "cum": 0.96
+   "cum": 0.96,
+   "osm": "admin_level 6"
   },
   {
    "name": "Galveston County",
    "level": "county",
    "pop": 270713,
-   "cum": 0.9613
+   "cum": 0.9613,
+   "osm": "admin_level 6"
   },
   {
    "name": "Placer County",
    "level": "county",
    "pop": 261641,
-   "cum": 0.9626
+   "cum": 0.9626,
+   "osm": "admin_level 6"
   },
   {
    "name": "Webb County",
    "level": "county",
    "pop": 256153,
-   "cum": 0.9639
+   "cum": 0.9639,
+   "osm": "admin_level 6"
   },
   {
    "name": "Lubbock County",
    "level": "county",
    "pop": 249042,
-   "cum": 0.9651
+   "cum": 0.9651,
+   "osm": "admin_level 6"
   },
   {
    "name": "Onondaga County",
    "level": "county",
    "pop": 233980,
-   "cum": 0.9663
+   "cum": 0.9663,
+   "osm": "admin_level 6"
   },
   {
    "name": "Albany County",
    "level": "county",
    "pop": 232296,
-   "cum": 0.9674
+   "cum": 0.9674,
+   "osm": "admin_level 6"
   },
   {
    "name": "Wyoming",
    "level": "state",
    "pop": 232059,
-   "cum": 0.9686
+   "cum": 0.9686,
+   "osm": "admin_level 4"
   },
   {
    "name": "Jefferson County",
    "level": "county",
    "pop": 203568,
-   "cum": 0.9696
+   "cum": 0.9696,
+   "osm": "admin_level 6"
   },
   {
    "name": "Potter County",
    "level": "county",
    "pop": 198645,
-   "cum": 0.9706
+   "cum": 0.9706,
+   "osm": "admin_level 6"
   },
   {
    "name": "Brazos County",
    "level": "county",
    "pop": 190007,
-   "cum": 0.9715
+   "cum": 0.9715,
+   "osm": "admin_level 6"
   },
   {
    "name": "Delaware",
    "level": "state",
    "pop": 183861,
-   "cum": 0.9724
+   "cum": 0.9724,
+   "osm": "admin_level 4"
   },
   {
    "name": "Montgomery County",
    "level": "county",
    "pop": 182449,
-   "cum": 0.9733
+   "cum": 0.9733,
+   "osm": "admin_level 6"
   },
   {
    "name": "Brazoria County",
    "level": "county",
    "pop": 181574,
-   "cum": 0.9742
+   "cum": 0.9742,
+   "osm": "admin_level 6"
   },
   {
    "name": "Yolo County",
    "level": "county",
    "pop": 178954,
-   "cum": 0.9751
+   "cum": 0.9751,
+   "osm": "admin_level 6"
   },
   {
    "name": "Butte County",
    "level": "county",
    "pop": 164081,
-   "cum": 0.9759
+   "cum": 0.9759,
+   "osm": "admin_level 6"
   },
   {
    "name": "Merced County",
    "level": "county",
    "pop": 149130,
-   "cum": 0.9767
+   "cum": 0.9767,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Luis Obispo County",
    "level": "county",
    "pop": 139137,
-   "cum": 0.9773
+   "cum": 0.9773,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ector County",
    "level": "county",
    "pop": 137135,
-   "cum": 0.978
+   "cum": 0.978,
+   "osm": "admin_level 6"
   },
   {
    "name": "Santa Cruz County",
    "level": "county",
    "pop": 135006,
-   "cum": 0.9787
+   "cum": 0.9787,
+   "osm": "admin_level 6"
   },
   {
    "name": "Midland County",
    "level": "county",
    "pop": 132524,
-   "cum": 0.9794
+   "cum": 0.9794,
+   "osm": "admin_level 6"
   },
   {
    "name": "McLennan County",
    "level": "county",
    "pop": 132356,
-   "cum": 0.98
+   "cum": 0.98,
+   "osm": "admin_level 6"
   },
   {
    "name": "Imperial County",
    "level": "county",
    "pop": 127001,
-   "cum": 0.9806
+   "cum": 0.9806,
+   "osm": "admin_level 6"
   },
   {
    "name": "Taylor County",
    "level": "county",
    "pop": 125182,
-   "cum": 0.9813
+   "cum": 0.9813,
+   "osm": "admin_level 6"
   },
   {
    "name": "Rockland County",
    "level": "county",
    "pop": 118327,
-   "cum": 0.9818
+   "cum": 0.9818,
+   "osm": "admin_level 6"
   },
   {
    "name": "Schenectady County",
    "level": "county",
    "pop": 115283,
-   "cum": 0.9824
+   "cum": 0.9824,
+   "osm": "admin_level 6"
   },
   {
    "name": "Marin County",
    "level": "county",
    "pop": 114692,
-   "cum": 0.983
+   "cum": 0.983,
+   "osm": "admin_level 6"
   },
   {
    "name": "Wichita County",
    "level": "county",
    "pop": 104710,
-   "cum": 0.9835
+   "cum": 0.9835,
+   "osm": "admin_level 6"
   },
   {
    "name": "Guadalupe County",
    "level": "county",
    "pop": 104388,
-   "cum": 0.984
+   "cum": 0.984,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kings County",
    "level": "county",
    "pop": 103783,
-   "cum": 0.9845
+   "cum": 0.9845,
+   "osm": "admin_level 6"
   },
   {
    "name": "Smith County",
    "level": "county",
    "pop": 103700,
-   "cum": 0.985
+   "cum": 0.985,
+   "osm": "admin_level 6"
   },
   {
    "name": "Napa County",
    "level": "county",
    "pop": 100988,
-   "cum": 0.9855
+   "cum": 0.9855,
+   "osm": "admin_level 6"
   },
   {
    "name": "Niagara County",
    "level": "county",
    "pop": 100325,
-   "cum": 0.986
+   "cum": 0.986,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tom Green County",
    "level": "county",
    "pop": 99893,
-   "cum": 0.9865
+   "cum": 0.9865,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hays County",
    "level": "county",
    "pop": 96417,
-   "cum": 0.987
+   "cum": 0.987,
+   "osm": "admin_level 6"
   },
   {
    "name": "Vermont",
    "level": "state",
    "pop": 94053,
-   "cum": 0.9875
+   "cum": 0.9875,
+   "osm": "admin_level 4"
   },
   {
    "name": "Oneida County",
    "level": "county",
    "pop": 93673,
-   "cum": 0.9879
+   "cum": 0.9879,
+   "osm": "admin_level 6"
   },
   {
    "name": "Comal County",
    "level": "county",
    "pop": 91805,
-   "cum": 0.9884
+   "cum": 0.9884,
+   "osm": "admin_level 6"
   },
   {
    "name": "Shasta County",
    "level": "county",
    "pop": 91582,
-   "cum": 0.9888
+   "cum": 0.9888,
+   "osm": "admin_level 6"
   },
   {
    "name": "Orange County",
    "level": "county",
    "pop": 89056,
-   "cum": 0.9893
+   "cum": 0.9893,
+   "osm": "admin_level 6"
   },
   {
    "name": "Madera County",
    "level": "county",
    "pop": 82718,
-   "cum": 0.9897
+   "cum": 0.9897,
+   "osm": "admin_level 6"
   },
   {
    "name": "Gregg County",
    "level": "county",
    "pop": 82287,
-   "cum": 0.9901
+   "cum": 0.9901,
+   "osm": "admin_level 6"
   },
   {
    "name": "Sutter County",
    "level": "county",
    "pop": 82158,
-   "cum": 0.9905
+   "cum": 0.9905,
+   "osm": "admin_level 6"
   },
   {
    "name": "El Dorado County",
    "level": "county",
    "pop": 82042,
-   "cum": 0.9909
+   "cum": 0.9909,
+   "osm": "admin_level 6"
   },
   {
    "name": "Saratoga County",
    "level": "county",
    "pop": 81831,
-   "cum": 0.9913
+   "cum": 0.9913,
+   "osm": "admin_level 6"
   },
   {
    "name": "Humboldt County",
    "level": "county",
    "pop": 77169,
-   "cum": 0.9917
+   "cum": 0.9917,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ellis County",
    "level": "county",
    "pop": 74709,
-   "cum": 0.9921
+   "cum": 0.9921,
+   "osm": "admin_level 6"
   },
   {
    "name": "Broome County",
    "level": "county",
    "pop": 74075,
-   "cum": 0.9924
+   "cum": 0.9924,
+   "osm": "admin_level 6"
   },
   {
    "name": "Johnson County",
    "level": "county",
    "pop": 73645,
-   "cum": 0.9928
+   "cum": 0.9928,
+   "osm": "admin_level 6"
   },
   {
    "name": "Victoria County",
    "level": "county",
    "pop": 67574,
-   "cum": 0.9931
+   "cum": 0.9931,
+   "osm": "admin_level 6"
   },
   {
    "name": "Grayson County",
    "level": "county",
    "pop": 63817,
-   "cum": 0.9935
+   "cum": 0.9935,
+   "osm": "admin_level 6"
   },
   {
    "name": "Rensselaer County",
    "level": "county",
    "pop": 49906,
-   "cum": 0.9937
+   "cum": 0.9937,
+   "osm": "admin_level 6"
   },
   {
    "name": "Coryell County",
    "level": "county",
    "pop": 48805,
-   "cum": 0.9939
+   "cum": 0.9939,
+   "osm": "admin_level 6"
   },
   {
    "name": "Rockwall County",
    "level": "county",
    "pop": 42566,
-   "cum": 0.9942
+   "cum": 0.9942,
+   "osm": "admin_level 6"
   },
   {
    "name": "Walker County",
    "level": "county",
    "pop": 40938,
-   "cum": 0.9944
+   "cum": 0.9944,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Benito County",
    "level": "county",
    "pop": 37462,
-   "cum": 0.9945
+   "cum": 0.9945,
+   "osm": "admin_level 6"
   },
   {
    "name": "Bowie County",
    "level": "county",
    "pop": 37280,
-   "cum": 0.9947
+   "cum": 0.9947,
+   "osm": "admin_level 6"
   },
   {
    "name": "Angelina County",
    "level": "county",
    "pop": 36333,
-   "cum": 0.9949
+   "cum": 0.9949,
+   "osm": "admin_level 6"
   },
   {
    "name": "Val Verde County",
    "level": "county",
    "pop": 36153,
-   "cum": 0.9951
+   "cum": 0.9951,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kaufman County",
    "level": "county",
    "pop": 35399,
-   "cum": 0.9953
+   "cum": 0.9953,
+   "osm": "admin_level 6"
   },
   {
    "name": "Nacogdoches County",
    "level": "county",
    "pop": 33894,
-   "cum": 0.9954
+   "cum": 0.9954,
+   "osm": "admin_level 6"
   },
   {
    "name": "Tompkins County",
    "level": "county",
    "pop": 30788,
-   "cum": 0.9956
+   "cum": 0.9956,
+   "osm": "admin_level 6"
   },
   {
    "name": "Dutchess County",
    "level": "county",
    "pop": 30371,
-   "cum": 0.9957
+   "cum": 0.9957,
+   "osm": "admin_level 6"
   },
   {
    "name": "Chautauqua County",
    "level": "county",
    "pop": 30075,
-   "cum": 0.9959
+   "cum": 0.9959,
+   "osm": "admin_level 6"
   },
   {
    "name": "Howard County",
    "level": "county",
    "pop": 28862,
-   "cum": 0.996
+   "cum": 0.996,
+   "osm": "admin_level 6"
   },
   {
    "name": "Maverick County",
    "level": "county",
    "pop": 28765,
-   "cum": 0.9962
+   "cum": 0.9962,
+   "osm": "admin_level 6"
   },
   {
    "name": "Parker County",
    "level": "county",
    "pop": 28742,
-   "cum": 0.9963
+   "cum": 0.9963,
+   "osm": "admin_level 6"
   },
   {
    "name": "Chemung County",
    "level": "county",
    "pop": 28213,
-   "cum": 0.9964
+   "cum": 0.9964,
+   "osm": "admin_level 6"
   },
   {
    "name": "Warren County",
    "level": "county",
    "pop": 27703,
-   "cum": 0.9966
+   "cum": 0.9966,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cayuga County",
    "level": "county",
    "pop": 26985,
-   "cum": 0.9967
+   "cum": 0.9967,
+   "osm": "admin_level 6"
   },
   {
    "name": "Jefferson County",
    "level": "county",
    "pop": 26780,
-   "cum": 0.9968
+   "cum": 0.9968,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hunt County",
    "level": "county",
    "pop": 26515,
-   "cum": 0.997
+   "cum": 0.997,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kleberg County",
    "level": "county",
    "pop": 26225,
-   "cum": 0.9971
+   "cum": 0.9971,
+   "osm": "admin_level 6"
   },
   {
    "name": "Lamar County",
    "level": "county",
    "pop": 24782,
-   "cum": 0.9972
+   "cum": 0.9972,
+   "osm": "admin_level 6"
   },
   {
    "name": "Navarro County",
    "level": "county",
    "pop": 23952,
-   "cum": 0.9973
+   "cum": 0.9973,
+   "osm": "admin_level 6"
   },
   {
    "name": "Harrison County",
    "level": "county",
    "pop": 23820,
-   "cum": 0.9975
+   "cum": 0.9975,
+   "osm": "admin_level 6"
   },
   {
    "name": "Ulster County",
    "level": "county",
    "pop": 23436,
-   "cum": 0.9976
+   "cum": 0.9976,
+   "osm": "admin_level 6"
   },
   {
    "name": "Kerr County",
    "level": "county",
    "pop": 23136,
-   "cum": 0.9977
+   "cum": 0.9977,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hale County",
    "level": "county",
    "pop": 20919,
-   "cum": 0.9978
+   "cum": 0.9978,
+   "osm": "admin_level 6"
   },
   {
    "name": "Erath County",
    "level": "county",
    "pop": 20120,
-   "cum": 0.9979
+   "cum": 0.9979,
+   "osm": "admin_level 6"
   },
   {
    "name": "Clinton County",
    "level": "county",
    "pop": 19806,
-   "cum": 0.998
+   "cum": 0.998,
+   "osm": "admin_level 6"
   },
   {
    "name": "Jim Wells County",
    "level": "county",
    "pop": 19408,
-   "cum": 0.9981
+   "cum": 0.9981,
+   "osm": "admin_level 6"
   },
   {
    "name": "Orange County",
    "level": "county",
    "pop": 19347,
-   "cum": 0.9982
+   "cum": 0.9982,
+   "osm": "admin_level 6"
   },
   {
    "name": "Brown County",
    "level": "county",
    "pop": 19031,
-   "cum": 0.9983
+   "cum": 0.9983,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cortland County",
    "level": "county",
    "pop": 18907,
-   "cum": 0.9984
+   "cum": 0.9984,
+   "osm": "admin_level 6"
   },
   {
    "name": "Anderson County",
    "level": "county",
    "pop": 18288,
-   "cum": 0.9985
+   "cum": 0.9985,
+   "osm": "admin_level 6"
   },
   {
    "name": "Gray County",
    "level": "county",
    "pop": 18177,
-   "cum": 0.9986
+   "cum": 0.9986,
+   "osm": "admin_level 6"
   },
   {
    "name": "Montgomery County",
    "level": "county",
    "pop": 18008,
-   "cum": 0.9986
+   "cum": 0.9986,
+   "osm": "admin_level 6"
   },
   {
    "name": "Oswego County",
    "level": "county",
    "pop": 17787,
-   "cum": 0.9987
+   "cum": 0.9987,
+   "osm": "admin_level 6"
   },
   {
    "name": "Yuba County",
    "level": "county",
    "pop": 17773,
-   "cum": 0.9988
+   "cum": 0.9988,
+   "osm": "admin_level 6"
   },
   {
    "name": "Matagorda County",
    "level": "county",
    "pop": 17598,
-   "cum": 0.9989
+   "cum": 0.9989,
+   "osm": "admin_level 6"
   },
   {
    "name": "Washington County",
    "level": "county",
    "pop": 16579,
-   "cum": 0.999
+   "cum": 0.999,
+   "osm": "admin_level 6"
   },
   {
    "name": "Uvalde County",
    "level": "county",
    "pop": 16476,
-   "cum": 0.9991
+   "cum": 0.9991,
+   "osm": "admin_level 6"
   },
   {
    "name": "Nevada County",
    "level": "county",
    "pop": 16299,
-   "cum": 0.9992
+   "cum": 0.9992,
+   "osm": "admin_level 6"
   },
   {
    "name": "Cooke County",
    "level": "county",
    "pop": 16292,
-   "cum": 0.9992
+   "cum": 0.9992,
+   "osm": "admin_level 6"
   },
   {
    "name": "San Patricio County",
    "level": "county",
    "pop": 16116,
-   "cum": 0.9993
+   "cum": 0.9993,
+   "osm": "admin_level 6"
   },
   {
    "name": "Hopkins County",
    "level": "county",
    "pop": 16098,
-   "cum": 0.9994
+   "cum": 0.9994,
+   "osm": "admin_level 6"
   },
   {
    "name": "Titus County",
    "level": "county",
    "pop": 16051,
-   "cum": 0.9995
+   "cum": 0.9995,
+   "osm": "admin_level 6"
   },
   {
    "name": "Mendocino County",
    "level": "county",
    "pop": 15917,
-   "cum": 0.9996
+   "cum": 0.9996,
+   "osm": "admin_level 6"
   },
   {
    "name": "Lassen County",
    "level": "county",
    "pop": 15247,
-   "cum": 0.9996
+   "cum": 0.9996,
+   "osm": "admin_level 6"
   },
   {
    "name": "Lake County",
    "level": "county",
    "pop": 15182,
-   "cum": 0.9997
+   "cum": 0.9997,
+   "osm": "admin_level 6"
   },
   {
    "name": "Fulton County",
    "level": "county",
    "pop": 15023,
-   "cum": 0.9998
+   "cum": 0.9998,
+   "osm": "admin_level 6"
   },
   {
    "name": "Deaf Smith County",
    "level": "county",
    "pop": 15021,
-   "cum": 0.9999
+   "cum": 0.9999,
+   "osm": "admin_level 6"
   },
   {
    "name": "Genesee County",
    "level": "county",
    "pop": 15010,
-   "cum": 0.9999
+   "cum": 0.9999,
+   "osm": "admin_level 6"
   },
   {
    "name": "Moore County",
    "level": "county",
    "pop": 15001,
-   "cum": 1.0
+   "cum": 1.0,
+   "osm": "admin_level 6"
   }
- ]
+ ],
+ "_geprueft": "OSM-Namenspruefung 23.08.2026: 194 von 195 passen auf Anhieb; abweichende Ebenen wurden dabei korrigiert, Namen ohne Flaeche stehen je Region unter 'osm'."
 }
