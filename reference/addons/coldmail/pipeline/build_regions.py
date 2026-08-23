@@ -91,6 +91,10 @@ LAENDER = {
     'DE': ('de', 'de', 'Europe/Berlin', 'Germany'),
     'CA': ('ca', 'en', 'America/Toronto', 'Canada'),
     'ZA': ('za', 'en', 'Africa/Johannesburg', 'South Africa'),
+    'SE': ('se', 'sv', 'Europe/Stockholm', 'Sweden'),
+    'EE': ('ee', 'et', 'Europe/Tallinn', 'Estonia'),
+    'NO': ('no', 'no', 'Europe/Oslo', 'Norway'),
+    'FI': ('fi', 'fi', 'Europe/Helsinki', 'Finland'),
 }
 
 # GeoNames uses GB, the pipeline says UK; same for a couple of others.

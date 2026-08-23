@@ -1,0 +1,102 @@
+{
+ "country": "Norway",
+ "countryCode": "no",
+ "language": "no",
+ "timezone": "Europe/Oslo",
+ "level": "state",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 3272667,
+ "regions": [
+  {
+   "name": "Oslo",
+   "level": "state",
+   "pop": 1082575,
+   "cum": 0.3308
+  },
+  {
+   "name": "Vestland",
+   "level": "state",
+   "pop": 369813,
+   "cum": 0.4438
+  },
+  {
+   "name": "Rogaland",
+   "level": "state",
+   "pop": 326698,
+   "cum": 0.5436
+  },
+  {
+   "name": "Trøndelag",
+   "level": "state",
+   "pop": 252382,
+   "cum": 0.6207
+  },
+  {
+   "name": "Østfold",
+   "level": "state",
+   "pop": 214437,
+   "cum": 0.6863
+  },
+  {
+   "name": "Agder",
+   "level": "state",
+   "pop": 172170,
+   "cum": 0.7389
+  },
+  {
+   "name": "Vestfold",
+   "level": "state",
+   "pop": 170023,
+   "cum": 0.7908
+  },
+  {
+   "name": "Akershus",
+   "level": "state",
+   "pop": 151590,
+   "cum": 0.8371
+  },
+  {
+   "name": "Buskerud",
+   "level": "state",
+   "pop": 123680,
+   "cum": 0.8749
+  },
+  {
+   "name": "Møre og Romsdal",
+   "level": "state",
+   "pop": 99049,
+   "cum": 0.9052
+  },
+  {
+   "name": "Telemark",
+   "level": "state",
+   "pop": 84972,
+   "cum": 0.9312
+  },
+  {
+   "name": "Troms",
+   "level": "state",
+   "pop": 81159,
+   "cum": 0.956
+  },
+  {
+   "name": "Innlandet",
+   "level": "state",
+   "pop": 76086,
+   "cum": 0.9792
+  },
+  {
+   "name": "Nordland",
+   "level": "state",
+   "pop": 52939,
+   "cum": 0.9954
+  },
+  {
+   "name": "Finnmark",
+   "level": "state",
+   "pop": 15094,
+   "cum": 1.0
+  }
+ ]
+}

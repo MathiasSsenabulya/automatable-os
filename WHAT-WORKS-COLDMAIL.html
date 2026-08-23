@@ -1249,6 +1249,26 @@
     </div>
     <div class="land">
       <i class="go"></i>
+      <b>Sweden<u>SE · EN</u></b>
+      <div class="law">
+        <span class="verdict go">Lawful <em>Marknadsföringslagen 19 §</em></span>
+        <p>The consent requirement applies only to natural persons, so corporate recipients need no prior consent. Every mail must carry a working address at which the recipient can demand it stops.</p>
+        <p class="snag">Enskild näringsidkare (sole trader) is a natural person and IS covered by the consent requirement. English is effectively a second business language, so no translation is needed.</p>
+      </div>
+      <p class="n"><u>21</u>regions</p>
+    </div>
+    <div class="land">
+      <i class="go"></i>
+      <b>Estonia<u>EE · EN</u></b>
+      <div class="law">
+        <span class="verdict go">Lawful <em>Elektroonilise side seadus § 103</em></span>
+        <p>Opt-out for legal persons: no prior consent needed, provided it is clear who sends and on whose behalf, the commercial nature is obvious, and every mail carries a free electronic opt-out.</p>
+        <p class="snag">FIE (sole trader) is a natural person and needs opt-in. Estonia's company register is fully digital, so the legal form can be filtered by machine, which makes exactly the filter cheap that Sweden also needs.</p>
+      </div>
+      <p class="n"><u>5</u>regions</p>
+    </div>
+    <div class="land">
+      <i class="go"></i>
       <b>Singapore<u>SG · EN</u></b>
       <div class="law">
         <span class="verdict go">Lawful <em>PDPA</em></span>
@@ -1286,6 +1306,26 @@
         <p class="snag">Natural persons (ZZP sole traders, VOF partners) need prior consent, and Dutch trades are full of them. Copy has to be Dutch.</p>
       </div>
       <p class="n"><u>206</u>regions</p>
+    </div>
+    <div class="land">
+      <i class="care"></i>
+      <b>Norway<u>NO · EN</u></b>
+      <div class="law">
+        <span class="verdict care">Conditional <em>Markedsføringsloven § 15</em></span>
+        <p>The ban covers marketing to NATURAL PERSONS. The consumer authority states plainly that mail to addresses not belonging to a specific person is permitted, naming post@firmaX.no as the example.</p>
+        <p class="snag">A firstname.lastname@ address falls back under the ban. In practice this is the easiest of the four: trades almost always run a shared inbox, and a rule of 'no personal names in the local part' settles the sole-trader question by address form instead of legal form.</p>
+      </div>
+      <p class="n"><u>15</u>regions</p>
+    </div>
+    <div class="land">
+      <i class="care"></i>
+      <b>Finland<u>FI · EN</u></b>
+      <div class="law">
+        <span class="verdict care">Conditional <em>Laki sähköisen viestinnän palveluista § 200 / § 202</em></span>
+        <p>Opt-out towards organisations. Generic addresses (info@) are free to write to.</p>
+        <p class="snag">Writing to a NAMED work address requires that the recipient's role fits the offer, and the sender must be able to demonstrate that afterwards. Finland's authority is the most active in the field, with six-figure fines on record. Sticking to generic addresses avoids the whole test.</p>
+      </div>
+      <p class="n"><u>18</u>regions</p>
     </div>
     <div class="land">
       <i class="care"></i>
@@ -1329,12 +1369,23 @@
     </div>
   </div>
 
-  <p class="note"><b>The catch that applies almost everywhere.</b> Where B2B cold mail is
-  allowed, the permission usually covers <b>registered companies</b> and not sole traders.
-  UK law protects sole traders and partnerships as individuals; the Dutch exemption names
-  BV and NV but not the one-person ZZP. And the trades this system is best at are
-  disproportionately sole traders. <b>The scrape cannot see the legal form.</b> This is the
-  largest open gap in the list, and it is written here rather than in a footnote.</p>
+  <p class="note"><b>The catch that applies almost everywhere.</b> Where B2B cold mail
+  is allowed, the permission usually covers <b>registered companies</b> and not sole traders.
+  UK law protects sole traders as individuals; the Dutch exemption names BV and NV but not the
+  one-person ZZP; Sweden's <em>enskild näringsidkare</em>, Estonia's <em>FIE</em> and Finland's
+  <em>toiminimi</em> are all natural persons. And the trades this system is best at are
+  disproportionately sole traders. <b>The scrape cannot see the legal form.</b> Across some
+  fifty jurisdictions surveyed, exactly one country writes sole traders into the exemption:
+  Mexico.</p>
+
+  <p class="note"><b>There is a way around it, and it is one filter.</b> Write to the
+  <b>shared inbox</b>, not to a person. Norway's consumer authority names
+  <code>post@firma.no</code> as permitted outright — the ban protects natural persons, and a
+  shared inbox is not one. Finland exempts generic addresses from its role-relevance test the
+  same way. In both, the permission then hangs on the <b>address form</b>, which the scrape
+  can see, instead of the legal form, which it cannot. A rule of "no personal name before the
+  @" settles it. <em>It does not rescue the UK or the Netherlands, where the protection
+  follows the subscriber rather than the address.</em></p>
 
   <p class="note"><b>The German-speaking market is missing on purpose.</b> UWG § 7 has no
   B2B exception of the kind UK law grants, and sending warning letters over it is a
@@ -1344,8 +1395,7 @@
   <p class="note"><b>None of this is legal advice.</b> It is desk research naming the
   statute in each case, and worth one warning: most of what is published on this topic
   comes from companies selling cold-email tools, whose reading bends towards "allowed".
-  Confirm your own market before the first send. 7 of the 11
-  above are green today, and every one of them already has its regions built.</p>
+  Confirm your own market before the first send. 9 of the 15 above are green today, and every one of them already has its regions built.</p>
 </section>
 
 <section>

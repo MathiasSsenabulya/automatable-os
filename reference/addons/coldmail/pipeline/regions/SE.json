@@ -1,0 +1,138 @@
+{
+ "country": "Sweden",
+ "countryCode": "se",
+ "language": "sv",
+ "timezone": "Europe/Stockholm",
+ "level": "state",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 6644933,
+ "regions": [
+  {
+   "name": "Stockholm",
+   "level": "state",
+   "pop": 2441812,
+   "cum": 0.3675
+  },
+  {
+   "name": "Västra Götaland",
+   "level": "state",
+   "pop": 1116788,
+   "cum": 0.5355
+  },
+  {
+   "name": "Skåne",
+   "level": "state",
+   "pop": 770254,
+   "cum": 0.6515
+  },
+  {
+   "name": "Östergötland",
+   "level": "state",
+   "pop": 291382,
+   "cum": 0.6953
+  },
+  {
+   "name": "Örebro",
+   "level": "state",
+   "pop": 200142,
+   "cum": 0.7254
+  },
+  {
+   "name": "Uppsala",
+   "level": "state",
+   "pop": 199627,
+   "cum": 0.7555
+  },
+  {
+   "name": "Jönköping",
+   "level": "state",
+   "pop": 171046,
+   "cum": 0.7812
+  },
+  {
+   "name": "Västerbotten",
+   "level": "state",
+   "pop": 165740,
+   "cum": 0.8061
+  },
+  {
+   "name": "Halland",
+   "level": "state",
+   "pop": 147525,
+   "cum": 0.8283
+  },
+  {
+   "name": "Västmanland",
+   "level": "state",
+   "pop": 146154,
+   "cum": 0.8503
+  },
+  {
+   "name": "Norrbotten",
+   "level": "state",
+   "pop": 134766,
+   "cum": 0.8706
+  },
+  {
+   "name": "Södermanland",
+   "level": "state",
+   "pop": 129422,
+   "cum": 0.8901
+  },
+  {
+   "name": "Gävleborg",
+   "level": "state",
+   "pop": 115689,
+   "cum": 0.9075
+  },
+  {
+   "name": "Västernorrland",
+   "level": "state",
+   "pop": 115111,
+   "cum": 0.9248
+  },
+  {
+   "name": "Dalarna",
+   "level": "state",
+   "pop": 94491,
+   "cum": 0.9391
+  },
+  {
+   "name": "Kronoberg",
+   "level": "state",
+   "pop": 87067,
+   "cum": 0.9522
+  },
+  {
+   "name": "Blekinge",
+   "level": "state",
+   "pop": 86787,
+   "cum": 0.9652
+  },
+  {
+   "name": "Värmland",
+   "level": "state",
+   "pop": 80049,
+   "cum": 0.9773
+  },
+  {
+   "name": "Kalmar",
+   "level": "state",
+   "pop": 77873,
+   "cum": 0.989
+  },
+  {
+   "name": "Jämtland",
+   "level": "state",
+   "pop": 49806,
+   "cum": 0.9965
+  },
+  {
+   "name": "Gotland",
+   "level": "state",
+   "pop": 23402,
+   "cum": 1.0
+  }
+ ]
+}

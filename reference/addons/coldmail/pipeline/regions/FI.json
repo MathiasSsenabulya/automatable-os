@@ -1,0 +1,120 @@
+{
+ "country": "Finland",
+ "countryCode": "fi",
+ "language": "fi",
+ "timezone": "Europe/Helsinki",
+ "level": "state",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 4569718,
+ "regions": [
+  {
+   "name": "Uusimaa",
+   "level": "state",
+   "pop": 1730957,
+   "cum": 0.3788
+  },
+  {
+   "name": "Pirkanmaa",
+   "level": "state",
+   "pop": 473407,
+   "cum": 0.4824
+  },
+  {
+   "name": "Southwest Finland",
+   "level": "state",
+   "pop": 391678,
+   "cum": 0.5681
+  },
+  {
+   "name": "North Ostrobothnia",
+   "level": "state",
+   "pop": 272305,
+   "cum": 0.6277
+  },
+  {
+   "name": "Central Finland",
+   "level": "state",
+   "pop": 204443,
+   "cum": 0.6724
+  },
+  {
+   "name": "Paijat-Hame",
+   "level": "state",
+   "pop": 198244,
+   "cum": 0.7158
+  },
+  {
+   "name": "North Savo",
+   "level": "state",
+   "pop": 186778,
+   "cum": 0.7567
+  },
+  {
+   "name": "Kymenlaakso",
+   "level": "state",
+   "pop": 170423,
+   "cum": 0.794
+  },
+  {
+   "name": "Kanta-Häme",
+   "level": "state",
+   "pop": 129446,
+   "cum": 0.8223
+  },
+  {
+   "name": "Satakunta",
+   "level": "state",
+   "pop": 122066,
+   "cum": 0.849
+  },
+  {
+   "name": "Ostrobothnia",
+   "level": "state",
+   "pop": 106663,
+   "cum": 0.8724
+  },
+  {
+   "name": "Lapland",
+   "level": "state",
+   "pop": 105934,
+   "cum": 0.8955
+  },
+  {
+   "name": "South Ostrobothnia",
+   "level": "state",
+   "pop": 101388,
+   "cum": 0.9177
+  },
+  {
+   "name": "South Savo",
+   "level": "state",
+   "pop": 100187,
+   "cum": 0.9396
+  },
+  {
+   "name": "South Karelia",
+   "level": "state",
+   "pop": 97490,
+   "cum": 0.961
+  },
+  {
+   "name": "North Karelia",
+   "level": "state",
+   "pop": 93490,
+   "cum": 0.9814
+  },
+  {
+   "name": "Central Ostrobothnia",
+   "level": "state",
+   "pop": 48361,
+   "cum": 0.992
+  },
+  {
+   "name": "Kainuu",
+   "level": "state",
+   "pop": 36458,
+   "cum": 1.0
+  }
+ ]
+}

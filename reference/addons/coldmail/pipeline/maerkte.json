@@ -5,7 +5,9 @@
 
   "_not_legal_advice": "The legal column names the regime and what it requires in substance. It is desk research from public sources, not reviewed by a lawyer, and it does not cover your specific case. Note also that most secondary sources on this topic are published by companies selling cold-email tools, whose bias runs towards 'this is allowed' -- so the statutes are named here and the blogs are not. Before sending into any market below, confirm it for yourself.",
 
-  "_the_catch_that_applies_almost_everywhere": "In nearly every country that permits B2B cold mail, the permission covers REGISTERED COMPANIES and not sole traders. UK PECR protects individual subscribers, which includes sole traders and partnerships. The Dutch Telecommunicatiewet exempts BV/NV/stichting but not ZZP one-person businesses. South Africa's guidance turns on writing to the legal entity rather than the natural person. And the trades this system is best at -- locksmiths, plumbers, electricians -- are disproportionately sole traders. The scrape does not know the legal form. This is the single biggest unresolved gap in the market list, and it is named here rather than buried.",
+  "_the_catch_that_applies_almost_everywhere": "In nearly every country that permits B2B cold mail, the permission covers REGISTERED COMPANIES and not sole traders. UK PECR protects individual subscribers, which includes sole traders and partnerships; the Dutch Telecommunicatiewet exempts BV/NV but not the one-person ZZP; Sweden's enskild näringsidkare, Estonia's FIE and Finland's toiminimi are all natural persons. And the trades this system is best at -- locksmiths, plumbers, electricians -- are disproportionately sole traders. The scrape does not know the legal form. Across a survey of roughly fifty jurisdictions (23.08.2026) exactly one exception turned up: Mexico writes sole traders into the exemption explicitly.",
+
+  "_and_the_way_around_it": "Write to the SHARED INBOX, not to a person. Norway's consumer authority says so outright -- the ban covers natural persons, and post@firma.no is named as the permitted example -- and Finland exempts generic addresses from its role-relevance test the same way. Both then turn on the ADDRESS FORM, which the scrape can see, rather than the legal form, which it cannot. A rule of 'no personal name in the local part' is one filter in the pipeline and settles the question in the two countries where it is otherwise hardest. It does not fix the UK or the Netherlands, where the protection follows the subscriber and not the address.",
 
   "countries": [
     {
@@ -31,6 +33,22 @@
       "light": "green", "regime": "ePrivacy Regulations 2011",
       "rule": "To companies as in the UK, with a working opt-out.",
       "catch": "Small market: three regions hold 60% of it.",
+      "status": "region file built, never scraped"
+    },
+    {
+      "code": "SE", "name": "Sweden", "language": "en",
+      "regions": 21, "region_file": "regions/SE.json", "region_level": "county",
+      "light": "green", "regime": "Marknadsföringslagen 19 §",
+      "rule": "The consent requirement applies only to natural persons, so corporate recipients need no prior consent. Every mail must carry a working address at which the recipient can demand it stops.",
+      "catch": "Enskild näringsidkare (sole trader) is a natural person and IS covered by the consent requirement. English is effectively a second business language, so no translation is needed.",
+      "status": "region file built, never scraped"
+    },
+    {
+      "code": "EE", "name": "Estonia", "language": "en",
+      "regions": 5, "region_file": "regions/EE.json", "region_level": "county",
+      "light": "green", "regime": "Elektroonilise side seadus § 103",
+      "rule": "Opt-out for legal persons: no prior consent needed, provided it is clear who sends and on whose behalf, the commercial nature is obvious, and every mail carries a free electronic opt-out.",
+      "catch": "FIE (sole trader) is a natural person and needs opt-in. Estonia's company register is fully digital, so the legal form can be filtered by machine, which makes exactly the filter cheap that Sweden also needs.",
       "status": "region file built, never scraped"
     },
     {
@@ -63,6 +81,22 @@
       "light": "green", "regime": "Telecommunicatiewet art. 11.7",
       "rule": "Legal entities (BV, NV, stichting, vereniging) may be mailed without prior consent, with sender identification and a working opt-out.",
       "catch": "Natural persons (ZZP sole traders, VOF partners) need prior consent, and Dutch trades are full of them. Copy has to be Dutch.",
+      "status": "region file built, never scraped"
+    },
+    {
+      "code": "NO", "name": "Norway", "language": "en",
+      "regions": 15, "region_file": "regions/NO.json", "region_level": "county",
+      "light": "amber", "regime": "Markedsføringsloven § 15",
+      "rule": "The ban covers marketing to NATURAL PERSONS. The consumer authority states plainly that mail to addresses not belonging to a specific person is permitted, naming post@firmaX.no as the example.",
+      "catch": "A firstname.lastname@ address falls back under the ban. In practice this is the easiest of the four: trades almost always run a shared inbox, and a rule of 'no personal names in the local part' settles the sole-trader question by address form instead of legal form.",
+      "status": "region file built, never scraped"
+    },
+    {
+      "code": "FI", "name": "Finland", "language": "en",
+      "regions": 18, "region_file": "regions/FI.json", "region_level": "region",
+      "light": "amber", "regime": "Laki sähköisen viestinnän palveluista § 200 / § 202",
+      "rule": "Opt-out towards organisations. Generic addresses (info@) are free to write to.",
+      "catch": "Writing to a NAMED work address requires that the recipient's role fits the offer, and the sender must be able to demonstrate that afterwards. Finland's authority is the most active in the field, with six-figure fines on record. Sticking to generic addresses avoids the whole test.",
       "status": "region file built, never scraped"
     },
     {

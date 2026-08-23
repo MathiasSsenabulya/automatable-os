@@ -8,8 +8,15 @@ waren 2 der 6 Behauptungen falsch: die Leistung stand sehr wohl drin. Der Befund
 63% aller Leads, also traegt rund jede fuenfte Mail eine Aussage, die der Empfaenger mit
 einem Blick auf sein eigenes Profil widerlegt.
 
-WARUM DIE BILLIGE DATENBANK REICHT: business_listings bedient aus DataForSEOs Crawl-Bestand,
-im Median 28 Tage alt (`last_updated_time`, laut Doku "when the data was last updated").
+WARUM DIE BILLIGE DATENBANK REICHT: business_listings bedient aus DataForSEOs Crawl-Bestand.
+
+  ⚠️ KORREKTUR 23.08.2026: hier stand "im Median 28 Tage alt". Nachgemessen an 246
+  neuseelaendischen Schluesseldiensten sind es **110 Tage im Median**, der aelteste
+  Datensatz 1.074 Tage. Nur 23 von 246 waren juenger als ein Monat. Woher die 28 kamen,
+  ist nicht mehr nachvollziehbar -- moeglicherweise aus einer UK-Stichprobe, moeglicherweise
+  geschaetzt. Am Schluss unten aendert das nichts (traege Felder bleiben traege), aber es
+  ist der Unterschied zwischen "fast frisch" und "ein Vierteljahr alt", und bei
+  Bewertungszahlen ist das der Unterschied zwischen einem Argument und einem Fehler.
 Gemessen ueber 540 Leads: bei den TRAEGEN Feldern stimmt das mit unserem frischen Apify-
 Scrape fast perfekt ueberein -- Oeffnungszeiten 0,0% Abweichung, beansprucht 0,4%,
 Kategorien 2,0%. Nur Bewertungen (16,5%) und Fotos (16,1%) laufen auseinander, und die
