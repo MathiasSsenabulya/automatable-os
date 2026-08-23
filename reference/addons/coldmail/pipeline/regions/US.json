@@ -1,0 +1,1182 @@
+{
+ "country": "United States",
+ "countryCode": "us",
+ "language": "en",
+ "timezone": "America/New_York",
+ "level": "state",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 202079467,
+ "regions": [
+  {
+   "name": "Florida",
+   "level": "state",
+   "pop": 13156034,
+   "cum": 0.0651
+  },
+  {
+   "name": "Los Angeles County",
+   "level": "county",
+   "pop": 9541361,
+   "cum": 0.1123
+  },
+  {
+   "name": "New York City",
+   "level": "city",
+   "pop": 8804190,
+   "cum": 0.1559
+  },
+  {
+   "name": "Illinois",
+   "level": "state",
+   "pop": 8756761,
+   "cum": 0.1992
+  },
+  {
+   "name": "Arizona",
+   "level": "state",
+   "pop": 5822446,
+   "cum": 0.228
+  },
+  {
+   "name": "Ohio",
+   "level": "state",
+   "pop": 5718753,
+   "cum": 0.2563
+  },
+  {
+   "name": "Massachusetts",
+   "level": "state",
+   "pop": 5595066,
+   "cum": 0.284
+  },
+  {
+   "name": "New Jersey",
+   "level": "state",
+   "pop": 5114623,
+   "cum": 0.3093
+  },
+  {
+   "name": "Washington",
+   "level": "state",
+   "pop": 4983162,
+   "cum": 0.334
+  },
+  {
+   "name": "North Carolina",
+   "level": "state",
+   "pop": 4558723,
+   "cum": 0.3565
+  },
+  {
+   "name": "Virginia",
+   "level": "state",
+   "pop": 4482194,
+   "cum": 0.3787
+  },
+  {
+   "name": "Michigan",
+   "level": "state",
+   "pop": 4344725,
+   "cum": 0.4002
+  },
+  {
+   "name": "Colorado",
+   "level": "state",
+   "pop": 3836246,
+   "cum": 0.4192
+  },
+  {
+   "name": "Maryland",
+   "level": "state",
+   "pop": 3832484,
+   "cum": 0.4382
+  },
+  {
+   "name": "Pennsylvania",
+   "level": "state",
+   "pop": 3706582,
+   "cum": 0.4565
+  },
+  {
+   "name": "Georgia",
+   "level": "state",
+   "pop": 3456593,
+   "cum": 0.4736
+  },
+  {
+   "name": "Tennessee",
+   "level": "state",
+   "pop": 3452455,
+   "cum": 0.4907
+  },
+  {
+   "name": "Indiana",
+   "level": "state",
+   "pop": 3437217,
+   "cum": 0.5077
+  },
+  {
+   "name": "Minnesota",
+   "level": "state",
+   "pop": 3311457,
+   "cum": 0.5241
+  },
+  {
+   "name": "Orange County",
+   "level": "county",
+   "pop": 3044090,
+   "cum": 0.5392
+  },
+  {
+   "name": "San Diego County",
+   "level": "county",
+   "pop": 2989964,
+   "cum": 0.554
+  },
+  {
+   "name": "Harris County",
+   "level": "county",
+   "pop": 2956023,
+   "cum": 0.5686
+  },
+  {
+   "name": "Connecticut",
+   "level": "state",
+   "pop": 2807173,
+   "cum": 0.5825
+  },
+  {
+   "name": "Dallas County",
+   "level": "county",
+   "pop": 2771051,
+   "cum": 0.5962
+  },
+  {
+   "name": "Wisconsin",
+   "level": "state",
+   "pop": 2743148,
+   "cum": 0.6098
+  },
+  {
+   "name": "Kings County",
+   "level": "county",
+   "pop": 2736074,
+   "cum": 0.6233
+  },
+  {
+   "name": "Missouri",
+   "level": "state",
+   "pop": 2696108,
+   "cum": 0.6367
+  },
+  {
+   "name": "Nevada",
+   "level": "state",
+   "pop": 2514886,
+   "cum": 0.6491
+  },
+  {
+   "name": "Oregon",
+   "level": "state",
+   "pop": 2475730,
+   "cum": 0.6614
+  },
+  {
+   "name": "Kentucky",
+   "level": "state",
+   "pop": 2362716,
+   "cum": 0.673
+  },
+  {
+   "name": "Queens County",
+   "level": "county",
+   "pop": 2316841,
+   "cum": 0.6845
+  },
+  {
+   "name": "Utah",
+   "level": "state",
+   "pop": 2300918,
+   "cum": 0.6959
+  },
+  {
+   "name": "Oklahoma",
+   "level": "state",
+   "pop": 2264143,
+   "cum": 0.7071
+  },
+  {
+   "name": "Alabama",
+   "level": "state",
+   "pop": 2019109,
+   "cum": 0.7171
+  },
+  {
+   "name": "Riverside County",
+   "level": "county",
+   "pop": 1959845,
+   "cum": 0.7268
+  },
+  {
+   "name": "Tarrant County",
+   "level": "county",
+   "pop": 1955387,
+   "cum": 0.7365
+  },
+  {
+   "name": "San Bernardino County",
+   "level": "county",
+   "pop": 1855544,
+   "cum": 0.7456
+  },
+  {
+   "name": "Louisiana",
+   "level": "state",
+   "pop": 1804389,
+   "cum": 0.7546
+  },
+  {
+   "name": "Santa Clara County",
+   "level": "county",
+   "pop": 1794492,
+   "cum": 0.7635
+  },
+  {
+   "name": "Kansas",
+   "level": "state",
+   "pop": 1691158,
+   "cum": 0.7718
+  },
+  {
+   "name": "Bexar County",
+   "level": "county",
+   "pop": 1583975,
+   "cum": 0.7797
+  },
+  {
+   "name": "Alameda County",
+   "level": "county",
+   "pop": 1571763,
+   "cum": 0.7874
+  },
+  {
+   "name": "New York County",
+   "level": "county",
+   "pop": 1487536,
+   "cum": 0.7948
+  },
+  {
+   "name": "Iowa",
+   "level": "state",
+   "pop": 1457230,
+   "cum": 0.802
+  },
+  {
+   "name": "Sacramento County",
+   "level": "county",
+   "pop": 1402148,
+   "cum": 0.809
+  },
+  {
+   "name": "Bronx County",
+   "level": "county",
+   "pop": 1385108,
+   "cum": 0.8158
+  },
+  {
+   "name": "South Carolina",
+   "level": "state",
+   "pop": 1336020,
+   "cum": 0.8224
+  },
+  {
+   "name": "Hawaii",
+   "level": "state",
+   "pop": 1284501,
+   "cum": 0.8288
+  },
+  {
+   "name": "New Mexico",
+   "level": "state",
+   "pop": 1253262,
+   "cum": 0.835
+  },
+  {
+   "name": "Arkansas",
+   "level": "state",
+   "pop": 1223985,
+   "cum": 0.841
+  },
+  {
+   "name": "District of Columbia",
+   "level": "state",
+   "pop": 1128429,
+   "cum": 0.8466
+  },
+  {
+   "name": "Nebraska",
+   "level": "state",
+   "pop": 1079965,
+   "cum": 0.852
+  },
+  {
+   "name": "Travis County",
+   "level": "county",
+   "pop": 1031569,
+   "cum": 0.8571
+  },
+  {
+   "name": "Mississippi",
+   "level": "state",
+   "pop": 987346,
+   "cum": 0.862
+  },
+  {
+   "name": "Contra Costa County",
+   "level": "county",
+   "pop": 961964,
+   "cum": 0.8667
+  },
+  {
+   "name": "Rhode Island",
+   "level": "state",
+   "pop": 932048,
+   "cum": 0.8713
+  },
+  {
+   "name": "Nassau County",
+   "level": "county",
+   "pop": 904113,
+   "cum": 0.8758
+  },
+  {
+   "name": "Collin County",
+   "level": "county",
+   "pop": 897777,
+   "cum": 0.8802
+  },
+  {
+   "name": "Suffolk County",
+   "level": "county",
+   "pop": 893396,
+   "cum": 0.8847
+  },
+  {
+   "name": "Idaho",
+   "level": "state",
+   "pop": 887403,
+   "cum": 0.8891
+  },
+  {
+   "name": "City and County of San Francisco",
+   "level": "county",
+   "pop": 862361,
+   "cum": 0.8933
+  },
+  {
+   "name": "El Paso County",
+   "level": "county",
+   "pop": 759962,
+   "cum": 0.8971
+  },
+  {
+   "name": "Fresno County",
+   "level": "county",
+   "pop": 752922,
+   "cum": 0.9008
+  },
+  {
+   "name": "Ventura County",
+   "level": "county",
+   "pop": 732379,
+   "cum": 0.9044
+  },
+  {
+   "name": "Westchester County",
+   "level": "county",
+   "pop": 675500,
+   "cum": 0.9078
+  },
+  {
+   "name": "San Mateo County",
+   "level": "county",
+   "pop": 652093,
+   "cum": 0.911
+  },
+  {
+   "name": "Erie County",
+   "level": "county",
+   "pop": 609343,
+   "cum": 0.914
+  },
+  {
+   "name": "Kern County",
+   "level": "county",
+   "pop": 586598,
+   "cum": 0.9169
+  },
+  {
+   "name": "San Joaquin County",
+   "level": "county",
+   "pop": 568794,
+   "cum": 0.9197
+  },
+  {
+   "name": "New Hampshire",
+   "level": "state",
+   "pop": 540737,
+   "cum": 0.9224
+  },
+  {
+   "name": "Hidalgo County",
+   "level": "county",
+   "pop": 528818,
+   "cum": 0.925
+  },
+  {
+   "name": "Richmond County",
+   "level": "county",
+   "pop": 468730,
+   "cum": 0.9273
+  },
+  {
+   "name": "Denton County",
+   "level": "county",
+   "pop": 423603,
+   "cum": 0.9294
+  },
+  {
+   "name": "North Dakota",
+   "level": "state",
+   "pop": 421219,
+   "cum": 0.9315
+  },
+  {
+   "name": "Solano County",
+   "level": "county",
+   "pop": 407133,
+   "cum": 0.9335
+  },
+  {
+   "name": "Stanislaus County",
+   "level": "county",
+   "pop": 399400,
+   "cum": 0.9355
+  },
+  {
+   "name": "Alaska",
+   "level": "state",
+   "pop": 397755,
+   "cum": 0.9375
+  },
+  {
+   "name": "Montana",
+   "level": "state",
+   "pop": 379514,
+   "cum": 0.9394
+  },
+  {
+   "name": "Williamson County",
+   "level": "county",
+   "pop": 366048,
+   "cum": 0.9412
+  },
+  {
+   "name": "Maine",
+   "level": "state",
+   "pop": 365066,
+   "cum": 0.943
+  },
+  {
+   "name": "Monroe County",
+   "level": "county",
+   "pop": 355822,
+   "cum": 0.9447
+  },
+  {
+   "name": "Sonoma County",
+   "level": "county",
+   "pop": 335526,
+   "cum": 0.9464
+  },
+  {
+   "name": "South Dakota",
+   "level": "state",
+   "pop": 334614,
+   "cum": 0.9481
+  },
+  {
+   "name": "Santa Barbara County",
+   "level": "county",
+   "pop": 324044,
+   "cum": 0.9497
+  },
+  {
+   "name": "Fort Bend County",
+   "level": "county",
+   "pop": 321257,
+   "cum": 0.9513
+  },
+  {
+   "name": "Nueces County",
+   "level": "county",
+   "pop": 316239,
+   "cum": 0.9528
+  },
+  {
+   "name": "Monterey County",
+   "level": "county",
+   "pop": 315393,
+   "cum": 0.9544
+  },
+  {
+   "name": "West Virginia",
+   "level": "state",
+   "pop": 293089,
+   "cum": 0.9558
+  },
+  {
+   "name": "Bell County",
+   "level": "county",
+   "pop": 292361,
+   "cum": 0.9573
+  },
+  {
+   "name": "Cameron County",
+   "level": "county",
+   "pop": 277008,
+   "cum": 0.9586
+  },
+  {
+   "name": "Tulare County",
+   "level": "county",
+   "pop": 272179,
+   "cum": 0.96
+  },
+  {
+   "name": "Galveston County",
+   "level": "county",
+   "pop": 270713,
+   "cum": 0.9613
+  },
+  {
+   "name": "Placer County",
+   "level": "county",
+   "pop": 261641,
+   "cum": 0.9626
+  },
+  {
+   "name": "Webb County",
+   "level": "county",
+   "pop": 256153,
+   "cum": 0.9639
+  },
+  {
+   "name": "Lubbock County",
+   "level": "county",
+   "pop": 249042,
+   "cum": 0.9651
+  },
+  {
+   "name": "Onondaga County",
+   "level": "county",
+   "pop": 233980,
+   "cum": 0.9663
+  },
+  {
+   "name": "Albany County",
+   "level": "county",
+   "pop": 232296,
+   "cum": 0.9674
+  },
+  {
+   "name": "Wyoming",
+   "level": "state",
+   "pop": 232059,
+   "cum": 0.9686
+  },
+  {
+   "name": "Jefferson County",
+   "level": "county",
+   "pop": 203568,
+   "cum": 0.9696
+  },
+  {
+   "name": "Potter County",
+   "level": "county",
+   "pop": 198645,
+   "cum": 0.9706
+  },
+  {
+   "name": "Brazos County",
+   "level": "county",
+   "pop": 190007,
+   "cum": 0.9715
+  },
+  {
+   "name": "Delaware",
+   "level": "state",
+   "pop": 183861,
+   "cum": 0.9724
+  },
+  {
+   "name": "Montgomery County",
+   "level": "county",
+   "pop": 182449,
+   "cum": 0.9733
+  },
+  {
+   "name": "Brazoria County",
+   "level": "county",
+   "pop": 181574,
+   "cum": 0.9742
+  },
+  {
+   "name": "Yolo County",
+   "level": "county",
+   "pop": 178954,
+   "cum": 0.9751
+  },
+  {
+   "name": "Butte County",
+   "level": "county",
+   "pop": 164081,
+   "cum": 0.9759
+  },
+  {
+   "name": "Merced County",
+   "level": "county",
+   "pop": 149130,
+   "cum": 0.9767
+  },
+  {
+   "name": "San Luis Obispo County",
+   "level": "county",
+   "pop": 139137,
+   "cum": 0.9773
+  },
+  {
+   "name": "Ector County",
+   "level": "county",
+   "pop": 137135,
+   "cum": 0.978
+  },
+  {
+   "name": "Santa Cruz County",
+   "level": "county",
+   "pop": 135006,
+   "cum": 0.9787
+  },
+  {
+   "name": "Midland County",
+   "level": "county",
+   "pop": 132524,
+   "cum": 0.9794
+  },
+  {
+   "name": "McLennan County",
+   "level": "county",
+   "pop": 132356,
+   "cum": 0.98
+  },
+  {
+   "name": "Imperial County",
+   "level": "county",
+   "pop": 127001,
+   "cum": 0.9806
+  },
+  {
+   "name": "Taylor County",
+   "level": "county",
+   "pop": 125182,
+   "cum": 0.9813
+  },
+  {
+   "name": "Rockland County",
+   "level": "county",
+   "pop": 118327,
+   "cum": 0.9818
+  },
+  {
+   "name": "Schenectady County",
+   "level": "county",
+   "pop": 115283,
+   "cum": 0.9824
+  },
+  {
+   "name": "Marin County",
+   "level": "county",
+   "pop": 114692,
+   "cum": 0.983
+  },
+  {
+   "name": "Wichita County",
+   "level": "county",
+   "pop": 104710,
+   "cum": 0.9835
+  },
+  {
+   "name": "Guadalupe County",
+   "level": "county",
+   "pop": 104388,
+   "cum": 0.984
+  },
+  {
+   "name": "Kings County",
+   "level": "county",
+   "pop": 103783,
+   "cum": 0.9845
+  },
+  {
+   "name": "Smith County",
+   "level": "county",
+   "pop": 103700,
+   "cum": 0.985
+  },
+  {
+   "name": "Napa County",
+   "level": "county",
+   "pop": 100988,
+   "cum": 0.9855
+  },
+  {
+   "name": "Niagara County",
+   "level": "county",
+   "pop": 100325,
+   "cum": 0.986
+  },
+  {
+   "name": "Tom Green County",
+   "level": "county",
+   "pop": 99893,
+   "cum": 0.9865
+  },
+  {
+   "name": "Hays County",
+   "level": "county",
+   "pop": 96417,
+   "cum": 0.987
+  },
+  {
+   "name": "Vermont",
+   "level": "state",
+   "pop": 94053,
+   "cum": 0.9875
+  },
+  {
+   "name": "Oneida County",
+   "level": "county",
+   "pop": 93673,
+   "cum": 0.9879
+  },
+  {
+   "name": "Comal County",
+   "level": "county",
+   "pop": 91805,
+   "cum": 0.9884
+  },
+  {
+   "name": "Shasta County",
+   "level": "county",
+   "pop": 91582,
+   "cum": 0.9888
+  },
+  {
+   "name": "Orange County",
+   "level": "county",
+   "pop": 89056,
+   "cum": 0.9893
+  },
+  {
+   "name": "Madera County",
+   "level": "county",
+   "pop": 82718,
+   "cum": 0.9897
+  },
+  {
+   "name": "Gregg County",
+   "level": "county",
+   "pop": 82287,
+   "cum": 0.9901
+  },
+  {
+   "name": "Sutter County",
+   "level": "county",
+   "pop": 82158,
+   "cum": 0.9905
+  },
+  {
+   "name": "El Dorado County",
+   "level": "county",
+   "pop": 82042,
+   "cum": 0.9909
+  },
+  {
+   "name": "Saratoga County",
+   "level": "county",
+   "pop": 81831,
+   "cum": 0.9913
+  },
+  {
+   "name": "Humboldt County",
+   "level": "county",
+   "pop": 77169,
+   "cum": 0.9917
+  },
+  {
+   "name": "Ellis County",
+   "level": "county",
+   "pop": 74709,
+   "cum": 0.9921
+  },
+  {
+   "name": "Broome County",
+   "level": "county",
+   "pop": 74075,
+   "cum": 0.9924
+  },
+  {
+   "name": "Johnson County",
+   "level": "county",
+   "pop": 73645,
+   "cum": 0.9928
+  },
+  {
+   "name": "Victoria County",
+   "level": "county",
+   "pop": 67574,
+   "cum": 0.9931
+  },
+  {
+   "name": "Grayson County",
+   "level": "county",
+   "pop": 63817,
+   "cum": 0.9935
+  },
+  {
+   "name": "Rensselaer County",
+   "level": "county",
+   "pop": 49906,
+   "cum": 0.9937
+  },
+  {
+   "name": "Coryell County",
+   "level": "county",
+   "pop": 48805,
+   "cum": 0.9939
+  },
+  {
+   "name": "Rockwall County",
+   "level": "county",
+   "pop": 42566,
+   "cum": 0.9942
+  },
+  {
+   "name": "Walker County",
+   "level": "county",
+   "pop": 40938,
+   "cum": 0.9944
+  },
+  {
+   "name": "San Benito County",
+   "level": "county",
+   "pop": 37462,
+   "cum": 0.9945
+  },
+  {
+   "name": "Bowie County",
+   "level": "county",
+   "pop": 37280,
+   "cum": 0.9947
+  },
+  {
+   "name": "Angelina County",
+   "level": "county",
+   "pop": 36333,
+   "cum": 0.9949
+  },
+  {
+   "name": "Val Verde County",
+   "level": "county",
+   "pop": 36153,
+   "cum": 0.9951
+  },
+  {
+   "name": "Kaufman County",
+   "level": "county",
+   "pop": 35399,
+   "cum": 0.9953
+  },
+  {
+   "name": "Nacogdoches County",
+   "level": "county",
+   "pop": 33894,
+   "cum": 0.9954
+  },
+  {
+   "name": "Tompkins County",
+   "level": "county",
+   "pop": 30788,
+   "cum": 0.9956
+  },
+  {
+   "name": "Dutchess County",
+   "level": "county",
+   "pop": 30371,
+   "cum": 0.9957
+  },
+  {
+   "name": "Chautauqua County",
+   "level": "county",
+   "pop": 30075,
+   "cum": 0.9959
+  },
+  {
+   "name": "Howard County",
+   "level": "county",
+   "pop": 28862,
+   "cum": 0.996
+  },
+  {
+   "name": "Maverick County",
+   "level": "county",
+   "pop": 28765,
+   "cum": 0.9962
+  },
+  {
+   "name": "Parker County",
+   "level": "county",
+   "pop": 28742,
+   "cum": 0.9963
+  },
+  {
+   "name": "Chemung County",
+   "level": "county",
+   "pop": 28213,
+   "cum": 0.9964
+  },
+  {
+   "name": "Warren County",
+   "level": "county",
+   "pop": 27703,
+   "cum": 0.9966
+  },
+  {
+   "name": "Cayuga County",
+   "level": "county",
+   "pop": 26985,
+   "cum": 0.9967
+  },
+  {
+   "name": "Jefferson County",
+   "level": "county",
+   "pop": 26780,
+   "cum": 0.9968
+  },
+  {
+   "name": "Hunt County",
+   "level": "county",
+   "pop": 26515,
+   "cum": 0.997
+  },
+  {
+   "name": "Kleberg County",
+   "level": "county",
+   "pop": 26225,
+   "cum": 0.9971
+  },
+  {
+   "name": "Lamar County",
+   "level": "county",
+   "pop": 24782,
+   "cum": 0.9972
+  },
+  {
+   "name": "Navarro County",
+   "level": "county",
+   "pop": 23952,
+   "cum": 0.9973
+  },
+  {
+   "name": "Harrison County",
+   "level": "county",
+   "pop": 23820,
+   "cum": 0.9975
+  },
+  {
+   "name": "Ulster County",
+   "level": "county",
+   "pop": 23436,
+   "cum": 0.9976
+  },
+  {
+   "name": "Kerr County",
+   "level": "county",
+   "pop": 23136,
+   "cum": 0.9977
+  },
+  {
+   "name": "Hale County",
+   "level": "county",
+   "pop": 20919,
+   "cum": 0.9978
+  },
+  {
+   "name": "Erath County",
+   "level": "county",
+   "pop": 20120,
+   "cum": 0.9979
+  },
+  {
+   "name": "Clinton County",
+   "level": "county",
+   "pop": 19806,
+   "cum": 0.998
+  },
+  {
+   "name": "Jim Wells County",
+   "level": "county",
+   "pop": 19408,
+   "cum": 0.9981
+  },
+  {
+   "name": "Orange County",
+   "level": "county",
+   "pop": 19347,
+   "cum": 0.9982
+  },
+  {
+   "name": "Brown County",
+   "level": "county",
+   "pop": 19031,
+   "cum": 0.9983
+  },
+  {
+   "name": "Cortland County",
+   "level": "county",
+   "pop": 18907,
+   "cum": 0.9984
+  },
+  {
+   "name": "Anderson County",
+   "level": "county",
+   "pop": 18288,
+   "cum": 0.9985
+  },
+  {
+   "name": "Gray County",
+   "level": "county",
+   "pop": 18177,
+   "cum": 0.9986
+  },
+  {
+   "name": "Montgomery County",
+   "level": "county",
+   "pop": 18008,
+   "cum": 0.9986
+  },
+  {
+   "name": "Oswego County",
+   "level": "county",
+   "pop": 17787,
+   "cum": 0.9987
+  },
+  {
+   "name": "Yuba County",
+   "level": "county",
+   "pop": 17773,
+   "cum": 0.9988
+  },
+  {
+   "name": "Matagorda County",
+   "level": "county",
+   "pop": 17598,
+   "cum": 0.9989
+  },
+  {
+   "name": "Washington County",
+   "level": "county",
+   "pop": 16579,
+   "cum": 0.999
+  },
+  {
+   "name": "Uvalde County",
+   "level": "county",
+   "pop": 16476,
+   "cum": 0.9991
+  },
+  {
+   "name": "Nevada County",
+   "level": "county",
+   "pop": 16299,
+   "cum": 0.9992
+  },
+  {
+   "name": "Cooke County",
+   "level": "county",
+   "pop": 16292,
+   "cum": 0.9992
+  },
+  {
+   "name": "San Patricio County",
+   "level": "county",
+   "pop": 16116,
+   "cum": 0.9993
+  },
+  {
+   "name": "Hopkins County",
+   "level": "county",
+   "pop": 16098,
+   "cum": 0.9994
+  },
+  {
+   "name": "Titus County",
+   "level": "county",
+   "pop": 16051,
+   "cum": 0.9995
+  },
+  {
+   "name": "Mendocino County",
+   "level": "county",
+   "pop": 15917,
+   "cum": 0.9996
+  },
+  {
+   "name": "Lassen County",
+   "level": "county",
+   "pop": 15247,
+   "cum": 0.9996
+  },
+  {
+   "name": "Lake County",
+   "level": "county",
+   "pop": 15182,
+   "cum": 0.9997
+  },
+  {
+   "name": "Fulton County",
+   "level": "county",
+   "pop": 15023,
+   "cum": 0.9998
+  },
+  {
+   "name": "Deaf Smith County",
+   "level": "county",
+   "pop": 15021,
+   "cum": 0.9999
+  },
+  {
+   "name": "Genesee County",
+   "level": "county",
+   "pop": 15010,
+   "cum": 0.9999
+  },
+  {
+   "name": "Moore County",
+   "level": "county",
+   "pop": 15001,
+   "cum": 1.0
+  }
+ ]
+}

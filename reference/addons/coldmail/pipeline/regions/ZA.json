@@ -1,0 +1,96 @@
+{
+ "country": "South Africa",
+ "countryCode": "za",
+ "language": "en",
+ "timezone": "Africa/Johannesburg",
+ "level": "county",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 46633208,
+ "regions": [
+  {
+   "name": "City of Johannesburg Metropolitan Municipality",
+   "level": "county",
+   "pop": 11864086,
+   "cum": 0.2544
+  },
+  {
+   "name": "Western Cape",
+   "level": "state",
+   "pop": 6885730,
+   "cum": 0.4021
+  },
+  {
+   "name": "KwaZulu-Natal",
+   "level": "state",
+   "pop": 6647329,
+   "cum": 0.5446
+  },
+  {
+   "name": "City of Tshwane Metropolitan Municipality",
+   "level": "county",
+   "pop": 3465949,
+   "cum": 0.6189
+  },
+  {
+   "name": "Eastern Cape",
+   "level": "state",
+   "pop": 3358601,
+   "cum": 0.691
+  },
+  {
+   "name": "Free State",
+   "level": "state",
+   "pop": 2975532,
+   "cum": 0.7548
+  },
+  {
+   "name": "Ekurhuleni Metropolitan Municipality",
+   "level": "county",
+   "pop": 2612060,
+   "cum": 0.8108
+  },
+  {
+   "name": "Mpumalanga",
+   "level": "state",
+   "pop": 2496788,
+   "cum": 0.8643
+  },
+  {
+   "name": "North West",
+   "level": "state",
+   "pop": 2069183,
+   "cum": 0.9087
+  },
+  {
+   "name": "Sedibeng District Municipality",
+   "level": "county",
+   "pop": 1638761,
+   "cum": 0.9438
+  },
+  {
+   "name": "Limpopo",
+   "level": "state",
+   "pop": 1414718,
+   "cum": 0.9742
+  },
+  {
+   "name": "West Rand District Municipality",
+   "level": "county",
+   "pop": 867697,
+   "cum": 0.9928
+  },
+  {
+   "name": "Northern Cape",
+   "level": "state",
+   "pop": 315522,
+   "cum": 0.9995
+  },
+  {
+   "name": "Verena",
+   "level": "city",
+   "pop": 21252,
+   "cum": 1.0
+  }
+ ]
+}

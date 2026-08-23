@@ -1,0 +1,84 @@
+{
+ "country": "Canada",
+ "countryCode": "ca",
+ "language": "en",
+ "timezone": "America/Toronto",
+ "level": "state",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 31036937,
+ "regions": [
+  {
+   "name": "Ontario",
+   "level": "state",
+   "pop": 13373780,
+   "cum": 0.4309
+  },
+  {
+   "name": "Quebec",
+   "level": "state",
+   "pop": 7338520,
+   "cum": 0.6673
+  },
+  {
+   "name": "British Columbia",
+   "level": "state",
+   "pop": 4288711,
+   "cum": 0.8055
+  },
+  {
+   "name": "Alberta",
+   "level": "state",
+   "pop": 3176872,
+   "cum": 0.9079
+  },
+  {
+   "name": "Manitoba",
+   "level": "state",
+   "pop": 814295,
+   "cum": 0.9341
+  },
+  {
+   "name": "Nova Scotia",
+   "level": "state",
+   "pop": 787673,
+   "cum": 0.9595
+  },
+  {
+   "name": "Saskatchewan",
+   "level": "state",
+   "pop": 613924,
+   "cum": 0.9793
+  },
+  {
+   "name": "New Brunswick",
+   "level": "state",
+   "pop": 353369,
+   "cum": 0.9907
+  },
+  {
+   "name": "Newfoundland and Labrador",
+   "level": "state",
+   "pop": 202443,
+   "cum": 0.9972
+  },
+  {
+   "name": "Prince Edward Island",
+   "level": "state",
+   "pop": 38809,
+   "cum": 0.9984
+  },
+  {
+   "name": "Yukon",
+   "level": "state",
+   "pop": 28201,
+   "cum": 0.9993
+  },
+  {
+   "name": "Northwest Territories",
+   "level": "state",
+   "pop": 20340,
+   "cum": 1.0
+  }
+ ]
+}

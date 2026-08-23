@@ -1,0 +1,150 @@
+{
+ "country": "Ireland",
+ "countryCode": "ie",
+ "language": "en",
+ "timezone": "Europe/Dublin",
+ "level": "county",
+ "_source": "GeoNames admin2 + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 2720758,
+ "regions": [
+  {
+   "name": "Dublin City",
+   "level": "county",
+   "pop": 1059094,
+   "cum": 0.3893
+  },
+  {
+   "name": "South Dublin",
+   "level": "county",
+   "pop": 432775,
+   "cum": 0.5483
+  },
+  {
+   "name": "County Cork",
+   "level": "county",
+   "pop": 287747,
+   "cum": 0.6541
+  },
+  {
+   "name": "Limerick City and County Council",
+   "level": "county",
+   "pop": 102287,
+   "cum": 0.6917
+  },
+  {
+   "name": "Kildare",
+   "level": "county",
+   "pop": 96506,
+   "cum": 0.7272
+  },
+  {
+   "name": "Fingal County",
+   "level": "county",
+   "pop": 95559,
+   "cum": 0.7623
+  },
+  {
+   "name": "Louth",
+   "level": "county",
+   "pop": 87247,
+   "cum": 0.7943
+  },
+  {
+   "name": "County Galway",
+   "level": "county",
+   "pop": 85910,
+   "cum": 0.8259
+  },
+  {
+   "name": "County Waterford",
+   "level": "county",
+   "pop": 60079,
+   "cum": 0.848
+  },
+  {
+   "name": "Wicklow",
+   "level": "county",
+   "pop": 55521,
+   "cum": 0.8684
+  },
+  {
+   "name": "Dún Laoghaire-Rathdown",
+   "level": "county",
+   "pop": 53527,
+   "cum": 0.8881
+  },
+  {
+   "name": "Westmeath",
+   "level": "county",
+   "pop": 45536,
+   "cum": 0.9048
+  },
+  {
+   "name": "Meath",
+   "level": "county",
+   "pop": 33886,
+   "cum": 0.9173
+  },
+  {
+   "name": "Clare",
+   "level": "county",
+   "pop": 27923,
+   "cum": 0.9275
+  },
+  {
+   "name": "County Carlow",
+   "level": "county",
+   "pop": 27351,
+   "cum": 0.9376
+  },
+  {
+   "name": "Kerry",
+   "level": "county",
+   "pop": 26079,
+   "cum": 0.9472
+  },
+  {
+   "name": "Laois",
+   "level": "county",
+   "pop": 23494,
+   "cum": 0.9558
+  },
+  {
+   "name": "County Donegal",
+   "level": "county",
+   "pop": 22549,
+   "cum": 0.9641
+  },
+  {
+   "name": "Kilkenny",
+   "level": "county",
+   "pop": 21589,
+   "cum": 0.972
+  },
+  {
+   "name": "Wexford",
+   "level": "county",
+   "pop": 21524,
+   "cum": 0.9799
+  },
+  {
+   "name": "Sligo",
+   "level": "county",
+   "pop": 20608,
+   "cum": 0.9875
+  },
+  {
+   "name": "County Tipperary",
+   "level": "county",
+   "pop": 18369,
+   "cum": 0.9943
+  },
+  {
+   "name": "Uíbh Fhailí",
+   "level": "county",
+   "pop": 15598,
+   "cum": 1.0
+  }
+ ]
+}

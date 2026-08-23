@@ -1,0 +1,198 @@
+{
+ "country": "New Zealand",
+ "countryCode": "nz",
+ "language": "en",
+ "timezone": "Pacific/Auckland",
+ "level": "county",
+ "_source": "GeoNames admin2 + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 5203989,
+ "regions": [
+  {
+   "name": "Auckland",
+   "level": "county",
+   "pop": 2677265,
+   "cum": 0.5145
+  },
+  {
+   "name": "Christchurch City",
+   "level": "county",
+   "pop": 419200,
+   "cum": 0.595
+  },
+  {
+   "name": "Wellington City",
+   "level": "county",
+   "pop": 397280,
+   "cum": 0.6714
+  },
+  {
+   "name": "Hamilton City",
+   "level": "county",
+   "pop": 207400,
+   "cum": 0.7112
+  },
+  {
+   "name": "Tauranga City",
+   "level": "county",
+   "pop": 161000,
+   "cum": 0.7422
+  },
+  {
+   "name": "Lower Hutt City",
+   "level": "county",
+   "pop": 134650,
+   "cum": 0.768
+  },
+  {
+   "name": "Dunedin City",
+   "level": "county",
+   "pop": 132800,
+   "cum": 0.7935
+  },
+  {
+   "name": "Palmerston North City",
+   "level": "county",
+   "pop": 90500,
+   "cum": 0.8109
+  },
+  {
+   "name": "New Plymouth District",
+   "level": "county",
+   "pop": 90100,
+   "cum": 0.8282
+  },
+  {
+   "name": "Hastings District",
+   "level": "county",
+   "pop": 88300,
+   "cum": 0.8452
+  },
+  {
+   "name": "Nelson City",
+   "level": "county",
+   "pop": 74660,
+   "cum": 0.8596
+  },
+  {
+   "name": "Napier City",
+   "level": "county",
+   "pop": 66400,
+   "cum": 0.8723
+  },
+  {
+   "name": "Rotorua District",
+   "level": "county",
+   "pop": 65901,
+   "cum": 0.885
+  },
+  {
+   "name": "Porirua City",
+   "level": "county",
+   "pop": 61500,
+   "cum": 0.8968
+  },
+  {
+   "name": "Invercargill City",
+   "level": "county",
+   "pop": 58000,
+   "cum": 0.9079
+  },
+  {
+   "name": "Whangarei",
+   "level": "county",
+   "pop": 50900,
+   "cum": 0.9177
+  },
+  {
+   "name": "Whanganui District",
+   "level": "county",
+   "pop": 49200,
+   "cum": 0.9272
+  },
+  {
+   "name": "Upper Hutt City",
+   "level": "county",
+   "pop": 47400,
+   "cum": 0.9363
+  },
+  {
+   "name": "Gisborne District",
+   "level": "county",
+   "pop": 38100,
+   "cum": 0.9436
+  },
+  {
+   "name": "Selwyn District",
+   "level": "county",
+   "pop": 34100,
+   "cum": 0.9502
+  },
+  {
+   "name": "Kapiti Coast District",
+   "level": "county",
+   "pop": 29900,
+   "cum": 0.9559
+  },
+  {
+   "name": "Marlborough District",
+   "level": "county",
+   "pop": 29800,
+   "cum": 0.9616
+  },
+  {
+   "name": "Timaru District",
+   "level": "county",
+   "pop": 29300,
+   "cum": 0.9673
+  },
+  {
+   "name": "Masterton District",
+   "level": "county",
+   "pop": 28900,
+   "cum": 0.9728
+  },
+  {
+   "name": "Taupo District",
+   "level": "county",
+   "pop": 27000,
+   "cum": 0.978
+  },
+  {
+   "name": "Ashburton District",
+   "level": "county",
+   "pop": 21600,
+   "cum": 0.9822
+  },
+  {
+   "name": "Tasman District",
+   "level": "county",
+   "pop": 19950,
+   "cum": 0.986
+  },
+  {
+   "name": "Horowhenua District",
+   "level": "county",
+   "pop": 19789,
+   "cum": 0.9898
+  },
+  {
+   "name": "Waimakariri District",
+   "level": "county",
+   "pop": 19300,
+   "cum": 0.9935
+  },
+  {
+   "name": "Whakatane District",
+   "level": "county",
+   "pop": 18602,
+   "cum": 0.9971
+  },
+  {
+   "name": "Waipa District",
+   "level": "county",
+   "pop": 15192,
+   "cum": 1.0
+  }
+ ]
+}

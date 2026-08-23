@@ -531,9 +531,9 @@
   var PRO_POSTFACH_TAG = 30;      // Instantlys Decke
 
   var PRO_DOMAIN = 3;             // Zapmails Empfehlung: 2-3
-  var ANSCHREIBBAR = 0.50;        // gescrapt -> wirklich verschickt, inkl. Pruefer
+  var ANSCHREIBBAR = 0.44;        // gescrapt -> verschickt, mit Verifizierung und Pruefern
   var APIFY = 0.0017;             // gemessen, nicht Liste
-  var VERIFY = 0.0039;
+  var VERIFY = 0.0004;            // gemessener Paketpreis, nicht der Kleinmengen-Tarif
   var DFS = 1.34;
   var DOMAIN_JAHR = 12;
 
@@ -722,8 +722,8 @@
           <td class="amt">$1.34</td></tr>
       <tr><td>Firecrawl</td><td class="dim">reading sites for the ~3 in 10 with no email</td>
           <td class="amt">~$1</td></tr>
-      <tr><td>MillionVerifier</td><td class="dim">$39 per 10,000 addresses checked</td>
-          <td class="amt">$3.90</td></tr>
+      <tr><td>MillionVerifier</td><td class="dim">about $0.0004 an address — bounces would undo the warmup</td>
+          <td class="amt">$0.40</td></tr>
       <tr class="sum"><td><b>Data</b></td><td class="dim">under one cent per lead</td>
           <td class="amt"><b>$9</b></td></tr>
     </tbody>
@@ -890,7 +890,7 @@
   </div>
 
   <div class="funnel" aria-hidden="true">
-    <svg viewBox="0 0 760 386" role="img">
+    <svg viewBox="0 0 760 466" role="img">
       <!-- Auf 1.000 normiert, weil das die Frage ist, die jemand stellt: was wird aus
            MEINEN tausend? Absolute Zahlen aus einem fremden Lauf beantworten sie nicht.
            Die Balkenbreite ist die Zahl. -->
@@ -939,25 +939,43 @@
               font-family="Georgia,serif">520</text>
 
         <text x="66" y="334" font-size="12.5" fill="var(--text-3)">
-          &#8595;&nbsp; failed one of the four checkers, or had too little to say</text>
+          &#8595;&nbsp; address does not accept mail — checked before a single send</text>
         <text x="694" y="334" font-size="12.5" fill="var(--accent-deep)" text-anchor="end">
+          ~&#8722;12%</text>
+
+        <rect x="50" y="346" width="302" height="46" rx="7" fill="var(--card)"
+              stroke="var(--accent)" stroke-width="1.5"/>
+        <text x="66" y="375" font-size="15.5" fill="var(--text)" font-family="Georgia,serif">
+          Deliverable</text>
+        <text x="336" y="375" font-size="19" fill="var(--accent-deep)" text-anchor="end"
+              font-family="Georgia,serif">458</text>
+
+        <text x="66" y="414" font-size="12.5" fill="var(--text-3)">
+          &#8595;&nbsp; failed one of the four checkers, or had too little to say</text>
+        <text x="694" y="414" font-size="12.5" fill="var(--accent-deep)" text-anchor="end">
           &#8722;4%</text>
 
-        <rect x="50" y="346" width="330" height="46" rx="7" fill="var(--ink)"/>
-        <text x="66" y="375" font-size="15.5" fill="var(--on-ink)" font-family="Georgia,serif">
+        <rect x="50" y="426" width="290" height="46" rx="7" fill="var(--ink)"/>
+        <text x="66" y="455" font-size="15.5" fill="var(--on-ink)" font-family="Georgia,serif">
           Actually sent</text>
-        <text x="364" y="375" font-size="19" fill="var(--on-ink)" text-anchor="end"
-              font-family="Georgia,serif">499</text>
+        <text x="324" y="455" font-size="19" fill="var(--on-ink)" text-anchor="end"
+              font-family="Georgia,serif">440</text>
       </g>
-      <text x="710" y="375" font-size="14" fill="var(--accent-deep)" text-anchor="end"
-            font-family="Georgia,serif">half of what you scraped</text>
+      <text x="710" y="455" font-size="14" fill="var(--accent-deep)" text-anchor="end"
+            font-family="Georgia,serif">44% of what you scraped</text>
     </svg>
   </div>
 
-  <p class="note"><b>Scrape a thousand, send five hundred.</b> That ratio holds well enough
-  to plan with: doubling what you want to send means doubling what you scrape. It is also
-  why the scrape is cheap enough to over-do — at $0.0017 a profile, the half you throw away
-  costs less than a coffee.</p>
+  <p class="note"><b>Scrape a thousand, send about 440.</b> Round it to "scrape twice what
+  you want to send" and you will not be far out. The scrape is cheap enough to over-do
+  anyway: at $0.0017 a profile, the half you throw away costs less than a coffee.</p>
+
+  <p class="note"><b>The bounce check is the one step you cannot skip.</b> A scraped address
+  is a string somebody typed on a website, and an <code>info@</code> that was switched off two
+  years ago still sits there. Every one of those is a bounce, and bounces destroy exactly what
+  three weeks of warming up built. Verifying costs about $0.0004 an address — four cents per
+  hundred — so it is checked before a single mail goes out. <em>The 12% figure is an estimate
+  from typical B2B lists, not from this run.</em></p>
 
   <div class="cards">
     <div class="card">

@@ -56,3 +56,6 @@ __pycache__/
 context/audit.json
 context/.mcp_cache.json
 .playwright-cli/
+
+# GeoNames-Rohdaten, von build_regions.py bei Bedarf geladen (mehrere MB)
+reference/addons/coldmail/pipeline/.geonames/

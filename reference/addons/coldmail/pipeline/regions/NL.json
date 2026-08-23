@@ -1,0 +1,1248 @@
+{
+ "country": "Netherlands",
+ "countryCode": "nl",
+ "language": "nl",
+ "timezone": "Europe/Amsterdam",
+ "level": "county",
+ "_source": "GeoNames admin2 + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 13892513,
+ "regions": [
+  {
+   "name": "Gemeente Amsterdam",
+   "level": "county",
+   "pop": 1645694,
+   "cum": 0.1185
+  },
+  {
+   "name": "Rotterdam",
+   "level": "county",
+   "pop": 972660,
+   "cum": 0.1885
+  },
+  {
+   "name": "Gemeente Den Haag",
+   "level": "county",
+   "pop": 527292,
+   "cum": 0.2264
+  },
+  {
+   "name": "Gemeente Utrecht",
+   "level": "county",
+   "pop": 447858,
+   "cum": 0.2587
+  },
+  {
+   "name": "Gemeente Groningen",
+   "level": "county",
+   "pop": 261517,
+   "cum": 0.2775
+  },
+  {
+   "name": "Gemeente Eindhoven",
+   "level": "county",
+   "pop": 255371,
+   "cum": 0.2959
+  },
+  {
+   "name": "Gemeente Zaanstad",
+   "level": "county",
+   "pop": 236023,
+   "cum": 0.3129
+  },
+  {
+   "name": "Gemeente Tilburg",
+   "level": "county",
+   "pop": 221947,
+   "cum": 0.3288
+  },
+  {
+   "name": "Gemeente Breda",
+   "level": "county",
+   "pop": 200126,
+   "cum": 0.3432
+  },
+  {
+   "name": "Gemeente Nijmegen",
+   "level": "county",
+   "pop": 193480,
+   "cum": 0.3572
+  },
+  {
+   "name": "Gemeente Haarlemmermeer",
+   "level": "county",
+   "pop": 179229,
+   "cum": 0.3701
+  },
+  {
+   "name": "Gemeente 's-Hertogenbosch",
+   "level": "county",
+   "pop": 176933,
+   "cum": 0.3828
+  },
+  {
+   "name": "Gemeente Almere",
+   "level": "county",
+   "pop": 176432,
+   "cum": 0.3955
+  },
+  {
+   "name": "Gemeente Enschede",
+   "level": "county",
+   "pop": 170915,
+   "cum": 0.4078
+  },
+  {
+   "name": "Gemeente Haarlem",
+   "level": "county",
+   "pop": 162543,
+   "cum": 0.4195
+  },
+  {
+   "name": "Gemeente Arnhem",
+   "level": "county",
+   "pop": 162424,
+   "cum": 0.4312
+  },
+  {
+   "name": "Gemeente Amersfoort",
+   "level": "county",
+   "pop": 139914,
+   "cum": 0.4413
+  },
+  {
+   "name": "Gemeente Venlo",
+   "level": "county",
+   "pop": 137998,
+   "cum": 0.4512
+  },
+  {
+   "name": "Gemeente Apeldoorn",
+   "level": "county",
+   "pop": 136670,
+   "cum": 0.461
+  },
+  {
+   "name": "Gemeente Leiden",
+   "level": "county",
+   "pop": 136213,
+   "cum": 0.4708
+  },
+  {
+   "name": "Gemeente Zwolle",
+   "level": "county",
+   "pop": 129840,
+   "cum": 0.4802
+  },
+  {
+   "name": "Gemeente Leeuwarden",
+   "level": "county",
+   "pop": 124481,
+   "cum": 0.4892
+  },
+  {
+   "name": "Gemeente Maastricht",
+   "level": "county",
+   "pop": 122378,
+   "cum": 0.498
+  },
+  {
+   "name": "Gemeente Dordrecht",
+   "level": "county",
+   "pop": 119260,
+   "cum": 0.5065
+  },
+  {
+   "name": "Gemeente Heerlen",
+   "level": "county",
+   "pop": 118084,
+   "cum": 0.515
+  },
+  {
+   "name": "Gemeente Zoetermeer",
+   "level": "county",
+   "pop": 115845,
+   "cum": 0.5234
+  },
+  {
+   "name": "Gemeente Velsen",
+   "level": "county",
+   "pop": 115103,
+   "cum": 0.5317
+  },
+  {
+   "name": "Gemeente Alphen aan den Rijn",
+   "level": "county",
+   "pop": 104432,
+   "cum": 0.5392
+  },
+  {
+   "name": "Gemeente Deventer",
+   "level": "county",
+   "pop": 97331,
+   "cum": 0.5462
+  },
+  {
+   "name": "Gemeente Delft",
+   "level": "county",
+   "pop": 95060,
+   "cum": 0.553
+  },
+  {
+   "name": "Gemeente Alkmaar",
+   "level": "county",
+   "pop": 94853,
+   "cum": 0.5599
+  },
+  {
+   "name": "Gemeente Hilversum",
+   "level": "county",
+   "pop": 83640,
+   "cum": 0.5659
+  },
+  {
+   "name": "Gemeente Ede",
+   "level": "county",
+   "pop": 82830,
+   "cum": 0.5718
+  },
+  {
+   "name": "Gemeente Hengelo",
+   "level": "county",
+   "pop": 82311,
+   "cum": 0.5778
+  },
+  {
+   "name": "Gemeente Sittard-Geleen",
+   "level": "county",
+   "pop": 81190,
+   "cum": 0.5836
+  },
+  {
+   "name": "Gemeente Purmerend",
+   "level": "county",
+   "pop": 80117,
+   "cum": 0.5894
+  },
+  {
+   "name": "Gemeente Lelystad",
+   "level": "county",
+   "pop": 79811,
+   "cum": 0.5951
+  },
+  {
+   "name": "Gemeente Amstelveen",
+   "level": "county",
+   "pop": 79639,
+   "cum": 0.6009
+  },
+  {
+   "name": "Roosendaal",
+   "level": "county",
+   "pop": 77725,
+   "cum": 0.6065
+  },
+  {
+   "name": "Gemeente Oss",
+   "level": "county",
+   "pop": 76430,
+   "cum": 0.612
+  },
+  {
+   "name": "Gemeente Schiedam",
+   "level": "county",
+   "pop": 75438,
+   "cum": 0.6174
+  },
+  {
+   "name": "Nissewaard",
+   "level": "county",
+   "pop": 74988,
+   "cum": 0.6228
+  },
+  {
+   "name": "Gemeente Helmond",
+   "level": "county",
+   "pop": 74740,
+   "cum": 0.6282
+  },
+  {
+   "name": "Gemeente Den Helder",
+   "level": "county",
+   "pop": 74704,
+   "cum": 0.6335
+  },
+  {
+   "name": "Gemeente Vlaardingen",
+   "level": "county",
+   "pop": 73798,
+   "cum": 0.6389
+  },
+  {
+   "name": "Gemeente Almelo",
+   "level": "county",
+   "pop": 72725,
+   "cum": 0.6441
+  },
+  {
+   "name": "Gemeente Gouda",
+   "level": "county",
+   "pop": 71952,
+   "cum": 0.6493
+  },
+  {
+   "name": "Gemeente Hoorn",
+   "level": "county",
+   "pop": 68852,
+   "cum": 0.6542
+  },
+  {
+   "name": "Gemeente Assen",
+   "level": "county",
+   "pop": 68836,
+   "cum": 0.6592
+  },
+  {
+   "name": "Gemeente Bergen op Zoom",
+   "level": "county",
+   "pop": 66256,
+   "cum": 0.6639
+  },
+  {
+   "name": "Meierijstad",
+   "level": "county",
+   "pop": 65522,
+   "cum": 0.6687
+  },
+  {
+   "name": "Gemeente Capelle aan den IJssel",
+   "level": "county",
+   "pop": 65255,
+   "cum": 0.6734
+  },
+  {
+   "name": "Gemeente Nieuwegein",
+   "level": "county",
+   "pop": 61489,
+   "cum": 0.6778
+  },
+  {
+   "name": "Gemeente Veenendaal",
+   "level": "county",
+   "pop": 61271,
+   "cum": 0.6822
+  },
+  {
+   "name": "Gemeente Zeist",
+   "level": "county",
+   "pop": 60949,
+   "cum": 0.6866
+  },
+  {
+   "name": "Gemeente Hardenberg",
+   "level": "county",
+   "pop": 57909,
+   "cum": 0.6908
+  },
+  {
+   "name": "Gemeente Emmen",
+   "level": "county",
+   "pop": 57010,
+   "cum": 0.6949
+  },
+  {
+   "name": "Gemeente Oosterhout",
+   "level": "county",
+   "pop": 53107,
+   "cum": 0.6987
+  },
+  {
+   "name": "Gemeente Doetinchem",
+   "level": "county",
+   "pop": 49906,
+   "cum": 0.7023
+  },
+  {
+   "name": "Gemeente Kerkrade",
+   "level": "county",
+   "pop": 49777,
+   "cum": 0.7059
+  },
+  {
+   "name": "Gemeente Kampen",
+   "level": "county",
+   "pop": 48980,
+   "cum": 0.7094
+  },
+  {
+   "name": "Gemeente Weert",
+   "level": "county",
+   "pop": 48662,
+   "cum": 0.7129
+  },
+  {
+   "name": "Gooise Meren",
+   "level": "county",
+   "pop": 48449,
+   "cum": 0.7164
+  },
+  {
+   "name": "Gemeente Woerden",
+   "level": "county",
+   "pop": 48431,
+   "cum": 0.7199
+  },
+  {
+   "name": "Dijk en Waard",
+   "level": "county",
+   "pop": 47580,
+   "cum": 0.7233
+  },
+  {
+   "name": "Gemeente Rijswijk",
+   "level": "county",
+   "pop": 47299,
+   "cum": 0.7267
+  },
+  {
+   "name": "Gemeente Middelburg",
+   "level": "county",
+   "pop": 46485,
+   "cum": 0.73
+  },
+  {
+   "name": "Gemeente Noordoostpolder",
+   "level": "county",
+   "pop": 46409,
+   "cum": 0.7334
+  },
+  {
+   "name": "Gemeente Zwijndrecht",
+   "level": "county",
+   "pop": 45696,
+   "cum": 0.7367
+  },
+  {
+   "name": "Gemeente Waalwijk",
+   "level": "county",
+   "pop": 45610,
+   "cum": 0.7399
+  },
+  {
+   "name": "Gemeente Vlissingen",
+   "level": "county",
+   "pop": 45273,
+   "cum": 0.7432
+  },
+  {
+   "name": "Gemeente Ridderkerk",
+   "level": "county",
+   "pop": 45189,
+   "cum": 0.7465
+  },
+  {
+   "name": "Gemeente Smallingerland",
+   "level": "county",
+   "pop": 45186,
+   "cum": 0.7497
+  },
+  {
+   "name": "Gemeente Soest",
+   "level": "county",
+   "pop": 45021,
+   "cum": 0.7529
+  },
+  {
+   "name": "Gemeente Roermond",
+   "level": "county",
+   "pop": 44975,
+   "cum": 0.7562
+  },
+  {
+   "name": "Gemeente Heerenveen",
+   "level": "county",
+   "pop": 43094,
+   "cum": 0.7593
+  },
+  {
+   "name": "Gemeente Medemblik",
+   "level": "county",
+   "pop": 41500,
+   "cum": 0.7623
+  },
+  {
+   "name": "Gemeente Huizen",
+   "level": "county",
+   "pop": 41273,
+   "cum": 0.7652
+  },
+  {
+   "name": "Gemeente Tiel",
+   "level": "county",
+   "pop": 40702,
+   "cum": 0.7682
+  },
+  {
+   "name": "Vijfheerenlanden",
+   "level": "county",
+   "pop": 40689,
+   "cum": 0.7711
+  },
+  {
+   "name": "Gemeente Harderwijk",
+   "level": "county",
+   "pop": 40516,
+   "cum": 0.774
+  },
+  {
+   "name": "Stichtse Vecht",
+   "level": "county",
+   "pop": 39675,
+   "cum": 0.7769
+  },
+  {
+   "name": "Gemeente Heemskerk",
+   "level": "county",
+   "pop": 39191,
+   "cum": 0.7797
+  },
+  {
+   "name": "Gemeente Venray",
+   "level": "county",
+   "pop": 39047,
+   "cum": 0.7825
+  },
+  {
+   "name": "Gemeente Hoogeveen",
+   "level": "county",
+   "pop": 38754,
+   "cum": 0.7853
+  },
+  {
+   "name": "Gemeente Barendrecht",
+   "level": "county",
+   "pop": 38672,
+   "cum": 0.7881
+  },
+  {
+   "name": "Gemeente Nijkerk",
+   "level": "county",
+   "pop": 38335,
+   "cum": 0.7908
+  },
+  {
+   "name": "Gemeente Leidschendam-Voorburg",
+   "level": "county",
+   "pop": 38000,
+   "cum": 0.7936
+  },
+  {
+   "name": "Gemeente Pijnacker-Nootdorp",
+   "level": "county",
+   "pop": 37715,
+   "cum": 0.7963
+  },
+  {
+   "name": "Gemeente Beverwijk",
+   "level": "county",
+   "pop": 37585,
+   "cum": 0.799
+  },
+  {
+   "name": "Gemeente Westland",
+   "level": "county",
+   "pop": 36943,
+   "cum": 0.8017
+  },
+  {
+   "name": "Gemeente Goes",
+   "level": "county",
+   "pop": 36931,
+   "cum": 0.8043
+  },
+  {
+   "name": "Gemeente Lansingerland",
+   "level": "county",
+   "pop": 36768,
+   "cum": 0.807
+  },
+  {
+   "name": "Gemeente Zutphen",
+   "level": "county",
+   "pop": 36188,
+   "cum": 0.8096
+  },
+  {
+   "name": "Gemeente Wageningen",
+   "level": "county",
+   "pop": 35433,
+   "cum": 0.8121
+  },
+  {
+   "name": "Gemeente Castricum",
+   "level": "county",
+   "pop": 35256,
+   "cum": 0.8147
+  },
+  {
+   "name": "Gemeente Barneveld",
+   "level": "county",
+   "pop": 35095,
+   "cum": 0.8172
+  },
+  {
+   "name": "Gemeente Gorinchem",
+   "level": "county",
+   "pop": 34736,
+   "cum": 0.8197
+  },
+  {
+   "name": "Maashorst",
+   "level": "county",
+   "pop": 34601,
+   "cum": 0.8222
+  },
+  {
+   "name": "Gemeente IJsselstein",
+   "level": "county",
+   "pop": 33886,
+   "cum": 0.8246
+  },
+  {
+   "name": "Gemeente Epe",
+   "level": "county",
+   "pop": 33385,
+   "cum": 0.827
+  },
+  {
+   "name": "Sûdwest Fryslân",
+   "level": "county",
+   "pop": 32811,
+   "cum": 0.8294
+  },
+  {
+   "name": "Gemeente Maassluis",
+   "level": "county",
+   "pop": 32780,
+   "cum": 0.8317
+  },
+  {
+   "name": "Gemeente Wijchen",
+   "level": "county",
+   "pop": 32693,
+   "cum": 0.8341
+  },
+  {
+   "name": "Gemeente Papendrecht",
+   "level": "county",
+   "pop": 31621,
+   "cum": 0.8364
+  },
+  {
+   "name": "Gemeente Oldenzaal",
+   "level": "county",
+   "pop": 31410,
+   "cum": 0.8386
+  },
+  {
+   "name": "Gemeente Valkenswaard",
+   "level": "county",
+   "pop": 31071,
+   "cum": 0.8409
+  },
+  {
+   "name": "Gemeente Meppel",
+   "level": "county",
+   "pop": 30697,
+   "cum": 0.8431
+  },
+  {
+   "name": "Gemeente Bergen",
+   "level": "county",
+   "pop": 29715,
+   "cum": 0.8452
+  },
+  {
+   "name": "Gemeente Winterswijk",
+   "level": "county",
+   "pop": 29623,
+   "cum": 0.8473
+  },
+  {
+   "name": "Gemeente Boxtel",
+   "level": "county",
+   "pop": 29511,
+   "cum": 0.8495
+  },
+  {
+   "name": "Gemeente Brunssum",
+   "level": "county",
+   "pop": 29254,
+   "cum": 0.8516
+  },
+  {
+   "name": "Gemeente Leusden",
+   "level": "county",
+   "pop": 29215,
+   "cum": 0.8537
+  },
+  {
+   "name": "Gemeente Best",
+   "level": "county",
+   "pop": 29074,
+   "cum": 0.8558
+  },
+  {
+   "name": "Gemeente Krimpen aan den IJssel",
+   "level": "county",
+   "pop": 29017,
+   "cum": 0.8579
+  },
+  {
+   "name": "Eemsdelta",
+   "level": "county",
+   "pop": 28649,
+   "cum": 0.8599
+  },
+  {
+   "name": "Gemeente Veendam",
+   "level": "county",
+   "pop": 28155,
+   "cum": 0.8619
+  },
+  {
+   "name": "Gemeente Dronten",
+   "level": "county",
+   "pop": 28073,
+   "cum": 0.864
+  },
+  {
+   "name": "Gemeente Terneuzen",
+   "level": "county",
+   "pop": 27930,
+   "cum": 0.866
+  },
+  {
+   "name": "Gemeente Geldrop-Mierlo",
+   "level": "county",
+   "pop": 27900,
+   "cum": 0.868
+  },
+  {
+   "name": "Gemeente Rijssen-Holten",
+   "level": "county",
+   "pop": 27740,
+   "cum": 0.87
+  },
+  {
+   "name": "Gemeente Uithoorn",
+   "level": "county",
+   "pop": 26846,
+   "cum": 0.8719
+  },
+  {
+   "name": "Gemeente Culemborg",
+   "level": "county",
+   "pop": 26826,
+   "cum": 0.8738
+  },
+  {
+   "name": "Gemeente Dalfsen",
+   "level": "county",
+   "pop": 26575,
+   "cum": 0.8758
+  },
+  {
+   "name": "Gemeente Zaltbommel",
+   "level": "county",
+   "pop": 26383,
+   "cum": 0.8777
+  },
+  {
+   "name": "Gemeente Zevenaar",
+   "level": "county",
+   "pop": 26063,
+   "cum": 0.8795
+  },
+  {
+   "name": "Gemeente Oisterwijk",
+   "level": "county",
+   "pop": 25980,
+   "cum": 0.8814
+  },
+  {
+   "name": "Gemeente Leiderdorp",
+   "level": "county",
+   "pop": 25966,
+   "cum": 0.8833
+  },
+  {
+   "name": "West Betuwe",
+   "level": "county",
+   "pop": 25734,
+   "cum": 0.8851
+  },
+  {
+   "name": "Gemeente Heemstede",
+   "level": "county",
+   "pop": 25562,
+   "cum": 0.887
+  },
+  {
+   "name": "Gemeente Beuningen",
+   "level": "county",
+   "pop": 25557,
+   "cum": 0.8888
+  },
+  {
+   "name": "Gemeente Duiven",
+   "level": "county",
+   "pop": 25469,
+   "cum": 0.8906
+  },
+  {
+   "name": "Gemeente Dongen",
+   "level": "county",
+   "pop": 25464,
+   "cum": 0.8925
+  },
+  {
+   "name": "Gemeente Wassenaar",
+   "level": "county",
+   "pop": 25353,
+   "cum": 0.8943
+  },
+  {
+   "name": "Gemeente Wierden",
+   "level": "county",
+   "pop": 25342,
+   "cum": 0.8961
+  },
+  {
+   "name": "Gemeente Waddinxveen",
+   "level": "county",
+   "pop": 25338,
+   "cum": 0.8979
+  },
+  {
+   "name": "Gemeente Vught",
+   "level": "county",
+   "pop": 25043,
+   "cum": 0.8997
+  },
+  {
+   "name": "Gemeente Hellendoorn",
+   "level": "county",
+   "pop": 25000,
+   "cum": 0.9015
+  },
+  {
+   "name": "Gemeente Baarn",
+   "level": "county",
+   "pop": 24584,
+   "cum": 0.9033
+  },
+  {
+   "name": "Gemeente Noordwijk",
+   "level": "county",
+   "pop": 24363,
+   "cum": 0.9051
+  },
+  {
+   "name": "Gemeente Diemen",
+   "level": "county",
+   "pop": 24361,
+   "cum": 0.9068
+  },
+  {
+   "name": "Gemeente Heiloo",
+   "level": "county",
+   "pop": 24144,
+   "cum": 0.9086
+  },
+  {
+   "name": "Gemeente Haaksbergen",
+   "level": "county",
+   "pop": 24137,
+   "cum": 0.9103
+  },
+  {
+   "name": "Gemeente Borne",
+   "level": "county",
+   "pop": 23877,
+   "cum": 0.912
+  },
+  {
+   "name": "Gemeente Sliedrecht",
+   "level": "county",
+   "pop": 23854,
+   "cum": 0.9137
+  },
+  {
+   "name": "Gemeente Steenbergen",
+   "level": "county",
+   "pop": 23582,
+   "cum": 0.9154
+  },
+  {
+   "name": "Hoeksche Waard",
+   "level": "county",
+   "pop": 23569,
+   "cum": 0.9171
+  },
+  {
+   "name": "Gemeente De Bilt",
+   "level": "county",
+   "pop": 23248,
+   "cum": 0.9188
+  },
+  {
+   "name": "Gemeente Nuenen, Gerwen en Nederwetten",
+   "level": "county",
+   "pop": 23223,
+   "cum": 0.9205
+  },
+  {
+   "name": "Gemeente Putten",
+   "level": "county",
+   "pop": 23168,
+   "cum": 0.9221
+  },
+  {
+   "name": "Gemeente Loon op Zand",
+   "level": "county",
+   "pop": 23000,
+   "cum": 0.9238
+  },
+  {
+   "name": "Gemeente Aalsmeer",
+   "level": "county",
+   "pop": 22991,
+   "cum": 0.9255
+  },
+  {
+   "name": "Gemeente Goirle",
+   "level": "county",
+   "pop": 22646,
+   "cum": 0.9271
+  },
+  {
+   "name": "Gemeente Voorschoten",
+   "level": "county",
+   "pop": 22468,
+   "cum": 0.9287
+  },
+  {
+   "name": "Gemeente Losser",
+   "level": "county",
+   "pop": 22431,
+   "cum": 0.9303
+  },
+  {
+   "name": "Gemeente Lisse",
+   "level": "county",
+   "pop": 22321,
+   "cum": 0.9319
+  },
+  {
+   "name": "Gemeente Borsele",
+   "level": "county",
+   "pop": 22285,
+   "cum": 0.9335
+  },
+  {
+   "name": "Gemeente Urk",
+   "level": "county",
+   "pop": 22173,
+   "cum": 0.9351
+  },
+  {
+   "name": "Gemeente Edam-Volendam",
+   "level": "county",
+   "pop": 22000,
+   "cum": 0.9367
+  },
+  {
+   "name": "Voorne aan Zee",
+   "level": "county",
+   "pop": 21927,
+   "cum": 0.9383
+  },
+  {
+   "name": "Gemeente Elburg",
+   "level": "county",
+   "pop": 21844,
+   "cum": 0.9399
+  },
+  {
+   "name": "Midden-Groningen",
+   "level": "county",
+   "pop": 21480,
+   "cum": 0.9414
+  },
+  {
+   "name": "Gemeente Brummen",
+   "level": "county",
+   "pop": 21344,
+   "cum": 0.9429
+  },
+  {
+   "name": "Gemeente Oegstgeest",
+   "level": "county",
+   "pop": 21149,
+   "cum": 0.9445
+  },
+  {
+   "name": "Gemeente Hendrik-Ido-Ambacht",
+   "level": "county",
+   "pop": 21027,
+   "cum": 0.946
+  },
+  {
+   "name": "Gemeente Geertruidenberg",
+   "level": "county",
+   "pop": 20941,
+   "cum": 0.9475
+  },
+  {
+   "name": "Gemeente Overbetuwe",
+   "level": "county",
+   "pop": 20488,
+   "cum": 0.949
+  },
+  {
+   "name": "Gemeente Tubbergen",
+   "level": "county",
+   "pop": 20334,
+   "cum": 0.9504
+  },
+  {
+   "name": "Gemeente Raalte",
+   "level": "county",
+   "pop": 20015,
+   "cum": 0.9519
+  },
+  {
+   "name": "Gemeente Katwijk",
+   "level": "county",
+   "pop": 20010,
+   "cum": 0.9533
+  },
+  {
+   "name": "Gemeente Stadskanaal",
+   "level": "county",
+   "pop": 20000,
+   "cum": 0.9547
+  },
+  {
+   "name": "Gemeente Cranendonck",
+   "level": "county",
+   "pop": 19966,
+   "cum": 0.9562
+  },
+  {
+   "name": "Gemeente Schagen",
+   "level": "county",
+   "pop": 19890,
+   "cum": 0.9576
+  },
+  {
+   "name": "Gemeente Lingewaard",
+   "level": "county",
+   "pop": 19725,
+   "cum": 0.959
+  },
+  {
+   "name": "Westerkwartier",
+   "level": "county",
+   "pop": 19651,
+   "cum": 0.9604
+  },
+  {
+   "name": "Oost Gelre",
+   "level": "county",
+   "pop": 19590,
+   "cum": 0.9619
+  },
+  {
+   "name": "Oude IJsselstreek",
+   "level": "county",
+   "pop": 19496,
+   "cum": 0.9633
+  },
+  {
+   "name": "Gemeente Nunspeet",
+   "level": "county",
+   "pop": 19496,
+   "cum": 0.9647
+  },
+  {
+   "name": "Bodegraven-Reeuwijk",
+   "level": "county",
+   "pop": 19395,
+   "cum": 0.9661
+  },
+  {
+   "name": "Gemeente Aalten",
+   "level": "county",
+   "pop": 19141,
+   "cum": 0.9674
+  },
+  {
+   "name": "Gemeente Zeewolde",
+   "level": "county",
+   "pop": 19022,
+   "cum": 0.9688
+  },
+  {
+   "name": "Gemeente Berg en Dal",
+   "level": "county",
+   "pop": 18741,
+   "cum": 0.9702
+  },
+  {
+   "name": "Gemeente Utrechtse Heuvelrug",
+   "level": "county",
+   "pop": 18553,
+   "cum": 0.9715
+  },
+  {
+   "name": "Gemeente Oldambt",
+   "level": "county",
+   "pop": 18506,
+   "cum": 0.9728
+  },
+  {
+   "name": "Gemeente Hillegom",
+   "level": "county",
+   "pop": 18419,
+   "cum": 0.9741
+  },
+  {
+   "name": "Gemeente Alblasserdam",
+   "level": "county",
+   "pop": 18348,
+   "cum": 0.9755
+  },
+  {
+   "name": "Gemeente Heusden",
+   "level": "county",
+   "pop": 18320,
+   "cum": 0.9768
+  },
+  {
+   "name": "Gemeente Albrandswaard",
+   "level": "county",
+   "pop": 18250,
+   "cum": 0.9781
+  },
+  {
+   "name": "Gemeente Eersel",
+   "level": "county",
+   "pop": 18185,
+   "cum": 0.9794
+  },
+  {
+   "name": "Bergeijk",
+   "level": "county",
+   "pop": 18181,
+   "cum": 0.9807
+  },
+  {
+   "name": "Gemeente Rhenen",
+   "level": "county",
+   "pop": 18061,
+   "cum": 0.982
+  },
+  {
+   "name": "Gemeente Montferland",
+   "level": "county",
+   "pop": 17812,
+   "cum": 0.9833
+  },
+  {
+   "name": "Gemeente Rheden",
+   "level": "county",
+   "pop": 17669,
+   "cum": 0.9846
+  },
+  {
+   "name": "Gemeente Goeree-Overflakkee",
+   "level": "county",
+   "pop": 17554,
+   "cum": 0.9858
+  },
+  {
+   "name": "Gemeente Wijk bij Duurstede",
+   "level": "county",
+   "pop": 17465,
+   "cum": 0.9871
+  },
+  {
+   "name": "Gemeente Enkhuizen",
+   "level": "county",
+   "pop": 17365,
+   "cum": 0.9883
+  },
+  {
+   "name": "Gemeente Steenwijkerland",
+   "level": "county",
+   "pop": 17138,
+   "cum": 0.9896
+  },
+  {
+   "name": "Gemeente Zandvoort",
+   "level": "county",
+   "pop": 16868,
+   "cum": 0.9908
+  },
+  {
+   "name": "Gemeente Gennep",
+   "level": "county",
+   "pop": 16642,
+   "cum": 0.992
+  },
+  {
+   "name": "Berkelland",
+   "level": "county",
+   "pop": 16493,
+   "cum": 0.9932
+  },
+  {
+   "name": "Gemeente Gilze en Rijen",
+   "level": "county",
+   "pop": 16230,
+   "cum": 0.9943
+  },
+  {
+   "name": "Gemeente Harlingen",
+   "level": "county",
+   "pop": 16119,
+   "cum": 0.9955
+  },
+  {
+   "name": "Gemeente Gemert-Bakel",
+   "level": "county",
+   "pop": 15995,
+   "cum": 0.9967
+  },
+  {
+   "name": "Gemeente Staphorst",
+   "level": "county",
+   "pop": 15765,
+   "cum": 0.9978
+  },
+  {
+   "name": "Gemeente Teylingen",
+   "level": "county",
+   "pop": 15510,
+   "cum": 0.9989
+  },
+  {
+   "name": "Gemeente De Ronde Venen",
+   "level": "county",
+   "pop": 15230,
+   "cum": 1.0
+  }
+ ]
+}

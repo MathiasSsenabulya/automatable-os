@@ -1,0 +1,132 @@
+{
+ "country": "Hong Kong",
+ "countryCode": "hk",
+ "language": "en",
+ "timezone": "Asia/Hong_Kong",
+ "level": "county",
+ "_source": "GeoNames admin2 + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 24678261,
+ "regions": [
+  {
+   "name": "New Territories",
+   "level": "city",
+   "pop": 7411945,
+   "cum": 0.3003
+  },
+  {
+   "name": "Hong Kong",
+   "level": "city",
+   "pop": 7396076,
+   "cum": 0.6
+  },
+  {
+   "name": "Tin Shui Wai",
+   "level": "city",
+   "pop": 1102185,
+   "cum": 0.6447
+  },
+  {
+   "name": "Sha Tin",
+   "level": "city",
+   "pop": 1083748,
+   "cum": 0.6886
+  },
+  {
+   "name": "Victoria",
+   "level": "city",
+   "pop": 1045496,
+   "cum": 0.731
+  },
+  {
+   "name": "Kowloon City",
+   "level": "city",
+   "pop": 1039749,
+   "cum": 0.7731
+  },
+  {
+   "name": "Sham Shui Po",
+   "level": "city",
+   "pop": 737741,
+   "cum": 0.803
+  },
+  {
+   "name": "Wong Tai Sin",
+   "level": "city",
+   "pop": 691394,
+   "cum": 0.831
+  },
+  {
+   "name": "Kwai Chung",
+   "level": "city",
+   "pop": 566336,
+   "cum": 0.854
+  },
+  {
+   "name": "Tuen Mun",
+   "level": "city",
+   "pop": 559209,
+   "cum": 0.8766
+  },
+  {
+   "name": "Tseung Kwan O",
+   "level": "city",
+   "pop": 535229,
+   "cum": 0.8983
+  },
+  {
+   "name": "Aberdeen",
+   "level": "city",
+   "pop": 438764,
+   "cum": 0.9161
+  },
+  {
+   "name": "Tsuen Wan",
+   "level": "city",
+   "pop": 395379,
+   "cum": 0.9321
+  },
+  {
+   "name": "Tai Po",
+   "level": "city",
+   "pop": 334498,
+   "cum": 0.9457
+  },
+  {
+   "name": "Fanling",
+   "level": "city",
+   "pop": 283714,
+   "cum": 0.9572
+  },
+  {
+   "name": "San Tung Chung Hang",
+   "level": "city",
+   "pop": 269205,
+   "cum": 0.9681
+  },
+  {
+   "name": "Tai Koo",
+   "level": "city",
+   "pop": 205542,
+   "cum": 0.9764
+  },
+  {
+   "name": "Sau Mau Ping",
+   "level": "city",
+   "pop": 198874,
+   "cum": 0.9845
+  },
+  {
+   "name": "Wan Chai",
+   "level": "city",
+   "pop": 195855,
+   "cum": 0.9924
+  },
+  {
+   "name": "Mong Kok",
+   "level": "city",
+   "pop": 187322,
+   "cum": 1.0
+  }
+ ]
+}

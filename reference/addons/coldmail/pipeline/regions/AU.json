@@ -1,0 +1,60 @@
+{
+ "country": "Australia",
+ "countryCode": "au",
+ "language": "en",
+ "timezone": "Australia/Sydney",
+ "level": "state",
+ "_source": "adaptive: states, split into counties above 15,000,000 urban residents; GeoNames + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 24520079,
+ "regions": [
+  {
+   "name": "New South Wales",
+   "level": "state",
+   "pop": 7483356,
+   "cum": 0.3052
+  },
+  {
+   "name": "Victoria",
+   "level": "state",
+   "pop": 6364949,
+   "cum": 0.5648
+  },
+  {
+   "name": "Queensland",
+   "level": "state",
+   "pop": 5216673,
+   "cum": 0.7775
+  },
+  {
+   "name": "Western Australia",
+   "level": "state",
+   "pop": 2776475,
+   "cum": 0.8908
+  },
+  {
+   "name": "South Australia",
+   "level": "state",
+   "pop": 1629454,
+   "cum": 0.9572
+  },
+  {
+   "name": "Australian Capital Territory",
+   "level": "state",
+   "pop": 457213,
+   "cum": 0.9759
+  },
+  {
+   "name": "Tasmania",
+   "level": "state",
+   "pop": 392450,
+   "cum": 0.9919
+  },
+  {
+   "name": "Northern Territory",
+   "level": "state",
+   "pop": 199509,
+   "cum": 1.0
+  }
+ ]
+}

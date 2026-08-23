@@ -18,9 +18,9 @@ const PRO_POSTFACH_TAG = 30;   // Instantlys Decke, nicht verhandelbar
 const TAGE = 26;               // Mo-Sa, wie diese Kampagne laeuft. Auf der Seite
                                // ist es ein Regler; hier der Standardwert.
 const PRO_DOMAIN = 3;          // Zapmails Empfehlung 2-3
-const ANSCHREIBBAR = 0.50;     // gescrapt -> verschickt, inklusive der vier Pruefer
+const ANSCHREIBBAR = 0.44;     // gescrapt -> verschickt, mit Verifizierung und Pruefern
 const APIFY = 0.0017;          // gemessen im Betrieb, Liste waere 0,004-0,006
-const VERIFY = 0.0039;         // MillionVerifier, 39 $/10.000
+const VERIFY = 0.0004;         // MillionVerifier, Paketpreis laut verify_emails.py
 const DFS = 1.34;              // DataForSEO je Nische
 const DOMAIN_JAHR = 12;
 
@@ -79,10 +79,10 @@ pruefe('Zapmail Starter voll ausgenutzt: 7.800 Mails', () => {
   gleich(r.zap, 39, 'Zapmail');                     // 10 Postfaecher = Starter
   gleich(r.instantly, 97, 'Instantly');             // 7.800 > 5.000, also Hypergrowth
   if (r.tarif !== 'Hypergrowth') throw new Error('Tarif: ' + r.tarif);
-  // Daten von Hand: 7800/0,50 = 15.600 Profile x 0,0017 = 26,52
-  //                 + 7800 x 0,0039 = 30,42  + 1,34 = 58,28
-  gleich(r.daten, 58.28, 'Daten');
-  gleich(r.summe, 39 + 97 + 4 + 58.28, 'Summe');    // 198,28
+  // Daten von Hand: 7800/0,44 = 17.727 Profile x 0,0017 = 30,14
+  //                 + 7800 x 0,0004 = 3,12  + 1,34 = 34,60
+  gleich(r.daten, 34.60, 'Daten');
+  gleich(r.summe, 39 + 97 + 4 + 34.60, 'Summe');    // 174,60
   gleich(r.antworten, 156, 'Antworten');
 });
 
@@ -154,8 +154,8 @@ function pruefeSeite() {
     ['preis: 97, name: \'Hypergrowth\'', 'Hypergrowth 97'],
     ['preis: 358, name: \'Lightspeed\'', 'Lightspeed 358'],
     ['APIFY = 0.0017', 'Apify-Satz'],
-    ['VERIFY = 0.0039', 'MillionVerifier'],
-    ['ANSCHREIBBAR = 0.50', 'Quote gescrapt zu verschickt'],
+    ['VERIFY = 0.0004', 'MillionVerifier'],
+    ["ANSCHREIBBAR = 0.44", "Quote gescrapt zu verschickt"],
   ];
   const fehlt = muss.filter(([s]) => !t.includes(s)).map(([, w]) => w);
   if (fehlt.length) throw new Error('Seite weicht ab: ' + fehlt.join(', '));

@@ -1,0 +1,588 @@
+{
+ "country": "France",
+ "countryCode": "fr",
+ "language": "fr",
+ "timezone": "Europe/Paris",
+ "level": "county",
+ "_source": "GeoNames admin2 + cities15000, sorted by urban population",
+ "_pop_note": "pop = residents of GeoNames cities over 15,000 in that region, not its total population. cum = running share of that, biggest first.",
+ "_urban_pop": 33093827,
+ "regions": [
+  {
+   "name": "Paris",
+   "level": "county",
+   "pop": 5298045,
+   "cum": 0.1601
+  },
+  {
+   "name": "Bouches-du-Rhône",
+   "level": "county",
+   "pop": 2470751,
+   "cum": 0.2348
+  },
+  {
+   "name": "Rhône",
+   "level": "county",
+   "pop": 1646139,
+   "cum": 0.2845
+  },
+  {
+   "name": "Hauts-de-Seine",
+   "level": "county",
+   "pop": 1520957,
+   "cum": 0.3305
+  },
+  {
+   "name": "Seine-Saint-Denis",
+   "level": "county",
+   "pop": 1390605,
+   "cum": 0.3725
+  },
+  {
+   "name": "Département du Nord",
+   "level": "county",
+   "pop": 1281381,
+   "cum": 0.4112
+  },
+  {
+   "name": "Val-de-Marne",
+   "level": "county",
+   "pop": 1225508,
+   "cum": 0.4482
+  },
+  {
+   "name": "Yvelines",
+   "level": "county",
+   "pop": 1053427,
+   "cum": 0.4801
+  },
+  {
+   "name": "Val d'Oise",
+   "level": "county",
+   "pop": 995014,
+   "cum": 0.5101
+  },
+  {
+   "name": "Alpes-Maritimes",
+   "level": "county",
+   "pop": 890316,
+   "cum": 0.537
+  },
+  {
+   "name": "Gironde",
+   "level": "county",
+   "pop": 756121,
+   "cum": 0.5599
+  },
+  {
+   "name": "Essonne",
+   "level": "county",
+   "pop": 692434,
+   "cum": 0.5808
+  },
+  {
+   "name": "Upper Garonne",
+   "level": "county",
+   "pop": 670194,
+   "cum": 0.601
+  },
+  {
+   "name": "Loire-Atlantique",
+   "level": "county",
+   "pop": 662892,
+   "cum": 0.6211
+  },
+  {
+   "name": "Var",
+   "level": "county",
+   "pop": 561600,
+   "cum": 0.638
+  },
+  {
+   "name": "Seine-et-Marne",
+   "level": "county",
+   "pop": 554672,
+   "cum": 0.6548
+  },
+  {
+   "name": "Seine-Maritime",
+   "level": "county",
+   "pop": 541555,
+   "cum": 0.6712
+  },
+  {
+   "name": "Hérault",
+   "level": "county",
+   "pop": 488630,
+   "cum": 0.6859
+  },
+  {
+   "name": "Bas-Rhin",
+   "level": "county",
+   "pop": 426775,
+   "cum": 0.6988
+  },
+  {
+   "name": "Pas-de-Calais",
+   "level": "county",
+   "pop": 424759,
+   "cum": 0.7117
+  },
+  {
+   "name": "Isère",
+   "level": "county",
+   "pop": 362083,
+   "cum": 0.7226
+  },
+  {
+   "name": "Ille-et-Vilaine",
+   "level": "county",
+   "pop": 335713,
+   "cum": 0.7328
+  },
+  {
+   "name": "Marne La Vallée",
+   "level": "city",
+   "pop": 318325,
+   "cum": 0.7424
+  },
+  {
+   "name": "Marne",
+   "level": "county",
+   "pop": 292154,
+   "cum": 0.7512
+  },
+  {
+   "name": "Moselle",
+   "level": "county",
+   "pop": 289839,
+   "cum": 0.76
+  },
+  {
+   "name": "Loire",
+   "level": "county",
+   "pop": 288200,
+   "cum": 0.7687
+  },
+  {
+   "name": "Finistère",
+   "level": "county",
+   "pop": 280303,
+   "cum": 0.7771
+  },
+  {
+   "name": "Maine-et-Loire",
+   "level": "county",
+   "pop": 254668,
+   "cum": 0.7848
+  },
+  {
+   "name": "Département du Vaucluse",
+   "level": "county",
+   "pop": 248454,
+   "cum": 0.7923
+  },
+  {
+   "name": "Loiret",
+   "level": "county",
+   "pop": 247095,
+   "cum": 0.7998
+  },
+  {
+   "name": "Haut-Rhin",
+   "level": "county",
+   "pop": 228910,
+   "cum": 0.8067
+  },
+  {
+   "name": "Indre-et-Loire",
+   "level": "county",
+   "pop": 227715,
+   "cum": 0.8136
+  },
+  {
+   "name": "Meurthe et Moselle",
+   "level": "county",
+   "pop": 223738,
+   "cum": 0.8204
+  },
+  {
+   "name": "Puy-de-Dôme",
+   "level": "county",
+   "pop": 223137,
+   "cum": 0.8271
+  },
+  {
+   "name": "Gard",
+   "level": "county",
+   "pop": 210286,
+   "cum": 0.8335
+  },
+  {
+   "name": "Haute-Savoie",
+   "level": "county",
+   "pop": 205170,
+   "cum": 0.8397
+  },
+  {
+   "name": "Pyrénées-Atlantiques",
+   "level": "county",
+   "pop": 200939,
+   "cum": 0.8457
+  },
+  {
+   "name": "Cote d'Or",
+   "level": "county",
+   "pop": 199894,
+   "cum": 0.8518
+  },
+  {
+   "name": "Oise",
+   "level": "county",
+   "pop": 199181,
+   "cum": 0.8578
+  },
+  {
+   "name": "Doubs",
+   "level": "county",
+   "pop": 193181,
+   "cum": 0.8636
+  },
+  {
+   "name": "Saône-et-Loire",
+   "level": "county",
+   "pop": 176107,
+   "cum": 0.8689
+  },
+  {
+   "name": "Calvados",
+   "level": "county",
+   "pop": 175318,
+   "cum": 0.8742
+  },
+  {
+   "name": "Morbihan",
+   "level": "county",
+   "pop": 173888,
+   "cum": 0.8795
+  },
+  {
+   "name": "Somme",
+   "level": "county",
+   "pop": 169547,
+   "cum": 0.8846
+  },
+  {
+   "name": "Sarthe",
+   "level": "county",
+   "pop": 163051,
+   "cum": 0.8896
+  },
+  {
+   "name": "Charente-Maritime",
+   "level": "county",
+   "pop": 154766,
+   "cum": 0.8942
+  },
+  {
+   "name": "Drôme",
+   "level": "county",
+   "pop": 154273,
+   "cum": 0.8989
+  },
+  {
+   "name": "Aisne",
+   "level": "county",
+   "pop": 146608,
+   "cum": 0.9033
+  },
+  {
+   "name": "Haute-Vienne",
+   "level": "county",
+   "pop": 141176,
+   "cum": 0.9076
+  },
+  {
+   "name": "Vendée",
+   "level": "county",
+   "pop": 126442,
+   "cum": 0.9114
+  },
+  {
+   "name": "Vienne",
+   "level": "county",
+   "pop": 123170,
+   "cum": 0.9151
+  },
+  {
+   "name": "Pyrénées-Orientales",
+   "level": "county",
+   "pop": 110706,
+   "cum": 0.9185
+  },
+  {
+   "name": "Eure-et-Loir",
+   "level": "county",
+   "pop": 108682,
+   "cum": 0.9218
+  },
+  {
+   "name": "Savoie",
+   "level": "county",
+   "pop": 108404,
+   "cum": 0.925
+  },
+  {
+   "name": "Eure",
+   "level": "county",
+   "pop": 103052,
+   "cum": 0.9281
+  },
+  {
+   "name": "Manche",
+   "level": "county",
+   "pop": 102463,
+   "cum": 0.9312
+  },
+  {
+   "name": "Aude",
+   "level": "county",
+   "pop": 100376,
+   "cum": 0.9343
+  },
+  {
+   "name": "Tarn",
+   "level": "county",
+   "pop": 99684,
+   "cum": 0.9373
+  },
+  {
+   "name": "Cher",
+   "level": "county",
+   "pop": 97863,
+   "cum": 0.9402
+  },
+  {
+   "name": "Allier",
+   "level": "county",
+   "pop": 95074,
+   "cum": 0.9431
+  },
+  {
+   "name": "Loire-et-Cher",
+   "level": "county",
+   "pop": 92839,
+   "cum": 0.9459
+  },
+  {
+   "name": "Lot-et-Garonne",
+   "level": "county",
+   "pop": 79305,
+   "cum": 0.9483
+  },
+  {
+   "name": "Deux-Sèvres",
+   "level": "county",
+   "pop": 75403,
+   "cum": 0.9506
+  },
+  {
+   "name": "Côtes-d'Armor",
+   "level": "county",
+   "pop": 74247,
+   "cum": 0.9528
+  },
+  {
+   "name": "Ardennes",
+   "level": "county",
+   "pop": 73035,
+   "cum": 0.955
+  },
+  {
+   "name": "Ain",
+   "level": "county",
+   "pop": 71037,
+   "cum": 0.9572
+  },
+  {
+   "name": "Corrèze",
+   "level": "county",
+   "pop": 70435,
+   "cum": 0.9593
+  },
+  {
+   "name": "Charente",
+   "level": "county",
+   "pop": 70336,
+   "cum": 0.9614
+  },
+  {
+   "name": "Yonne",
+   "level": "county",
+   "pop": 70216,
+   "cum": 0.9636
+  },
+  {
+   "name": "Hautes-Pyrénées",
+   "level": "county",
+   "pop": 67892,
+   "cum": 0.9656
+  },
+  {
+   "name": "Orne",
+   "level": "county",
+   "pop": 66446,
+   "cum": 0.9676
+  },
+  {
+   "name": "Mayenne",
+   "level": "county",
+   "pop": 66072,
+   "cum": 0.9696
+  },
+  {
+   "name": "Vosges",
+   "level": "county",
+   "pop": 64146,
+   "cum": 0.9716
+  },
+  {
+   "name": "Dordogne",
+   "level": "county",
+   "pop": 63087,
+   "cum": 0.9735
+  },
+  {
+   "name": "Haute-Marne",
+   "level": "county",
+   "pop": 60899,
+   "cum": 0.9753
+  },
+  {
+   "name": "Aube",
+   "level": "county",
+   "pop": 60785,
+   "cum": 0.9771
+  },
+  {
+   "name": "Landes",
+   "level": "county",
+   "pop": 58510,
+   "cum": 0.9789
+  },
+  {
+   "name": "Territoire de Belfort",
+   "level": "county",
+   "pop": 54562,
+   "cum": 0.9806
+  },
+  {
+   "name": "South Corsica",
+   "level": "county",
+   "pop": 54364,
+   "cum": 0.9822
+  },
+  {
+   "name": "Indre",
+   "level": "county",
+   "pop": 53301,
+   "cum": 0.9838
+  },
+  {
+   "name": "Tarn-et-Garonne",
+   "level": "county",
+   "pop": 52434,
+   "cum": 0.9854
+  },
+  {
+   "name": "Aveyron",
+   "level": "county",
+   "pop": 51644,
+   "cum": 0.987
+  },
+  {
+   "name": "Jura",
+   "level": "county",
+   "pop": 46556,
+   "cum": 0.9884
+  },
+  {
+   "name": "Nièvre",
+   "level": "county",
+   "pop": 43988,
+   "cum": 0.9897
+  },
+  {
+   "name": "Hautes-Alpes",
+   "level": "county",
+   "pop": 42715,
+   "cum": 0.991
+  },
+  {
+   "name": "Upper Corsica",
+   "level": "county",
+   "pop": 41001,
+   "cum": 0.9922
+  },
+  {
+   "name": "Meuse",
+   "level": "county",
+   "pop": 40393,
+   "cum": 0.9934
+  },
+  {
+   "name": "Alpes-de-Haute-Provence",
+   "level": "county",
+   "pop": 40337,
+   "cum": 0.9947
+  },
+  {
+   "name": "Cantal",
+   "level": "county",
+   "pop": 34724,
+   "cum": 0.9957
+  },
+  {
+   "name": "Gers",
+   "level": "county",
+   "pop": 24494,
+   "cum": 0.9965
+  },
+  {
+   "name": "Lot",
+   "level": "county",
+   "pop": 23331,
+   "cum": 0.9972
+  },
+  {
+   "name": "Haute-Loire",
+   "level": "county",
+   "pop": 22718,
+   "cum": 0.9978
+  },
+  {
+   "name": "Haute-Saône",
+   "level": "county",
+   "pop": 19892,
+   "cum": 0.9985
+  },
+  {
+   "name": "Ardèche",
+   "level": "county",
+   "pop": 18423,
+   "cum": 0.999
+  },
+  {
+   "name": "Ariège",
+   "level": "county",
+   "pop": 16997,
+   "cum": 0.9995
+  },
+  {
+   "name": "Creuse",
+   "level": "county",
+   "pop": 15853,
+   "cum": 1.0
+  }
+ ]
+}
